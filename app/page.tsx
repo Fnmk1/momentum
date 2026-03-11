@@ -1,301 +1,378 @@
+import {
+  features,
+  steps,
+  stats,
+  screenshots,
+  aiPoints,
+  appleIcon,
+  playIcon,
+} from "@/app/lib/content";
 import Image from "next/image";
 
-const features = [
-  {
-    title: "تتبع السعرات",
-    description: "سجّل وجباتك من قاعدة بيانات تضم أكثر من 18,000 طعام. امسح الباركود، ابحث بالاسم، أو صوّر وخلّ الذكاء الاصطناعي يسوّيها.",
-  },
-  {
-    title: "تسجيل الوجبات",
-    description: "تابع كل وجبة مع تفاصيل الماكروز. حجم الحصص، معلومات غذائية لحظية، وتسجيل بالصور.",
-  },
-  {
-    title: "برامج التمارين",
-    description: "أكثر من 1,500 تمرين مع برامج جاهزة. تتبع المجموعات والتكرارات والأوزان.",
-  },
-  {
-    title: "تتبع العادات",
-    description: "حدد أهدافك اليومية للماء والخطوات والتغذية. ابنِ سلاسل التزام يوم بعد يوم.",
-  },
-  {
-    title: "مساعد ذكي",
-    description: "تكلم مع Momentum AI — يقترح وجبات، ينصحك بتمارين، يحلل صور الأكل، ويجاوب أي سؤال.",
-  },
-  {
-    title: "مجتمع الوصفات",
-    description: "اكتشف وصفات من المجتمع. احفظ المفضلة، قيّم الوجبات، وشارك إبداعاتك.",
-  },
-];
+function StoreButtons({ variant = "primary" }: { variant?: "primary" | "outlined" }) {
+  const isPrimary = variant === "primary";
+  return (
+    <div className="flex flex-wrap items-center gap-4">
+      <a
+        href="#"
+        className={
+          isPrimary
+            ? "flex items-center gap-3 bg-[#0B0D14] text-white rounded-full px-7 py-3.5 transition-all hover:bg-[#b06a52] shadow-[0_2px_12px_rgba(194,119,94,0.25)]"
+            : "flex items-center gap-3 bg-[#0B0D14] text-white rounded-full px-7 py-3.5 transition-all hover:bg-[#b06a52] shadow-[0_2px_12px_rgba(194,119,94,0.25)]"
+        }
+      >
+        <svg
+          viewBox="0 0 384 512"
+          fill="currentColor"
+          className="w-[15px] h-[15px] shrink-0"
+        >
+          <path d={appleIcon} />
+        </svg>
+        <div className="text-right">
+          <div className="text-[10px] leading-tight opacity-80">حمّل من</div>
+          <div className="text-sm font-bold leading-tight">App Store</div>
+        </div>
+      </a>
+
+      <a
+        href="#"
+        className="flex items-center gap-3 rounded-full border-2 border-[#8B6E4E]/30 px-7 py-3.5 text-[#2C2417] transition-colors hover:bg-[#8B6E4E]/[0.06] hover:border-[#8B6E4E]/50"
+      >
+        <svg
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          className="w-[15px] h-[15px] shrink-0"
+        >
+          <path d={playIcon} />
+        </svg>
+        <div className="text-right">
+          <div className="text-[10px] leading-tight text-[#8B6E4E]">حمّل من</div>
+          <div className="text-sm font-bold leading-tight">Google Play</div>
+        </div>
+      </a>
+    </div>
+  );
+}
 
 export default function Home() {
   return (
-    <>
-      {/* ── Navigation ── */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-bg/80 backdrop-blur-lg border-b border-border-subtle">
-        <div className="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
+    <div className="bg-[#FAF8F5] text-[#2C2417] min-h-screen">
+      {/* ── Nav ─────────────────────────────────────────────── */}
+      <nav className="fixed top-0 inset-x-0 z-50 bg-[#FAF8F5]/85 backdrop-blur-xl border-b border-[#8B6E4E]/10">
+        <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
           <div className="flex items-center gap-2.5">
-            <Image src="/Logo.png" alt="Momentum" width={26} height={26} />
-            <span className="font-semibold text-lg tracking-tight">Momentum</span>
+            <Image
+              src="/Logo.png"
+              alt="Momentum"
+              width={28}
+              height={28}
+              className="rounded-lg"
+            />
+            <span className="font-bold text-lg tracking-tight text-[#2C2417]">
+              Momentum
+            </span>
           </div>
 
-          <div className="hidden md:flex items-center gap-8 text-sm text-text-secondary">
-            <a href="#features" className="hover:text-text-primary transition-colors">المميزات</a>
-            <a href="#how-it-works" className="hover:text-text-primary transition-colors">كيف يعمل</a>
-            <a href="#ai" className="hover:text-text-primary transition-colors">المساعد الذكي</a>
+          <div className="hidden md:flex items-center gap-8">
+            <a
+              href="#features"
+              className="text-sm text-[#6B5D4F] transition-colors hover:text-[#2C2417]"
+            >
+              المميزات
+            </a>
+            <a
+              href="#how-it-works"
+              className="text-sm text-[#6B5D4F] transition-colors hover:text-[#2C2417]"
+            >
+              كيف يعمل
+            </a>
+            <a
+              href="#ai"
+              className="text-sm text-[#6B5D4F] transition-colors hover:text-[#2C2417]"
+            >
+              المساعد الذكي
+            </a>
           </div>
 
           <a
             href="#download"
-            className="px-5 py-2 rounded-full bg-text-primary text-bg text-sm font-medium hover:bg-text-primary/85 transition-colors"
+            className="hidden sm:inline-flex bg-[#161e2b] text-white text-sm font-semibold rounded-full px-5 py-2.5 transition-all hover:bg-[#b06a52] shadow-[0_2px_8px_rgba(194,119,94,0.2)]"
           >
             حمّل التطبيق
           </a>
         </div>
       </nav>
 
-      <main>
-        {/* ── Hero ── */}
-        <section className="min-h-screen flex items-center justify-center pt-16">
-          <div className="max-w-3xl mx-auto px-6 text-center">
-            <p className="text-text-muted text-sm tracking-widest uppercase mb-8 animate-fade-in-up opacity-0">
+      {/* ── Hero ────────────────────────────────────────────── */}
+      <section className="relative min-h-screen flex items-center pt-16">
+        {/* Subtle warm radial glow */}
+        <div
+          aria-hidden="true"
+          className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[500px] rounded-full bg-[#C2775E]/[0.04] blur-[100px] pointer-events-none"
+        />
+
+        <div className="relative max-w-6xl mx-auto px-6 w-full">
+          <div className="max-w-2xl">
+            <p className="text-xs font-semibold uppercase tracking-[0.25em] text-[#475569] mb-6">
               استمر في التقدم
             </p>
 
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.12] tracking-tight mb-6 animate-fade-in-up opacity-0 animate-delay-100">
-              رحلتك الصحية،
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-[1.15] mb-6 text-[#475569]">
+              رحلتك نحو
               <br />
-              بكل بساطة.
+              <span className="text-[#161e2b]">أفضل نسخة منك</span>
             </h1>
 
-            <p className="text-text-secondary text-lg md:text-xl max-w-xl mx-auto leading-relaxed mb-12 animate-fade-in-up opacity-0 animate-delay-200">
-              تتبع سعراتك، سجّل وجباتك، تابع تمارينك، وابنِ عادات صحية
-              — مع مساعد ذكي يخليك دايم على المسار.
+            <p className="text-[#6B5D4F] text-lg md:text-xl max-w-lg mb-10 leading-relaxed">
+              تطبيق عربي شامل لتتبع التغذية والتمارين بمساعدة الذكاء
+              الاصطناعي. كل اللي تحتاجه في مكان واحد.
             </p>
 
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-3 animate-fade-in-up opacity-0 animate-delay-300">
-              <a href="#download" className="flex items-center gap-3 px-6 py-3 rounded-full bg-text-primary text-bg font-medium text-sm hover:bg-text-primary/85 transition-colors">
-                <svg width="15" height="18" viewBox="0 0 384 512" fill="currentColor">
-                  <path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184 4 273.5c0 26.2 4.8 53.3 14.4 81.2 12.8 37.4 59.1 128.9 107.2 127.4 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-94.1zM244.8 8C265.4 30.5 280.4 62.1 276.4 96h-2.3c-21.4 0-42.6-17.2-55.7-38.5C205.1 36.4 192.4 4.7 196.5 0h2.3c17.6 0 35.1 2.7 46 8z" />
-                </svg>
-                <div className="text-right">
-                  <div className="text-[10px] uppercase tracking-wide opacity-50">حمّل من</div>
-                  <div className="text-sm font-semibold -mt-0.5">App Store</div>
-                </div>
-              </a>
-              <a href="#download" className="flex items-center gap-3 px-6 py-3 rounded-full border border-border text-text-primary font-medium text-sm hover:bg-bg-subtle transition-colors">
-                <svg width="15" height="16" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M3 20.5V3.5C3 2.91 3.34 2.39 3.84 2.15L13.69 12L3.84 21.85C3.34 21.61 3 21.09 3 20.5ZM16.81 15.12L6.05 21.34L14.54 12.85L16.81 15.12ZM20.16 10.81C20.5 11.08 20.75 11.5 20.75 12C20.75 12.5 20.5 12.92 20.16 13.19L17.89 14.5L15.39 12L17.89 9.5L20.16 10.81ZM6.05 2.66L16.81 8.88L14.54 11.15L6.05 2.66Z" />
-                </svg>
-                <div className="text-right">
-                  <div className="text-[10px] uppercase tracking-wide opacity-50">حمّل من</div>
-                  <div className="text-sm font-semibold -mt-0.5">Google Play</div>
-                </div>
-              </a>
+            <div className="mb-14">
+              <StoreButtons />
             </div>
-          </div>
-        </section>
 
-        {/* ── Screenshots ── */}
-        <section className="py-16 md:py-20">
-          <div className="max-w-4xl mx-auto px-6">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-5">
-              {[
-                { src: "/screenshot-dashboard.jpeg", alt: "لوحة التحكم" },
-                { src: "/screenshot-mealplan.jpeg", alt: "خطة الوجبات" },
-                { src: "/screenshot-gym.jpeg", alt: "النادي" },
-                { src: "/screenshot-chat.jpeg", alt: "المساعد الذكي" },
-              ].map((img) => (
-                <div key={img.src} className="relative aspect-[9/19.5] rounded-2xl md:rounded-3xl overflow-hidden shadow-lg shadow-black/[0.08]">
-                  <Image
-                    src={img.src}
-                    alt={img.alt}
-                    fill
-                    className="object-cover"
-                    sizes="(max-width: 768px) 45vw, 22vw"
-                  />
+            {/* Stats row */}
+            <div className="flex items-center gap-10">
+              {stats.map((stat, i) => (
+                <div key={stat.label} className="flex items-center gap-10">
+                  <div>
+                    <div className="text-2xl md:text-3xl font-bold text-[#0B0D14]">
+                      {stat.value}
+                    </div>
+                    <div className="text-sm text-[#0B0D14] mt-0.5">
+                      {stat.label}
+                    </div>
+                  </div>
+                  {i < stats.length - 1 && (
+                    <div className="w-px h-10 bg-[#0B0D14]/15" />
+                  )}
                 </div>
               ))}
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        {/* ── Overview ── */}
-        <section className="py-16 md:py-24 bg-bg-subtle">
-          <div className="max-w-3xl mx-auto px-6 text-center">
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-5">
-              كل اللي تحتاجه في مكان واحد
-            </h2>
-            <p className="text-text-secondary text-lg leading-relaxed mb-14">
-              Momentum يجمع لك تتبع التغذية، برامج التمارين، والمساعد الذكي
-              في تطبيق واحد بدون تعقيد.
+      {/* ── Features ───────────────────────────────────────── */}
+      <section id="features" className="scroll-mt-20 bg-[#F0EDE8]">
+        <div className="max-w-6xl mx-auto px-6 py-24 md:py-32">
+          <div className="text-center mb-16">
+            <p className="text-sm font-semibold text-[#334155] mb-3 tracking-wide">
+              المميزات
             </p>
-
-            <div className="flex justify-center gap-14 md:gap-20">
-              {[
-                { value: "+18,000", label: "طعام" },
-                { value: "+1,500", label: "تمرين" },
-                { value: "24/7", label: "مساعد ذكي" },
-              ].map((stat) => (
-                <div key={stat.label} className="text-center">
-                  <div className="text-3xl md:text-4xl font-bold text-accent mb-1">{stat.value}</div>
-                  <div className="text-text-muted text-sm">{stat.label}</div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* ── Features ── */}
-        <section id="features" className="py-16 md:py-24 scroll-mt-20">
-          <div className="max-w-4xl mx-auto px-6">
-            <p className="text-accent text-xs font-medium tracking-widest uppercase mb-3">المميزات</p>
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-14">
-              مصمم لنتائج حقيقية
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0B0D14]">
+              كل ما تحتاجه لتحقيق أهدافك
             </h2>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-10">
-              {features.map((f) => (
-                <div key={f.title}>
-                  <h3 className="text-lg font-semibold mb-2">{f.title}</h3>
-                  <p className="text-text-secondary text-[15px] leading-relaxed">{f.description}</p>
-                </div>
-              ))}
-            </div>
           </div>
-        </section>
 
-        {/* ── How It Works ── */}
-        <section id="how-it-works" className="py-16 md:py-24 bg-bg-subtle scroll-mt-20">
-          <div className="max-w-4xl mx-auto px-6">
-            <p className="text-accent text-xs font-medium tracking-widest uppercase mb-3">كيف يعمل</p>
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-14">
+          <div className="grid sm:grid-cols-2 gap-6">
+            {features.map((f) => (
+              <div
+                key={f.title}
+                className="bg-white rounded-2xl p-7 "
+              >
+                <h3 className="text-lg font-semibold mb-2 text-[#334155]">
+                  {f.title}
+                </h3>
+                <p className="text-[#6B5D4F] leading-relaxed text-[15px]">
+                  {f.desc}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── Screenshots ───────────────────────────────────── */}
+      <section className="max-w-6xl mx-auto px-6 py-24 md:py-32">
+        <div className="text-center mb-16">
+          <p className="text-sm font-semibold text-[#C2775E] mb-3 tracking-wide">
+            نظرة على التطبيق
+          </p>
+          <h2 className="text-3xl md:text-4xl font-bold text-[#2C2417]">
+            تجربة مصممة بعناية
+          </h2>
+        </div>
+
+        <div className="flex justify-center gap-5 md:gap-6 overflow-x-auto pb-4">
+          {screenshots.map((shot) => (
+            <div
+              key={shot.alt}
+              className="shrink-0 rounded-2xl overflow-hidden border border-[#8B6E4E]/10 shadow-[0_4px_16px_rgba(44,36,23,0.08)] bg-white p-1.5"
+            >
+              <div className="rounded-xl overflow-hidden">
+                <Image
+                  src={shot.src}
+                  alt={shot.alt}
+                  width={220}
+                  height={440}
+                  className="object-cover"
+                />
+              </div>
+              <p className="text-center text-sm text-[#6B5D4F] mt-2.5 mb-1 font-medium">
+                {shot.alt}
+              </p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* ── How It Works (Steps) ──────────────────────────── */}
+      <section id="how-it-works" className="scroll-mt-20 bg-[#F0EDE8]">
+        <div className="max-w-6xl mx-auto px-6 py-24 md:py-32">
+          <div className="text-center mb-16">
+            <p className="text-sm font-semibold text-[#334155] mb-3 tracking-wide">
+              كيف يعمل
+            </p>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0B0D14]">
               ابدأ في أقل من دقيقة
             </h2>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-14">
-              {[
-                {
-                  num: "١",
-                  title: "حدد هدفك",
-                  description: "أخبرنا هدفك — تنزيل وزن، بناء عضل، أو ثبات. نحسب لك السعرات والماكروز المثالية.",
-                },
-                {
-                  num: "٢",
-                  title: "سجّل يومك",
-                  description: "سجّل وجباتك وتمارينك وعاداتك خلال اليوم. كل ما سجّلت أكثر، صار التطبيق أذكى.",
-                },
-                {
-                  num: "٣",
-                  title: "شوف النتائج",
-                  description: "تابع تقدمك بالرسوم البيانية. ابنِ سلاسل إنجاز واستمر في التقدم.",
-                },
-              ].map((s) => (
-                <div key={s.num}>
-                  <div className="text-5xl font-bold text-border mb-4">{s.num}</div>
-                  <h3 className="text-lg font-semibold mb-2">{s.title}</h3>
-                  <p className="text-text-secondary text-[15px] leading-relaxed">{s.description}</p>
-                </div>
-              ))}
-            </div>
           </div>
-        </section>
 
-        {/* ── AI Companion ── */}
-        <section id="ai" className="py-16 md:py-24 scroll-mt-20">
-          <div className="max-w-4xl mx-auto px-6">
-            <div className="grid grid-cols-1 lg:grid-cols-[1fr_auto] gap-12 lg:gap-16 items-center">
-              <div>
-                <p className="text-accent text-xs font-medium tracking-widest uppercase mb-3">المساعد الذكي</p>
-                <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-5">
+          <div className="grid sm:grid-cols-3 gap-10 md:gap-14">
+            {steps.map((s) => (
+              <div key={s.num} className="text-center">
+                <div className="w-14 h-14 rounded-full bg-[#334155] text-white flex items-center justify-center text-xl font-bold mx-auto mb-6 shadow-[0_4px_12px_rgba(194,119,94,0.25)]">
+                  {s.num}
+                </div>
+                <h3 className="text-lg font-semibold mb-3 text-[#2C2417]">
+                  {s.title}
+                </h3>
+                <p className="text-[#6B5D4F] leading-relaxed">{s.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── AI Section ────────────────────────────────────── */}
+      <section id="ai" className="scroll-mt-20">
+        <div className="max-w-6xl mx-auto px-6 py-24 md:py-32">
+          <div className="bg-white rounded-2xl overflow-hidden">
+            {/* Terracotta accent line */}
+            <div className="h-0 bg-[#C2775E]" />
+
+            <div className="flex flex-col md:flex-row items-start gap-10 md:gap-14 p-8 md:p-12">
+              <div className="flex-1">
+                <p className="text-sm font-semibold text-[#334155] mb-3 tracking-wide">
+                  المساعد الذكي
+                </p>
+                <h2 className="text-3xl md:text-4xl font-bold mb-5 text-[#0B0D14]">
                   شريكك في اللياقة، ٢٤/٧
                 </h2>
-                <p className="text-text-secondary text-lg leading-relaxed mb-8">
-                  Momentum AI يفهم أهدافك، يتابع تقدمك، ويعطيك
-                  نصائح عملية في أي وقت تحتاجها.
+                <p className="text-[#6B5D4F] leading-relaxed mb-8 text-[15px]">
+                  مساعد ذكي يفهم أهدافك ويساعدك توصل لها. اسأله أي شي عن
+                  التغذية أو التمارين، صوّر وجبتك وخله يحللها، أو خله يبني لك
+                  برنامج تمارين كامل.
                 </p>
 
-                <div className="space-y-3 text-text-secondary text-[15px] leading-relaxed">
-                  <p>— اقتراحات وجبات مبنية على ماكروزك المتبقية</p>
-                  <p>— توصيات تمارين حسب جدولك ومستواك</p>
-                  <p>— صوّر وجبتك واعرف السعرات فوراً</p>
-                  <p>— جاوب على أي سؤال عن اللياقة والتغذية</p>
-                </div>
+                <ul className="space-y-4">
+                  {aiPoints.map((point) => (
+                    <li
+                      key={point}
+                      className="flex items-start gap-3 text-[#6B5D4F] leading-relaxed"
+                    >
+                      <svg
+                        className="w-5 h-5 text-[#161e2bff] shrink-0 mt-0.5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        strokeWidth={2.5}
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M5 13l4 4L19 7"
+                        />
+                      </svg>
+                      <span>{point}</span>
+                    </li>
+                  ))}
+                </ul>
               </div>
 
-              <div className="flex justify-center lg:justify-end">
-                <div className="relative w-[220px] md:w-[240px] aspect-[9/19.5] rounded-3xl overflow-hidden shadow-xl shadow-black/[0.1]">
+              <div className="shrink-0 w-[220px] self-center">
+                <div className="relative aspect-[9/19.5] rounded-2xl overflow-hidden border border-[#8B6E4E]/10 shadow-[0_4px_16px_rgba(44,36,23,0.08)]">
                   <Image
                     src="/screenshot-chat.jpeg"
-                    alt="Momentum AI"
+                    alt="المساعد الذكي"
                     fill
                     className="object-cover"
-                    sizes="240px"
+                    sizes="220px"
                   />
                 </div>
               </div>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        {/* ── Download CTA ── */}
-        <section id="download" className="py-20 md:py-28 bg-bg-subtle scroll-mt-20">
-          <div className="max-w-3xl mx-auto px-6 text-center">
-            <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-5">
-              جاهز تبدأ؟
-            </h2>
-            <p className="text-text-secondary text-lg leading-relaxed mb-10 max-w-md mx-auto">
-              حمّل Momentum مجاناً وابدأ ابنِ عادات صحية اليوم.
-            </p>
+      {/* ── CTA / Download ────────────────────────────────── */}
+      <section id="download" className="scroll-mt-20 bg-[#F0EDE8]">
+        <div className="max-w-6xl mx-auto px-6 py-24 md:py-32 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-5 text-[#2C2417]">
+            جاهز تبدأ رحلتك؟
+          </h2>
+          <p className="text-[#6B5D4F] text-lg mb-12 max-w-md mx-auto leading-relaxed">
+            حمّل Momentum الحين وابدأ رحلتك نحو أفضل نسخة منك. مجاني بالكامل.
+          </p>
 
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
-              <a href="#" className="flex items-center gap-3 px-6 py-3 rounded-full bg-text-primary text-bg font-medium text-sm hover:bg-text-primary/85 transition-colors">
-                <svg width="15" height="18" viewBox="0 0 384 512" fill="currentColor">
-                  <path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184 4 273.5c0 26.2 4.8 53.3 14.4 81.2 12.8 37.4 59.1 128.9 107.2 127.4 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-94.1zM244.8 8C265.4 30.5 280.4 62.1 276.4 96h-2.3c-21.4 0-42.6-17.2-55.7-38.5C205.1 36.4 192.4 4.7 196.5 0h2.3c17.6 0 35.1 2.7 46 8z" />
-                </svg>
-                <div className="text-right">
-                  <div className="text-[10px] uppercase tracking-wide opacity-50">حمّل من</div>
-                  <div className="text-sm font-semibold -mt-0.5">App Store</div>
-                </div>
-              </a>
-              <a href="#" className="flex items-center gap-3 px-6 py-3 rounded-full border border-border text-text-primary font-medium text-sm hover:bg-bg transition-colors">
-                <svg width="15" height="16" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M3 20.5V3.5C3 2.91 3.34 2.39 3.84 2.15L13.69 12L3.84 21.85C3.34 21.61 3 21.09 3 20.5ZM16.81 15.12L6.05 21.34L14.54 12.85L16.81 15.12ZM20.16 10.81C20.5 11.08 20.75 11.5 20.75 12C20.75 12.5 20.5 12.92 20.16 13.19L17.89 14.5L15.39 12L17.89 9.5L20.16 10.81ZM6.05 2.66L16.81 8.88L14.54 11.15L6.05 2.66Z" />
-                </svg>
-                <div className="text-right">
-                  <div className="text-[10px] uppercase tracking-wide opacity-50">حمّل من</div>
-                  <div className="text-sm font-semibold -mt-0.5">Google Play</div>
-                </div>
-              </a>
-            </div>
+          <div className="flex justify-center mb-8">
+            <StoreButtons />
           </div>
-        </section>
-      </main>
 
-      {/* ── Footer ── */}
-      <footer className="border-t border-border-subtle">
-        <div className="max-w-5xl mx-auto px-6 py-10">
-          <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
+          <p className="text-sm text-[#8B6E4E]/60">
+            متوفر على iOS و Android
+          </p>
+        </div>
+      </section>
+
+      {/* ── Footer ─────────────────────────────────────────── */}
+      <footer className="border-t border-[#8B6E4E]/10">
+        <div className="max-w-6xl mx-auto px-6 py-12">
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-6 mb-8">
             <div className="flex items-center gap-2.5">
-              <Image src="/Logo.png" alt="Momentum" width={22} height={22} />
-              <span className="font-semibold tracking-tight">Momentum</span>
+              <Image
+                src="/Logo.png"
+                alt="Momentum"
+                width={22}
+                height={22}
+                className="rounded-md"
+              />
+              <span className="font-semibold text-[#2C2417]">Momentum</span>
             </div>
 
-            <div className="flex flex-wrap gap-6 md:gap-8 text-sm text-text-secondary">
-              <a href="#features" className="hover:text-text-primary transition-colors">المميزات</a>
-              <a href="#how-it-works" className="hover:text-text-primary transition-colors">كيف يعمل</a>
-              <a href="#" className="hover:text-text-primary transition-colors">سياسة الخصوصية</a>
-              <a href="#" className="hover:text-text-primary transition-colors">الشروط والأحكام</a>
-              <a href="mailto:support@momentumsup.com" className="hover:text-text-primary transition-colors">تواصل معنا</a>
+            <div className="flex flex-wrap items-center justify-center gap-6 text-sm text-[#6B5D4F]">
+              <a
+                href="#features"
+                className="transition-colors hover:text-[#2C2417]"
+              >
+                المميزات
+              </a>
+              <a
+                href="#how-it-works"
+                className="transition-colors hover:text-[#2C2417]"
+              >
+                كيف يعمل
+              </a>
+              <a href="#" className="transition-colors hover:text-[#2C2417]">
+                سياسة الخصوصية
+              </a>
+              <a href="#" className="transition-colors hover:text-[#2C2417]">
+                الشروط والأحكام
+              </a>
+              <a href="#" className="transition-colors hover:text-[#2C2417]">
+                تواصل معنا
+              </a>
             </div>
           </div>
 
-          <div className="mt-8 pt-8 border-t border-border-subtle">
-            <p className="text-text-muted text-xs">
-              &copy; {new Date().getFullYear()} Momentum. جميع الحقوق محفوظة.
-            </p>
+          <div className="text-center text-sm text-[#8B6E4E]/50">
+            &copy; 2026 Momentum. جميع الحقوق محفوظة.
           </div>
         </div>
       </footer>
-    </>
+    </div>
   );
 }
