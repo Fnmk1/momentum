@@ -20,10 +20,12 @@ export const stats = [
 ];
 
 export const screenshots = [
-  { src: "/screenshot-dashboard.jpeg", alt: "لوحة التحكم" },
-  { src: "/screenshot-mealplan.jpeg", alt: "خطة الوجبات" },
-  { src: "/screenshot-gym.jpeg", alt: "النادي" },
-  { src: "/screenshot-chat.jpeg", alt: "المساعد الذكي" },
+  { src: "/Screenshots/1288@3x.png", alt: "لوحة التحكم" },
+  { src: "/Screenshots/1289@3x.png", alt: "التغذية" },
+  { src: "/Screenshots/1290@3x.png", alt: "التمارين" },
+  { src: "/Screenshots/1291@3x.png", alt: "خطة الوجبات" },
+  { src: "/Screenshots/1292@3x.png", alt: "المساعد الذكي" },
+  { src: "/Screenshots/1293@3x.png", alt: "المزيد" },
 ];
 
 export const aiPoints = [

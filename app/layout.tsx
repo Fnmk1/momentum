@@ -9,7 +9,7 @@ const rubik = Rubik({
 });
 
 export const metadata: Metadata = {
-  title: "Momentum - Keep Moving Forward | تطبيق اللياقة",
+  title: "Momentum - Keep Moving Forward | تطبيق مومنتم",
   description:
     "Your all-in-one Arabic fitness companion. Track nutrition, AI-powered meal logging, gym programs, and community recipes. 18,000+ foods, 1,500+ exercises.",
   keywords: [
