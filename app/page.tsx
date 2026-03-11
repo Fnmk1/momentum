@@ -322,7 +322,7 @@ export default function Home() {
                   المساعد الذكي
                 </p>
                 <h2 className="text-3xl md:text-4xl font-bold mb-5 text-[#0B0D14]">
-                  شريكك في اللياقة، ٢٤/٧
+                  رفـــــيق الـــدرب، ٢٤/٧
                 </h2>
                 <p className="text-[#6B5D4F] leading-relaxed mb-8 text-[15px]">
                   مساعد ذكي يفهم أهدافك ويساعدك توصل لها. اسأله أي شي عن
@@ -430,11 +430,23 @@ export default function Home() {
             </div>
 
             {/* Left side — form */}
-            <form className="bg-white/[0.06] rounded-2xl p-8 md:p-10 space-y-5">
+            <form
+              action="https://formsubmit.co/info@momentumsup.com"
+              method="POST"
+              className="bg-white/[0.06] rounded-2xl p-8 md:p-10 space-y-5"
+            >
+              {/* FormSubmit config */}
+              <input type="hidden" name="_subject" value="رسالة جديدة من موقع Momentum" />
+              <input type="hidden" name="_captcha" value="false" />
+              <input type="hidden" name="_next" value="https://momentumsup.com/#contact" />
+              <input type="hidden" name="_template" value="table" />
+
               <div>
                 <label className="block text-white/60 text-sm mb-2">الاسم</label>
                 <input
                   type="text"
+                  name="name"
+                  required
                   placeholder="اسمك الكامل"
                   className="w-full bg-white/[0.06] text-white rounded-xl px-5 py-3.5 text-sm placeholder:text-white/25 border border-white/[0.08] focus:border-[#4D8AFF]/50 focus:outline-none transition-colors"
                 />
@@ -443,6 +455,8 @@ export default function Home() {
                 <label className="block text-white/60 text-sm mb-2">البريد الإلكتروني</label>
                 <input
                   type="email"
+                  name="email"
+                  required
                   placeholder="email@example.com"
                   dir="ltr"
                   className="w-full bg-white/[0.06] text-white rounded-xl px-5 py-3.5 text-sm placeholder:text-white/25 border border-white/[0.08] focus:border-[#4D8AFF]/50 focus:outline-none transition-colors text-right"
@@ -450,17 +464,23 @@ export default function Home() {
               </div>
               <div>
                 <label className="block text-white/60 text-sm mb-2">الموضوع</label>
-                <select className="w-full bg-white/[0.06] text-white rounded-xl px-5 py-3.5 text-sm border border-white/[0.08] focus:border-[#4D8AFF]/50 focus:outline-none transition-colors appearance-none">
+                <select
+                  name="subject"
+                  required
+                  className="w-full bg-white/[0.06] text-white rounded-xl px-5 py-3.5 text-sm border border-white/[0.08] focus:border-[#4D8AFF]/50 focus:outline-none transition-colors appearance-none"
+                >
                   <option value="" className="bg-[#161e2b]">اختر الموضوع</option>
-                  <option value="sales" className="bg-[#161e2b]">استفسار تجاري</option>
-                  <option value="partnership" className="bg-[#161e2b]">شراكة</option>
-                  <option value="support" className="bg-[#161e2b]">دعم فني</option>
-                  <option value="other" className="bg-[#161e2b]">أخرى</option>
+                  <option value="استفسار تجاري" className="bg-[#161e2b]">استفسار تجاري</option>
+                  <option value="شراكة" className="bg-[#161e2b]">شراكة</option>
+                  <option value="دعم فني" className="bg-[#161e2b]">دعم فني</option>
+                  <option value="أخرى" className="bg-[#161e2b]">أخرى</option>
                 </select>
               </div>
               <div>
                 <label className="block text-white/60 text-sm mb-2">الرسالة</label>
                 <textarea
+                  name="message"
+                  required
                   rows={4}
                   placeholder="اكتب رسالتك هنا..."
                   className="w-full bg-white/[0.06] text-white rounded-xl px-5 py-3.5 text-sm placeholder:text-white/25 border border-white/[0.08] focus:border-[#4D8AFF]/50 focus:outline-none transition-colors resize-none"
@@ -484,7 +504,7 @@ export default function Home() {
             جاهز تبدأ رحلتك؟
           </h2>
           <p className="text-[#6B5D4F] text-lg mb-12 max-w-md mx-auto leading-relaxed">
-            حمّل Momentum الحين وابدأ رحلتك نحو أفضل نسخة منك. مجاني بالكامل.
+            حمّل Momentum الحين وابدأ رحلتك نحو أفضل نسخة منك. مجاني.
           </p>
 
           <div className="flex justify-center mb-8">

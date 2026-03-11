@@ -23,6 +23,10 @@ export const metadata: Metadata = {
     "تطبيق لياقة",
     "تتبع السعرات",
   ],
+  icons: {
+    icon: "/Logo (2).png",
+    apple: "/Logo (2).png",
+  },
   openGraph: {
     title: "Momentum - Keep Moving Forward",
     description:

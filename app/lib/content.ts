@@ -14,7 +14,7 @@ export const steps = [
 ];
 
 export const stats = [
-  { value: "+18,000", label: "طعام" },
+  { value: "+18,000", label: "أكلة" },
   { value: "+1,500", label: "تمرين" },
   { value: "24/7", label: "مساعد ذكي" },
 ];
