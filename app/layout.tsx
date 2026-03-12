@@ -8,32 +8,110 @@ const rubik = Rubik({
   weight: ["400", "500", "600", "700"],
 });
 
+const siteUrl = "https://momentumsup.com";
+
 export const metadata: Metadata = {
-  title: "Momentum - Keep Moving Forward | تطبيق مومنتم",
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: "Momentum | تطبيق مومنتم — تتبع التغذية والتمارين بالذكاء الاصطناعي",
+    template: "%s | Momentum",
+  },
   description:
-    "Your all-in-one Arabic fitness companion. Track nutrition, AI-powered meal logging, gym programs, and community recipes. 18,000+ foods, 1,500+ exercises.",
+    "تطبيق عربي شامل لتتبع التغذية والتمارين. أكثر من 18,000 أكلة، 1,500 تمرين، مساعد ذكي 24/7، باركود، خطط وجبات، ومجتمع وصفات. حمّله مجاناً.",
   keywords: [
-    "fitness app",
-    "nutrition tracker",
-    "calorie counter",
-    "gym workout",
-    "Saudi Arabia",
-    "Arabic fitness",
-    "meal plan",
     "تطبيق لياقة",
     "تتبع السعرات",
+    "حساب السعرات الحرارية",
+    "تطبيق تمارين",
+    "تطبيق دايت",
+    "تطبيق تغذية",
+    "حساب الماكروز",
+    "خطة وجبات",
+    "تمارين رياضية",
+    "مومنتم",
+    "Momentum app",
+    "fitness app Saudi Arabia",
+    "Arabic calorie counter",
+    "nutrition tracker",
+    "gym workout tracker",
+    "AI meal plan",
+    "barcode food scanner",
+    "Saudi fitness app",
+    "calorie counter Arabic",
+    "macro tracker",
   ],
+  authors: [{ name: "Momentum", url: siteUrl }],
+  creator: "Momentum",
+  publisher: "Momentum",
   icons: {
-    icon: "/Logo (2).png",
-    apple: "/Logo (2).png",
+    icon: [
+      { url: "/Logo (2).png", sizes: "any" },
+      { url: "/Logo (2).png", sizes: "192x192", type: "image/png" },
+    ],
+    apple: [{ url: "/Logo (2).png", sizes: "180x180" }],
   },
   openGraph: {
-    title: "Momentum - Keep Moving Forward",
+    title: "Momentum | مومنتم — رفيق لياقتك الذكي",
     description:
-      "Your all-in-one Arabic fitness companion. Track nutrition, AI-powered meal logging, gym programs, and community recipes.",
+      "تطبيق عربي شامل لتتبع التغذية والتمارين. أكثر من 18,000 أكلة، 1,500 تمرين، مساعد ذكي 24/7. حمّله مجاناً.",
     type: "website",
-    url: "https://momentumsup.com",
+    url: siteUrl,
+    siteName: "Momentum",
+    locale: "ar_SA",
+    images: [
+      {
+        url: "/Screenshots/1288@3x.png",
+        width: 1290,
+        height: 2796,
+        alt: "تطبيق مومنتم — لوحة التحكم",
+      },
+    ],
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Momentum | مومنتم — رفيق لياقتك الذكي",
+    description:
+      "تطبيق عربي شامل لتتبع التغذية والتمارين بالذكاء الاصطناعي. حمّله مجاناً.",
+    images: ["/Screenshots/1288@3x.png"],
+  },
+  alternates: {
+    canonical: siteUrl,
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  category: "Health & Fitness",
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "MobileApplication",
+  name: "Momentum",
+  alternateName: "مومنتم",
+  description:
+    "تطبيق عربي شامل لتتبع التغذية والتمارين بالذكاء الاصطناعي. أكثر من 18,000 أكلة و1,500 تمرين.",
+  url: siteUrl,
+  applicationCategory: "HealthApplication",
+  operatingSystem: "iOS, Android",
+  offers: {
+    "@type": "Offer",
+    price: "0",
+    priceCurrency: "SAR",
+  },
+  aggregateRating: {
+    "@type": "AggregateRating",
+    ratingValue: "4.8",
+    ratingCount: "120",
+  },
+  inLanguage: ["ar", "en"],
 };
 
 export default function RootLayout({
@@ -43,6 +121,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ar" dir="rtl" className="scroll-smooth">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body className={`${rubik.variable} antialiased`}>{children}</body>
     </html>
   );

@@ -548,10 +548,10 @@ export default function Home() {
               <a href="#contact" className="transition-colors hover:text-[#2C2417]">
                 تواصل معنا
               </a>
-              <a href="#" className="transition-colors hover:text-[#2C2417]">
+              <a href="/privacy" className="transition-colors hover:text-[#2C2417]">
                 سياسة الخصوصية
               </a>
-              <a href="#" className="transition-colors hover:text-[#2C2417]">
+              <a href="/terms" className="transition-colors hover:text-[#2C2417]">
                 الشروط والأحكام
               </a>
             </div>
