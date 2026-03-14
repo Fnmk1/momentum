@@ -2,6 +2,7 @@
 
 @theme inline {
   --font-sans: var(--font-rubik);
+  --animate-spotlight: spotlight 2s ease 0.75s 1 forwards;
 }
 
 @layer base {
@@ -16,7 +17,23 @@
 
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: transparent; }
-::-webkit-scrollbar-thumb { background: #ccc; border-radius: 3px; }
+::-webkit-scrollbar-thumb { background: #333; border-radius: 3px; }
+
+@keyframes spotlight {
+  0% { opacity: 0; transform: translate(-72%, -62%) scale(0.5); }
+  100% { opacity: 1; transform: translate(-50%, -40%) scale(1); }
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.animate-marquee {
+  animation: marquee 40s linear infinite;
+}
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
 
 @keyframes fadeInUp {
   from { opacity: 0; transform: translateY(24px); }
