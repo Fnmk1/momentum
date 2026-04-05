@@ -150,6 +150,12 @@ export default function Home() {
               المساعد الذكي
             </a>
             <a
+              href="/library"
+              className="text-sm text-neutral-400 transition-colors hover:text-white"
+            >
+              مكتبة البرامج
+            </a>
+            <a
               href="#contact"
               className="text-sm text-neutral-400 transition-colors hover:text-white"
             >
