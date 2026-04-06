@@ -42,7 +42,7 @@ const PROGRAMS = [
     name: "Blood and Guts",
     nameAr: "دم وعرق",
     creator: "Dorian Yates",
-    desc: "تدريب عالي الشدة. مجموعة واحدة لكل تمرين حتى الفشل التام..",
+    desc: "تدريب عالي الشدة. مجموعة واحدة لكل تمرين حتى الفشل التام.",
     days: 4, weeks: 6, level: "advanced" as Level, routines: 4, color: "#dc2626",
     image: "/explore/Dorian-Yates.png",
   },
@@ -340,6 +340,15 @@ const PROGRAM_ROUTINES: Record<string, { name: string; exercises: { name: string
 
 function ProgramDetail({ program, onClose }: { program: typeof PROGRAMS[0]; onClose: () => void }) {
   const [openRoutine, setOpenRoutine] = useState<number | null>(0);
+  const [importing, setImporting] = useState(false);
+
+  function handleImport() {
+    if (importing) return;
+    setImporting(true);
+    window.location.href = `momentum://gym/import?id=${program.id}`;
+    // Reset after 4s in case user returns without the app opening
+    setTimeout(() => setImporting(false), 4000);
+  }
   const levelStyle = LEVEL_COLORS[program.level];
   const thumb = getThumbSrc(program);
   const routines = PROGRAM_ROUTINES[program.id] ?? [];
@@ -433,15 +442,28 @@ function ProgramDetail({ program, onClose }: { program: typeof PROGRAMS[0]; onCl
             )}
 
             {/* Import button */}
-            <a
-              href={`momentum://gym/import?id=${program.id}`}
-              className="flex items-center justify-center gap-2 w-full py-3 rounded-xl bg-[#4D8AFF] hover:bg-[#4D8AFF]/80 text-white text-sm font-semibold transition-all"
+            <button
+              onClick={handleImport}
+              disabled={importing}
+              className="flex items-center justify-center gap-2 w-full py-3 rounded-xl bg-[#4D8AFF] hover:bg-[#4D8AFF]/80 text-white text-sm font-semibold transition-all disabled:opacity-60 disabled:cursor-not-allowed"
             >
-              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-              </svg>
-              استيراد البرنامج
-            </a>
+              {importing ? (
+                <>
+                  <svg className="w-4 h-4 animate-spin" fill="none" viewBox="0 0 24 24">
+                    <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
+                    <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8z" />
+                  </svg>
+                  جارٍ الاستيراد...
+                </>
+              ) : (
+                <>
+                  <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                  </svg>
+                  استيراد البرنامج
+                </>
+              )}
+            </button>
           </div>
         </div>
       </div>
@@ -467,6 +489,15 @@ function getThumbSrc(p: typeof PROGRAMS[0]) {
 function ProgramCard({ program }: { program: typeof PROGRAMS[0] }) {
   const levelStyle = LEVEL_COLORS[program.level];
   const thumb = getThumbSrc(program);
+  const [importing, setImporting] = useState(false);
+
+  function handleImport(e: React.MouseEvent) {
+    e.stopPropagation(); // don't toggle the detail panel
+    if (importing) return;
+    setImporting(true);
+    window.location.href = `momentum://gym/import?id=${program.id}`;
+    setTimeout(() => setImporting(false), 4000);
+  }
 
   return (
     <div
@@ -522,15 +553,28 @@ function ProgramCard({ program }: { program: typeof PROGRAMS[0] }) {
         </div>
 
         {/* Import button */}
-        <a
-          href={`momentum://gym/import?id=${program.id}`}
-          className="flex items-center justify-center gap-2 w-full py-3 rounded-xl bg-[#4D8AFF] hover:bg-[#4D8AFF]/65 text-white text-sm font-semibold transition-all active:scale-[0.98]"
+        <button
+          onClick={handleImport}
+          disabled={importing}
+          className="flex items-center justify-center gap-2 w-full py-3 rounded-xl bg-[#4D8AFF] hover:bg-[#4D8AFF]/65 text-white text-sm font-semibold transition-all active:scale-[0.98] disabled:opacity-60 disabled:cursor-not-allowed"
         >
-          <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-            <path strokeLinecap="round" strokeLinejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-          </svg>
-          استيراد البرنامج
-        </a>
+          {importing ? (
+            <>
+              <svg className="w-4 h-4 animate-spin" fill="none" viewBox="0 0 24 24">
+                <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
+                <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8z" />
+              </svg>
+              جارٍ الاستيراد...
+            </>
+          ) : (
+            <>
+              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+              </svg>
+              استيراد البرنامج
+            </>
+          )}
+        </button>
       </div>
     </div>
   );
@@ -562,8 +606,8 @@ export default function LibraryPage() {
 
       {/* ── Hero ── */}
       <section className="pt-40 pb-16 px-6 text-center max-w-3xl mx-auto">
-        <div className="inline-flex items-center gap-2 bg-[#4D8AFF]/10 border border-[#4D8AFF]/20 rounded-full px-4 py-1.5 mb-6">
-          <span className="text-[#4D8AFF] text-sm font-medium">١٠ برنامج احترافي</span>
+        <div className="inline-flex items-center gap-2 bg-[#4D8AFF] rounded-full px-4 py-1.5 mb-6">
+          <span className="text-white text-sm font-medium">أكثر من +١٠ برامج احترافية</span>
         </div>
         <h1 className="text-4xl md:text-5xl font-bold mb-5 leading-tight">
           <span className="bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400">
