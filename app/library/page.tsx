@@ -5,7 +5,7 @@ import { CATEGORIES, getProgramsForCategory } from "@/app/lib/programs";
 
 export const metadata: Metadata = {
   title: "مكتبة برامج التمارين — Workout Library",
-  description: "أكثر من ١٠ برامج تمارين احترافية من أشهر أبطال كمال الأجسام — Momentum Workout Library",
+  description: "أكثر من ١٠ برامج تمارين احترافية — Momentum Workout Library",
 };
 
 export default function LibraryPage() {
@@ -31,8 +31,8 @@ export default function LibraryPage() {
       </nav>
 
       {/* ── Hero ── */}
-      <section className="pt-40 pb-16 px-6 text-center max-w-3xl mx-auto">
-        <h1 className="text-4xl md:text-5xl font-semibold mb-5 leading-tight text-white" style={{ letterSpacing: "-0.3px" }}>
+      <section className="pt-40 pb-12 px-6 text-center max-w-3xl mx-auto">
+        <h1 className="text-4xl md:text-5xl font-semibold mb-4 leading-tight text-white" style={{ letterSpacing: "-0.3px" }}>
           مكتبة برامج التمارين
         </h1>
         <p className="text-[#cccccc] text-[17px] leading-relaxed max-w-xl mx-auto" style={{ letterSpacing: "-0.37px" }}>
@@ -40,42 +40,31 @@ export default function LibraryPage() {
         </p>
       </section>
 
-      {/* ── Category Grid ── */}
+      {/* ── Category Grid — compact M&S-style tiles ── */}
       <main className="max-w-6xl mx-auto px-6 pb-24">
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3">
           {CATEGORIES.map((category) => {
             const programCount = getProgramsForCategory(category.tag).length;
             return (
               <Link
                 key={category.tag}
                 href={`/library/${category.tag}`}
-                className="group relative rounded-2xl overflow-hidden transition-transform active:scale-[0.97]"
+                className="group relative rounded-xl overflow-hidden aspect-[4/5] transition-transform active:scale-[0.97]"
               >
-                {/* Full-bleed image */}
-                <div className="relative h-56">
-                  <img
-                    src={category.image}
-                    alt={category.nameAr}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
-                  />
-                  {/* Scrim for text legibility */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-black/10" />
-
-                  {/* Text over image */}
-                  <div className="absolute bottom-0 right-0 left-0 p-5">
-                    <h3 className="text-white font-semibold text-xl mb-0.5" style={{ letterSpacing: "-0.2px" }}>
-                      {category.nameAr}
-                    </h3>
-                    <p className="text-white/60 text-xs mb-2">{category.nameEn}</p>
-                    <p className="text-[#cccccc] text-sm leading-relaxed line-clamp-2" style={{ letterSpacing: "-0.37px" }}>
-                      {category.descAr}
-                    </p>
-                    {programCount > 0 && (
-                      <span className="inline-block mt-3 text-[#2997ff] text-xs font-medium">
-                        {programCount} برنامج
-                      </span>
-                    )}
-                  </div>
+                <img
+                  src={category.image}
+                  alt={category.nameAr}
+                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
+                <div className="absolute bottom-0 right-0 left-0 p-3.5">
+                  <h3 className="text-white font-semibold text-[15px] leading-tight mb-0.5">
+                    {category.nameAr}
+                  </h3>
+                  <p className="text-white/50 text-[11px]">{category.nameEn}</p>
+                  {programCount > 0 && (
+                    <p className="text-[#2997ff] text-[11px] font-medium mt-1.5">{programCount} برنامج</p>
+                  )}
                 </div>
               </Link>
             );
