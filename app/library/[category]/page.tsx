@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useState, use } from "react";
+import { useState, use, useEffect, useRef, Fragment } from "react";
 import {
   LEVEL_LABELS,
   LEVEL_COLORS,
@@ -231,6 +231,20 @@ function ProgramDetail({ program, onClose }: { program: Program; onClose: () => 
   );
 }
 
+// ── Detail Inline (wraps ProgramDetail with col-span + scroll-into-view) ──
+
+function DetailInline({ program, onClose }: { program: Program; onClose: () => void }) {
+  const ref = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    ref.current?.scrollIntoView({ behavior: "smooth", block: "nearest" });
+  }, []);
+  return (
+    <div ref={ref} className="col-span-full">
+      <ProgramDetail program={program} onClose={onClose} />
+    </div>
+  );
+}
+
 // ── Program Card (M&S-style: image + info-dense metadata) ─────────────────
 
 function ProgramCard({ program, isSelected, onClick }: { program: Program; isSelected: boolean; onClick: () => void }) {
@@ -362,8 +376,6 @@ export default function CategoryPage({ params }: { params: Promise<{ category: s
     return true;
   });
 
-  const selectedProgram = filteredPrograms.find((p) => p.id === selectedId) ?? null;
-
   return (
     <div className="bg-black text-white min-h-screen" dir="rtl">
       {/* Nav */}
@@ -448,25 +460,20 @@ export default function CategoryPage({ params }: { params: Promise<{ category: s
             </p>
           </div>
         ) : (
-          <>
-            <div className="grid md:grid-cols-2 gap-5">
-              {filteredPrograms.map((program) => (
+          <div className="grid md:grid-cols-2 gap-5 grid-flow-dense">
+            {filteredPrograms.map((program) => (
+              <Fragment key={program.id}>
                 <ProgramCard
-                  key={program.id}
                   program={program}
                   isSelected={selectedId === program.id}
                   onClick={() => setSelectedId(selectedId === program.id ? null : program.id)}
                 />
-              ))}
-            </div>
-
-            {selectedProgram && (
-              <ProgramDetail
-                program={selectedProgram}
-                onClose={() => setSelectedId(null)}
-              />
-            )}
-          </>
+                {selectedId === program.id && (
+                  <DetailInline program={program} onClose={() => setSelectedId(null)} />
+                )}
+              </Fragment>
+            ))}
+          </div>
         )}
       </main>
 
