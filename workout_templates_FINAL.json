@@ -1,0 +1,4693 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "createdAt": "2026-04-28",
+    "exerciseDbVersion": "ExerciseDB v1",
+    "totalTemplates": 10,
+    "schemaNotes": "كل جدول له category رئيسي + tags إضافية. التمارين تستخدم exerciseId من مكتبة ExerciseDB.",
+    "categories": [
+      {
+        "id": "beginner",
+        "name_en": "Beginner",
+        "name_ar": "للمبتدئين"
+      },
+      {
+        "id": "muscle_building",
+        "name_en": "Muscle Building",
+        "name_ar": "بناء عضل"
+      },
+      {
+        "id": "fat_loss",
+        "name_en": "Fat Loss",
+        "name_ar": "حرق دهون"
+      },
+      {
+        "id": "strength",
+        "name_en": "Increase Strength",
+        "name_ar": "زيادة قوة"
+      },
+      {
+        "id": "full_body",
+        "name_en": "Full Body",
+        "name_ar": "جسم كامل"
+      },
+      {
+        "id": "abs",
+        "name_en": "Ab Workouts",
+        "name_ar": "تمارين كور"
+      },
+      {
+        "id": "bodyweight",
+        "name_en": "Bodyweight",
+        "name_ar": "وزن الجسم"
+      },
+      {
+        "id": "at_home",
+        "name_en": "At Home",
+        "name_ar": "تمارين البيت"
+      },
+      {
+        "id": "sports_performance",
+        "name_en": "Sports Performance",
+        "name_ar": "الأداء الرياضي"
+      },
+      {
+        "id": "women",
+        "name_en": "Workouts For Women",
+        "name_ar": "تمارين النساء"
+      }
+    ]
+  },
+  "templates": [
+    {
+      "templateId": "beginner_full_body_3day",
+      "name": {
+        "en": "Beginner Full Body",
+        "ar": "جدول المبتدئين - جسم كامل"
+      },
+      "description": {
+        "en": "A 3-day full body routine designed for beginners to build a solid foundation in strength training. Focuses on compound movements with manageable volume to teach proper form and create gradual progression.",
+        "ar": "جدول 3 أيام بالأسبوع للمبتدئين لبناء أساس قوي في رفع الأثقال. يركز على التمارين المركبة مع حجم تدريبي مناسب لتعلم الفورم الصحيح والتدرج التدريجي."
+      },
+      "mainGoal": "muscle_building",
+      "trainingLevel": "beginner",
+      "targetGender": "unisex",
+      "category": "beginner",
+      "tags": [
+        "beginner",
+        "full_body",
+        "muscle_building",
+        "general_fitness"
+      ],
+      "daysPerWeek": 3,
+      "durationWeeks": 8,
+      "estimatedSessionMinutes": "45-60",
+      "workoutSplit": "full_body",
+      "requiredEquipment": [
+        "barbell",
+        "dumbbell",
+        "bench"
+      ],
+      "optionalEquipment": [
+        "cable",
+        "pull-up bar"
+      ],
+      "recommendedSupplements": [
+        {
+          "name": {
+            "en": "Whey Protein",
+            "ar": "بروتين واي"
+          },
+          "dosage": {
+            "en": "1 scoop (25g) post-workout",
+            "ar": "سكوب واحد (25 جرام) بعد التمرين"
+          },
+          "priority": "essential",
+          "notes": {
+            "en": "Helps you reach daily protein target (1.6–2.2g per kg of bodyweight).",
+            "ar": "يساعدك توصل لهدفك اليومي من البروتين (1.6–2.2 جرام لكل كيلو من وزنك)."
+          }
+        },
+        {
+          "name": {
+            "en": "Creatine Monohydrate",
+            "ar": "كرياتين مونوهيدرات"
+          },
+          "dosage": {
+            "en": "5g daily, any time",
+            "ar": "5 جرام يومياً، بأي وقت"
+          },
+          "priority": "highly_recommended",
+          "notes": {
+            "en": "Most researched supplement. Improves strength and muscle gain.",
+            "ar": "أكثر مكمل عليه دراسات. يحسّن القوة والتضخيم."
+          }
+        },
+        {
+          "name": {
+            "en": "Multivitamin",
+            "ar": "فيتامينات متعددة"
+          },
+          "dosage": {
+            "en": "1 tablet daily with breakfast",
+            "ar": "حبة واحدة يومياً مع الفطور"
+          },
+          "priority": "optional",
+          "notes": {
+            "en": "Useful as a safety net if your diet lacks variety.",
+            "ar": "مفيد كأمان لو أكلك ما يشمل تنوع كافي."
+          }
+        }
+      ],
+      "advices": [
+        {
+          "title": {
+            "en": "Form before weight",
+            "ar": "الفورم قبل الوزن"
+          },
+          "body": {
+            "en": "In the first 4 weeks, focus on perfecting your technique with light weights. Bad habits formed early are very hard to fix later.",
+            "ar": "في أول 4 أسابيع ركّز على إتقان الحركة بأوزان خفيفة. العادات الخاطئة تتعلمها بداية صعب تصلحها بعدين."
+          }
+        },
+        {
+          "title": {
+            "en": "Progressive Overload",
+            "ar": "زيادة الحمل التدريجي"
+          },
+          "body": {
+            "en": "Add 2.5kg to compound lifts each week if you can complete all sets with good form. For dumbbells, increase 1–2kg every 2 weeks.",
+            "ar": "زِد 2.5 كيلو على التمارين المركبة كل أسبوع إذا قدرت تكمل كل السيتات بفورم سليم. للدمبلز، زِد 1–2 كيلو كل أسبوعين."
+          }
+        },
+        {
+          "title": {
+            "en": "Rest & Recovery",
+            "ar": "الراحة والاستشفاء"
+          },
+          "body": {
+            "en": "Sleep 7–9 hours nightly. Muscles grow during rest, not in the gym. Take at least one full rest day between sessions.",
+            "ar": "نام 7–9 ساعات يومياً. العضلات تنمو وقت الراحة مو في الجيم. خلي بين كل تمرين ويوم بعده يوم راحة على الأقل."
+          }
+        },
+        {
+          "title": {
+            "en": "Daily Protein",
+            "ar": "البروتين اليومي"
+          },
+          "body": {
+            "en": "Aim for 1.6–2.2g of protein per kg of bodyweight. For a 70kg person, that's 112–154g daily spread across 3–5 meals.",
+            "ar": "اهدف لـ1.6–2.2 جرام بروتين لكل كيلو من وزنك. لشخص 70 كيلو، يعني 112–154 جرام يومياً موزعة على 3–5 وجبات."
+          }
+        },
+        {
+          "title": {
+            "en": "Warm-up matters",
+            "ar": "الإحماء مهم"
+          },
+          "body": {
+            "en": "Start each session with 5 minutes of light cardio + 2 warm-up sets with lighter weight before working sets.",
+            "ar": "ابدأ كل تمرين بـ5 دقائق كارديو خفيف + سيتين إحماء بوزن أخف قبل السيتات الأساسية."
+          }
+        }
+      ],
+      "schedule": [
+        {
+          "dayNumber": 1,
+          "dayLabel": {
+            "en": "Day A — Squat Focus",
+            "ar": "اليوم الأول — تركيز على السكوات"
+          },
+          "focus": "full_body",
+          "exercises": [
+            {
+              "exerciseId": "qXTaZnJ",
+              "displayName": {
+                "en": "Barbell Back Squat",
+                "ar": "سكوات بار"
+              },
+              "sets": 3,
+              "reps": "8-10",
+              "restSeconds": 120,
+              "notes": {
+                "en": "Keep chest up, knees tracking over toes, descend to parallel.",
+                "ar": "خلي صدرك مرفوع، الركب باتجاه الأصابع، انزل لين الفخذ موازي للأرض."
+              }
+            },
+            {
+              "exerciseId": "EIeI8Vf",
+              "displayName": {
+                "en": "Barbell Bench Press",
+                "ar": "بنش بريس بار"
+              },
+              "sets": 3,
+              "reps": "8-10",
+              "restSeconds": 120,
+              "notes": {
+                "en": "Retract scapula, light arch, bar touches mid-chest.",
+                "ar": "اقفل الأكتاف للخلف، قوس بسيط، البار يلامس وسط الصدر."
+              }
+            },
+            {
+              "exerciseId": "BJ0Hz5L",
+              "displayName": {
+                "en": "Dumbbell Bent Over Row",
+                "ar": "تجديف دمبل منحني"
+              },
+              "sets": 3,
+              "reps": "10-12",
+              "restSeconds": 90,
+              "notes": {
+                "en": "Hinge at hips, keep back flat, pull elbows past torso.",
+                "ar": "انحنِ من الورك، خلي ظهرك مستقيم، اسحب الكوع لخلف الجذع."
+              }
+            },
+            {
+              "exerciseId": "DsgkuIt",
+              "displayName": {
+                "en": "Dumbbell Lateral Raise",
+                "ar": "رفرفة جانبية دمبل"
+              },
+              "sets": 3,
+              "reps": "12-15",
+              "restSeconds": 60,
+              "notes": {
+                "en": "Slight bend in elbow, raise to shoulder height, control the descent.",
+                "ar": "ثني خفيف في الكوع، ارفع لين مستوى الكتف، تحكم بالنزول."
+              }
+            },
+            {
+              "exerciseId": "h1ezqSu",
+              "displayName": {
+                "en": "Plank",
+                "ar": "بلانك"
+              },
+              "sets": 3,
+              "duration": "30-45s",
+              "restSeconds": 60,
+              "notes": {
+                "en": "Tight core, neutral spine, no sagging hips.",
+                "ar": "اشدّ الكور، ظهر مستقيم، الورك ما ينزل."
+              }
+            }
+          ]
+        },
+        {
+          "dayNumber": 2,
+          "dayLabel": {
+            "en": "Day B — Hinge Focus",
+            "ar": "اليوم الثاني — تركيز على الديدلفت"
+          },
+          "focus": "full_body",
+          "exercises": [
+            {
+              "exerciseId": "wQ2c4XD",
+              "displayName": {
+                "en": "Romanian Deadlift",
+                "ar": "ديدلفت روماني"
+              },
+              "sets": 3,
+              "reps": "8-10",
+              "restSeconds": 120,
+              "notes": {
+                "en": "Slight knee bend, push hips back, feel stretch in hamstrings.",
+                "ar": "ثني خفيف في الركب، ارجع الورك للخلف، حس بشد الهامسترنق."
+              }
+            },
+            {
+              "exerciseId": "fUBheHs",
+              "displayName": {
+                "en": "Seated Cable Row",
+                "ar": "تجديف كيبل جالس"
+              },
+              "sets": 3,
+              "reps": "10-12",
+              "restSeconds": 90,
+              "notes": {
+                "en": "Squeeze shoulder blades together, pull to lower chest.",
+                "ar": "اضغط الأكتاف لبعض، اسحب للجزء السفلي من الصدر."
+              }
+            },
+            {
+              "exerciseId": "SpYC0Kp",
+              "displayName": {
+                "en": "Dumbbell Bench Press",
+                "ar": "بنش بريس دمبل"
+              },
+              "sets": 3,
+              "reps": "10-12",
+              "restSeconds": 90,
+              "notes": {
+                "en": "Greater range of motion than barbell, control the descent.",
+                "ar": "مدى حركة أكبر من البار، تحكم بالنزول."
+              }
+            },
+            {
+              "exerciseId": "NbVPDMW",
+              "displayName": {
+                "en": "Dumbbell Biceps Curl",
+                "ar": "بايسبس كيرل دمبل"
+              },
+              "sets": 3,
+              "reps": "10-12",
+              "restSeconds": 60,
+              "notes": {
+                "en": "No swinging, control both directions.",
+                "ar": "بدون استخدام الزخم، تحكم بالحركتين."
+              }
+            },
+            {
+              "exerciseId": "X6C6i5Y",
+              "displayName": {
+                "en": "Triceps Dip",
+                "ar": "ديبس ترايسبس"
+              },
+              "sets": 3,
+              "reps": "8-12",
+              "restSeconds": 90,
+              "notes": {
+                "en": "If too hard, use bench dips. Keep elbows close to body.",
+                "ar": "لو صعب، استخدم بنش ديب. خلي الكوع قريب من الجسم."
+              }
+            }
+          ]
+        },
+        {
+          "dayNumber": 3,
+          "dayLabel": {
+            "en": "Day C — Mixed",
+            "ar": "اليوم الثالث — متنوع"
+          },
+          "focus": "full_body",
+          "exercises": [
+            {
+              "exerciseId": "yn8yg1r",
+              "displayName": {
+                "en": "Dumbbell Goblet Squat",
+                "ar": "سكوات قوبلت دمبل"
+              },
+              "sets": 3,
+              "reps": "10-12",
+              "restSeconds": 90,
+              "notes": {
+                "en": "Hold dumbbell at chest, elbows tucked, deep squat.",
+                "ar": "امسك الدمبل عند الصدر، الكوع داخل، انزل عميق."
+              }
+            },
+            {
+              "exerciseId": "3TZduzM",
+              "displayName": {
+                "en": "Barbell Incline Bench Press",
+                "ar": "بنش بريس مائل بار"
+              },
+              "sets": 3,
+              "reps": "8-10",
+              "restSeconds": 120,
+              "notes": {
+                "en": "Bench at 30°, bar touches upper chest.",
+                "ar": "البنش بزاوية 30°، البار يلامس أعلى الصدر."
+              }
+            },
+            {
+              "exerciseId": "lBDjFxJ",
+              "displayName": {
+                "en": "Pull-up",
+                "ar": "بول أب"
+              },
+              "sets": 3,
+              "reps": "AMRAP (up to 10)",
+              "restSeconds": 120,
+              "notes": {
+                "en": "If you can't do 5, use band assistance or replace with lat pulldown.",
+                "ar": "لو ما تقدر تسوي 5، استخدم مطاط مساعد أو بدّلها بـlat pulldown."
+              }
+            },
+            {
+              "exerciseId": "DsgkuIt",
+              "displayName": {
+                "en": "Dumbbell Lateral Raise",
+                "ar": "رفرفة جانبية دمبل"
+              },
+              "sets": 3,
+              "reps": "12-15",
+              "restSeconds": 60,
+              "notes": null
+            },
+            {
+              "exerciseId": "TFqbd8t",
+              "displayName": {
+                "en": "Crunch",
+                "ar": "كرنش"
+              },
+              "sets": 3,
+              "reps": "15-20",
+              "restSeconds": 45,
+              "notes": {
+                "en": "Slow controlled movement, exhale at top.",
+                "ar": "حركة بطيئة وتحكم، ازفر في الأعلى."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "templateId": "ppl_6day_intermediate",
+      "name": {
+        "en": "Push Pull Legs (PPL) — 6 Day",
+        "ar": "بوش بُل ليقز (PPL) — 6 أيام"
+      },
+      "description": {
+        "en": "The most popular muscle building split. Train each muscle group twice per week with high volume. Push (chest/shoulders/triceps), Pull (back/biceps), Legs (quads/hams/glutes/calves). Designed for intermediate lifters who can train 6 days a week.",
+        "ar": "أشهر تقسيم لبناء العضل. تدرّب كل مجموعة عضلية مرتين بالأسبوع بحجم تدريبي عالي. بوش (صدر/كتف/ترايسبس)، بُل (ظهر/بايسبس)، ليقز (أرجل). للمستويات المتوسطة اللي يقدرون يتمرنون 6 أيام بالأسبوع."
+      },
+      "mainGoal": "muscle_building",
+      "trainingLevel": "intermediate",
+      "targetGender": "unisex",
+      "category": "muscle_building",
+      "tags": [
+        "muscle_building",
+        "intermediate",
+        "advanced",
+        "push_pull_legs"
+      ],
+      "daysPerWeek": 6,
+      "durationWeeks": 12,
+      "estimatedSessionMinutes": "60-75",
+      "workoutSplit": "push_pull_legs",
+      "requiredEquipment": [
+        "barbell",
+        "dumbbell",
+        "bench",
+        "cable",
+        "pull-up bar",
+        "leg press machine"
+      ],
+      "optionalEquipment": [
+        "leverage machine"
+      ],
+      "recommendedSupplements": [
+        {
+          "name": {
+            "en": "Whey Protein",
+            "ar": "بروتين واي"
+          },
+          "dosage": {
+            "en": "1-2 scoops (25-50g) daily",
+            "ar": "1-2 سكوب (25-50 جرام) يومياً"
+          },
+          "priority": "essential",
+          "notes": {
+            "en": "Critical for hitting daily protein target with this volume of training.",
+            "ar": "ضروري للوصول لهدف البروتين اليومي مع حجم التدريب هذا."
+          }
+        },
+        {
+          "name": {
+            "en": "Creatine Monohydrate",
+            "ar": "كرياتين مونوهيدرات"
+          },
+          "dosage": {
+            "en": "5g daily, any time",
+            "ar": "5 جرام يومياً، بأي وقت"
+          },
+          "priority": "essential",
+          "notes": {
+            "en": "Boosts strength, muscle volume, and recovery between sessions.",
+            "ar": "يزيد القوة وحجم العضل والاستشفاء بين الجلسات."
+          }
+        },
+        {
+          "name": {
+            "en": "Caffeine (pre-workout)",
+            "ar": "كافيين (قبل التمرين)"
+          },
+          "dosage": {
+            "en": "200-400mg, 30-45 min before workout",
+            "ar": "200-400 ملغ قبل التمرين بـ30-45 دقيقة"
+          },
+          "priority": "highly_recommended",
+          "notes": {
+            "en": "Improves focus, output, and reduces perceived exertion. Skip late evening sessions.",
+            "ar": "يحسّن التركيز والأداء ويقلل الإحساس بالتعب. تجنّبه في التمارين المتأخرة."
+          }
+        },
+        {
+          "name": {
+            "en": "Omega-3 (Fish Oil)",
+            "ar": "أوميقا 3 (زيت السمك)"
+          },
+          "dosage": {
+            "en": "2-3g EPA+DHA daily",
+            "ar": "2-3 جرام EPA+DHA يومياً"
+          },
+          "priority": "highly_recommended",
+          "notes": {
+            "en": "Reduces inflammation and supports recovery from heavy training.",
+            "ar": "يقلل الالتهابات ويدعم الاستشفاء من التدريب الثقيل."
+          }
+        },
+        {
+          "name": {
+            "en": "Vitamin D3",
+            "ar": "فيتامين د3"
+          },
+          "dosage": {
+            "en": "2000-4000 IU daily",
+            "ar": "2000-4000 وحدة يومياً"
+          },
+          "priority": "highly_recommended",
+          "notes": {
+            "en": "Most people are deficient. Critical for hormones and recovery.",
+            "ar": "أغلب الناس عندهم نقص. مهم للهرمونات والاستشفاء."
+          }
+        }
+      ],
+      "advices": [
+        {
+          "title": {
+            "en": "Schedule template",
+            "ar": "جدول الأسبوع المقترح"
+          },
+          "body": {
+            "en": "Push - Pull - Legs - Rest - Push - Pull - Legs. Or PPL/PPL with one rest day at the end. Don't do more than 3 days in a row.",
+            "ar": "بوش - بُل - ليقز - راحة - بوش - بُل - ليقز. أو PPL/PPL مع يوم راحة في الآخر. لا تتمرّن أكثر من 3 أيام متتالية."
+          }
+        },
+        {
+          "title": {
+            "en": "Train with intensity",
+            "ar": "تمرّن بكثافة"
+          },
+          "body": {
+            "en": "Each working set should leave 1-3 reps in reserve (RIR). Don't go to absolute failure on every set—save it for your last set of isolation movements.",
+            "ar": "كل سيت أساسي يلازم تخلّي 1-3 تكرارات احتياط (RIR). لا تروح للفشل التام في كل سيت—خلّيها للسيت الأخير في تمارين العزل."
+          }
+        },
+        {
+          "title": {
+            "en": "Volume is king",
+            "ar": "الحجم التدريبي هو الأساس"
+          },
+          "body": {
+            "en": "12-20 working sets per muscle per week is the optimal range for hypertrophy. This program gives you that across 2 sessions.",
+            "ar": "12-20 سيت أسبوعياً لكل عضلة هو المدى الأمثل للتضخيم. هذا الجدول يعطيك هالمدى موزّع على جلستين."
+          }
+        },
+        {
+          "title": {
+            "en": "Caloric surplus",
+            "ar": "السعرات الزائدة"
+          },
+          "body": {
+            "en": "To build muscle, eat 250-500 calories above maintenance. Track for at least 2 weeks before adjusting.",
+            "ar": "لبناء العضل، كُل 250-500 سعرة فوق سعرات الثبات. تابع لمدة أسبوعين على الأقل قبل أي تعديل."
+          }
+        },
+        {
+          "title": {
+            "en": "Deload every 6-8 weeks",
+            "ar": "ديلود كل 6-8 أسابيع"
+          },
+          "body": {
+            "en": "Reduce volume by 40-50% for one week to allow full recovery. Prevents burnout and injury.",
+            "ar": "قلّل الحجم 40-50% لمدة أسبوع لتسمح بالاستشفاء الكامل. يمنع الإنهاك والإصابات."
+          }
+        },
+        {
+          "title": {
+            "en": "Don't skip warm-ups",
+            "ar": "لا تتجاهل الإحماء"
+          },
+          "body": {
+            "en": "On heavy compounds, do 3-4 warm-up sets pyramiding up to your working weight. Saves your joints.",
+            "ar": "في التمارين المركبة الثقيلة، سوّ 3-4 سيتات إحماء صاعدة لين توصل لوزن العمل. يحمي مفاصلك."
+          }
+        }
+      ],
+      "schedule": [
+        {
+          "dayNumber": 1,
+          "dayLabel": {
+            "en": "Push Day A — Chest Focus",
+            "ar": "يوم الدفع أ — تركيز صدر"
+          },
+          "focus": "chest_shoulders_triceps",
+          "exercises": [
+            {
+              "exerciseId": "EIeI8Vf",
+              "displayName": {
+                "en": "Barbell Bench Press",
+                "ar": "بنش بريس بار"
+              },
+              "sets": 4,
+              "reps": "6-8",
+              "restSeconds": 150,
+              "notes": {
+                "en": "Heavy compound. Use spotter on top sets.",
+                "ar": "تمرين مركّب ثقيل. استخدم spotter في السيتات الثقيلة."
+              }
+            },
+            {
+              "exerciseId": "3TZduzM",
+              "displayName": {
+                "en": "Barbell Incline Bench Press",
+                "ar": "بنش بريس مائل بار"
+              },
+              "sets": 3,
+              "reps": "8-10",
+              "restSeconds": 120,
+              "notes": {
+                "en": "Targets upper chest. 30° incline is optimal.",
+                "ar": "يستهدف أعلى الصدر. الزاوية المثالية 30°."
+              }
+            },
+            {
+              "exerciseId": "znQUdHY",
+              "displayName": {
+                "en": "Dumbbell Seated Shoulder Press",
+                "ar": "ضغط أكتاف دمبل جالس"
+              },
+              "sets": 3,
+              "reps": "8-10",
+              "restSeconds": 120,
+              "notes": {
+                "en": "Press straight up. Don't lock out completely.",
+                "ar": "اضغط لفوق بشكل مستقيم. لا تقفل المرفق تماماً."
+              }
+            },
+            {
+              "exerciseId": "DsgkuIt",
+              "displayName": {
+                "en": "Dumbbell Lateral Raise",
+                "ar": "رفرفة جانبية دمبل"
+              },
+              "sets": 4,
+              "reps": "12-15",
+              "restSeconds": 60,
+              "notes": {
+                "en": "Pause at the top. Use light weight, focus on contraction.",
+                "ar": "وقفة في الأعلى. استخدم وزن خفيف وركّز على الانقباض."
+              }
+            },
+            {
+              "exerciseId": "dU605di",
+              "displayName": {
+                "en": "Cable Tricep Pushdown (Rope)",
+                "ar": "تراي بوشداون كيبل (حبل)"
+              },
+              "sets": 3,
+              "reps": "10-12",
+              "restSeconds": 75,
+              "notes": {
+                "en": "Spread the rope at the bottom for full contraction.",
+                "ar": "افتح الحبل في الأسفل عشان انقباض كامل."
+              }
+            },
+            {
+              "exerciseId": "X6C6i5Y",
+              "displayName": {
+                "en": "Triceps Dip",
+                "ar": "ديبس ترايسبس"
+              },
+              "sets": 3,
+              "reps": "AMRAP",
+              "restSeconds": 90,
+              "notes": {
+                "en": "Keep torso upright. Add weight if you can do 12+ reps.",
+                "ar": "خلّي جسمك عمودي. ضيف وزن لو تقدر تسوّي 12+ تكرار."
+              }
+            }
+          ]
+        },
+        {
+          "dayNumber": 2,
+          "dayLabel": {
+            "en": "Pull Day A — Back Width",
+            "ar": "يوم السحب أ — عرض الظهر"
+          },
+          "focus": "back_biceps",
+          "exercises": [
+            {
+              "exerciseId": "ila4NZS",
+              "displayName": {
+                "en": "Barbell Deadlift",
+                "ar": "ديدلفت بار"
+              },
+              "sets": 3,
+              "reps": "5",
+              "restSeconds": 180,
+              "notes": {
+                "en": "Heavy compound. Brace core, neutral spine throughout.",
+                "ar": "تمرين مركّب ثقيل. شدّ الكور، ظهر مستقيم طول الحركة."
+              }
+            },
+            {
+              "exerciseId": "lBDjFxJ",
+              "displayName": {
+                "en": "Pull-up",
+                "ar": "بول أب"
+              },
+              "sets": 4,
+              "reps": "6-10",
+              "restSeconds": 120,
+              "notes": {
+                "en": "If can't do 6, use band assist or substitute lat pulldown.",
+                "ar": "لو ما تقدر 6، استخدم مطاط مساعد أو بدّلها بـlat pulldown."
+              }
+            },
+            {
+              "exerciseId": "eZyBC3j",
+              "displayName": {
+                "en": "Barbell Bent Over Row",
+                "ar": "تجديف بار منحني"
+              },
+              "sets": 4,
+              "reps": "8-10",
+              "restSeconds": 120,
+              "notes": {
+                "en": "Hinge to ~45°, pull bar to lower chest.",
+                "ar": "انحنِ بزاوية ~45°، اسحب البار للجزء السفلي من الصدر."
+              }
+            },
+            {
+              "exerciseId": "fUBheHs",
+              "displayName": {
+                "en": "Seated Cable Row",
+                "ar": "تجديف كيبل جالس"
+              },
+              "sets": 3,
+              "reps": "10-12",
+              "restSeconds": 90,
+              "notes": {
+                "en": "Focus on squeezing shoulder blades, slight pause.",
+                "ar": "ركّز على ضغط الأكتاف لبعض، وقفة بسيطة."
+              }
+            },
+            {
+              "exerciseId": "mu5Guxt",
+              "displayName": {
+                "en": "Dumbbell Rear Delt Raise",
+                "ar": "رفرفة خلفية دمبل"
+              },
+              "sets": 3,
+              "reps": "12-15",
+              "restSeconds": 60,
+              "notes": {
+                "en": "Bend over, raise dumbbells out to sides. Light weight only.",
+                "ar": "انحنِ، ارفع الدمبلز للجوانب. وزن خفيف فقط."
+              }
+            },
+            {
+              "exerciseId": "NbVPDMW",
+              "displayName": {
+                "en": "Dumbbell Biceps Curl",
+                "ar": "بايسبس كيرل دمبل"
+              },
+              "sets": 3,
+              "reps": "10-12",
+              "restSeconds": 75,
+              "notes": {
+                "en": "No momentum. Squeeze at top.",
+                "ar": "بدون زخم. اضغط في الأعلى."
+              }
+            },
+            {
+              "exerciseId": "slDvUAU",
+              "displayName": {
+                "en": "Dumbbell Hammer Curl",
+                "ar": "هامر كيرل دمبل"
+              },
+              "sets": 3,
+              "reps": "10-12",
+              "restSeconds": 60,
+              "notes": {
+                "en": "Targets brachialis. Neutral grip throughout.",
+                "ar": "يستهدف عضلة البراكياليس. قبضة محايدة طول الحركة."
+              }
+            }
+          ]
+        },
+        {
+          "dayNumber": 3,
+          "dayLabel": {
+            "en": "Legs Day A — Quad Focus",
+            "ar": "يوم الأرجل أ — تركيز فخذ أمامي"
+          },
+          "focus": "quads_hamstrings_glutes_calves",
+          "exercises": [
+            {
+              "exerciseId": "qXTaZnJ",
+              "displayName": {
+                "en": "Barbell Back Squat",
+                "ar": "سكوات بار"
+              },
+              "sets": 4,
+              "reps": "6-8",
+              "restSeconds": 180,
+              "notes": {
+                "en": "Foundation lift. Depth to parallel or below.",
+                "ar": "تمرين أساسي. النزول لمستوى الموازاة أو أعمق."
+              }
+            },
+            {
+              "exerciseId": "10Z2DXU",
+              "displayName": {
+                "en": "Sled 45° Leg Press",
+                "ar": "ليق بريس 45°"
+              },
+              "sets": 3,
+              "reps": "10-12",
+              "restSeconds": 120,
+              "notes": {
+                "en": "Feet shoulder-width. Don't lock knees at top.",
+                "ar": "القدم بعرض الأكتاف. لا تقفل الركب في الأعلى."
+              }
+            },
+            {
+              "exerciseId": "my33uHU",
+              "displayName": {
+                "en": "Lever Leg Extension",
+                "ar": "ليق إكستنشن آلة"
+              },
+              "sets": 3,
+              "reps": "12-15",
+              "restSeconds": 75,
+              "notes": {
+                "en": "Pause at top, slow descent. Isolation for quads.",
+                "ar": "وقفة في الأعلى، نزول بطيء. عزل للفخذ الأمامي."
+              }
+            },
+            {
+              "exerciseId": "17lJ1kr",
+              "displayName": {
+                "en": "Lever Lying Leg Curl",
+                "ar": "ليق كيرل آلة (راقد)"
+              },
+              "sets": 3,
+              "reps": "10-12",
+              "restSeconds": 75,
+              "notes": {
+                "en": "Don't let weight stack rest at bottom.",
+                "ar": "لا تخلّي الأوزان ترتاح في الأسفل."
+              }
+            },
+            {
+              "exerciseId": "yl2IYyy",
+              "displayName": {
+                "en": "Standing Calf Raise",
+                "ar": "رفع كعبين واقف"
+              },
+              "sets": 4,
+              "reps": "12-15",
+              "restSeconds": 60,
+              "notes": {
+                "en": "Full range, pause at top. Stretch at bottom.",
+                "ar": "مدى حركة كامل، وقفة في الأعلى. تمدّد في الأسفل."
+              }
+            },
+            {
+              "exerciseId": "h1ezqSu",
+              "displayName": {
+                "en": "Plank",
+                "ar": "بلانك"
+              },
+              "sets": 3,
+              "duration": "45-60s",
+              "restSeconds": 60,
+              "notes": null
+            }
+          ]
+        },
+        {
+          "dayNumber": 4,
+          "dayLabel": {
+            "en": "Push Day B — Shoulder Focus",
+            "ar": "يوم الدفع ب — تركيز كتف"
+          },
+          "focus": "chest_shoulders_triceps",
+          "exercises": [
+            {
+              "exerciseId": "kTbSH9h",
+              "displayName": {
+                "en": "Barbell Overhead Press",
+                "ar": "ضغط أكتاف بار"
+              },
+              "sets": 4,
+              "reps": "6-8",
+              "restSeconds": 150,
+              "notes": {
+                "en": "Press straight up. Tight core, glutes squeezed.",
+                "ar": "اضغط لفوق مستقيم. شدّ الكور والمؤخرة."
+              }
+            },
+            {
+              "exerciseId": "SpYC0Kp",
+              "displayName": {
+                "en": "Dumbbell Bench Press",
+                "ar": "بنش بريس دمبل"
+              },
+              "sets": 3,
+              "reps": "8-10",
+              "restSeconds": 120,
+              "notes": {
+                "en": "Stretch at bottom, full range of motion.",
+                "ar": "تمدّد في الأسفل، مدى حركة كامل."
+              }
+            },
+            {
+              "exerciseId": "DsgkuIt",
+              "displayName": {
+                "en": "Dumbbell Lateral Raise",
+                "ar": "رفرفة جانبية دمبل"
+              },
+              "sets": 4,
+              "reps": "12-15",
+              "restSeconds": 60,
+              "notes": {
+                "en": "Drop sets recommended on last set.",
+                "ar": "ينصح بـdrop set على السيت الأخير."
+              }
+            },
+            {
+              "exerciseId": "X6C6i5Y",
+              "displayName": {
+                "en": "Triceps Dip",
+                "ar": "ديبس ترايسبس"
+              },
+              "sets": 3,
+              "reps": "AMRAP",
+              "restSeconds": 90,
+              "notes": null
+            },
+            {
+              "exerciseId": "dU605di",
+              "displayName": {
+                "en": "Cable Tricep Pushdown (Rope)",
+                "ar": "تراي بوشداون كيبل (حبل)"
+              },
+              "sets": 3,
+              "reps": "12-15",
+              "restSeconds": 60,
+              "notes": null
+            }
+          ]
+        },
+        {
+          "dayNumber": 5,
+          "dayLabel": {
+            "en": "Pull Day B — Back Thickness",
+            "ar": "يوم السحب ب — سماكة الظهر"
+          },
+          "focus": "back_biceps",
+          "exercises": [
+            {
+              "exerciseId": "wQ2c4XD",
+              "displayName": {
+                "en": "Romanian Deadlift",
+                "ar": "ديدلفت روماني"
+              },
+              "sets": 4,
+              "reps": "8-10",
+              "restSeconds": 150,
+              "notes": {
+                "en": "Hits hams and lower back. Light knee bend, hinge from hips.",
+                "ar": "يستهدف الهامسترنق والظهر السفلي. ثني خفيف بالركب، انحنِ من الورك."
+              }
+            },
+            {
+              "exerciseId": "RVwzP10",
+              "displayName": {
+                "en": "Cable Lat Pulldown",
+                "ar": "لات بولداون كيبل"
+              },
+              "sets": 4,
+              "reps": "8-10",
+              "restSeconds": 90,
+              "notes": {
+                "en": "Wide grip, pull to upper chest, squeeze lats.",
+                "ar": "قبضة واسعة، اسحب لأعلى الصدر، اضغط اللات."
+              }
+            },
+            {
+              "exerciseId": "BJ0Hz5L",
+              "displayName": {
+                "en": "Dumbbell Bent Over Row",
+                "ar": "تجديف دمبل منحني"
+              },
+              "sets": 3,
+              "reps": "10-12",
+              "restSeconds": 90,
+              "notes": null
+            },
+            {
+              "exerciseId": "fUBheHs",
+              "displayName": {
+                "en": "Seated Cable Row",
+                "ar": "تجديف كيبل جالس"
+              },
+              "sets": 3,
+              "reps": "12-15",
+              "restSeconds": 75,
+              "notes": {
+                "en": "Lighter weight, focus on contraction this time.",
+                "ar": "وزن أخف، ركّز على الانقباض هذي المرة."
+              }
+            },
+            {
+              "exerciseId": "mu5Guxt",
+              "displayName": {
+                "en": "Dumbbell Rear Delt Raise",
+                "ar": "رفرفة خلفية دمبل"
+              },
+              "sets": 3,
+              "reps": "12-15",
+              "restSeconds": 60,
+              "notes": null
+            },
+            {
+              "exerciseId": "slDvUAU",
+              "displayName": {
+                "en": "Dumbbell Hammer Curl",
+                "ar": "هامر كيرل دمبل"
+              },
+              "sets": 3,
+              "reps": "10-12",
+              "restSeconds": 60,
+              "notes": null
+            },
+            {
+              "exerciseId": "NbVPDMW",
+              "displayName": {
+                "en": "Dumbbell Biceps Curl",
+                "ar": "بايسبس كيرل دمبل"
+              },
+              "sets": 3,
+              "reps": "12-15",
+              "restSeconds": 60,
+              "notes": {
+                "en": "Higher reps for arm pump.",
+                "ar": "تكرارات أعلى لضخ الذراع."
+              }
+            }
+          ]
+        },
+        {
+          "dayNumber": 6,
+          "dayLabel": {
+            "en": "Legs Day B — Posterior Focus",
+            "ar": "يوم الأرجل ب — تركيز خلفي"
+          },
+          "focus": "quads_hamstrings_glutes_calves",
+          "exercises": [
+            {
+              "exerciseId": "zG0zs85",
+              "displayName": {
+                "en": "Barbell Front Squat",
+                "ar": "سكوات أمامي بار"
+              },
+              "sets": 4,
+              "reps": "8-10",
+              "restSeconds": 150,
+              "notes": {
+                "en": "Targets quads more. Elbows up high, upright torso.",
+                "ar": "يركّز على الفخذ الأمامي أكثر. ارفع المرفق، خلّي جسمك مستقيم."
+              }
+            },
+            {
+              "exerciseId": "9E25EOx",
+              "displayName": {
+                "en": "Bulgarian Split Squat",
+                "ar": "سكوات بلغاري"
+              },
+              "sets": 3,
+              "reps": "10-12 each leg",
+              "restSeconds": 90,
+              "notes": {
+                "en": "Rear foot elevated, descend deep. Use dumbbells.",
+                "ar": "القدم الخلفية مرفوعة، انزل عميق. استخدم دمبلز."
+              }
+            },
+            {
+              "exerciseId": "17lJ1kr",
+              "displayName": {
+                "en": "Lever Lying Leg Curl",
+                "ar": "ليق كيرل آلة (راقد)"
+              },
+              "sets": 4,
+              "reps": "10-12",
+              "restSeconds": 75,
+              "notes": null
+            },
+            {
+              "exerciseId": "10Z2DXU",
+              "displayName": {
+                "en": "Sled 45° Leg Press",
+                "ar": "ليق بريس 45°"
+              },
+              "sets": 3,
+              "reps": "12-15",
+              "restSeconds": 90,
+              "notes": {
+                "en": "High and wide foot placement targets glutes/hams.",
+                "ar": "وقوف القدم عالي وواسع يستهدف المؤخرة والهامسترنق."
+              }
+            },
+            {
+              "exerciseId": "yl2IYyy",
+              "displayName": {
+                "en": "Standing Calf Raise",
+                "ar": "رفع كعبين واقف"
+              },
+              "sets": 5,
+              "reps": "10-12",
+              "restSeconds": 60,
+              "notes": {
+                "en": "Heavier than day A. Shorter range, more weight.",
+                "ar": "أثقل من يوم أ. مدى أقصر ووزن أكبر."
+              }
+            },
+            {
+              "exerciseId": "I3tsCnC",
+              "displayName": {
+                "en": "Hanging Leg Raise",
+                "ar": "رفع رجلين معلّق"
+              },
+              "sets": 3,
+              "reps": "10-15",
+              "restSeconds": 60,
+              "notes": {
+                "en": "Control descent, no swinging.",
+                "ar": "تحكم بالنزول، بدون تأرجح."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "templateId": "5x5_strength_3day",
+      "name": {
+        "en": "5x5 Strength Program",
+        "ar": "برنامج 5x5 للقوة"
+      },
+      "description": {
+        "en": "Classic linear progression program based on 5 fundamental compound lifts. Add weight every workout. Best for beginners and intermediates wanting to build foundational strength. Two alternating workouts (A/B) performed 3 times per week.",
+        "ar": "برنامج قوة كلاسيكي بنظام التدرج الخطي مبني على 5 تمارين مركّبة أساسية. تضيف وزن كل تمرين. الأفضل للمبتدئين والمتوسطين اللي يبون يبنون قوة أساسية. تمرينين يتبادلان (أ/ب) 3 مرات بالأسبوع."
+      },
+      "mainGoal": "strength",
+      "trainingLevel": "beginner",
+      "targetGender": "unisex",
+      "category": "strength",
+      "tags": [
+        "strength",
+        "beginner",
+        "intermediate",
+        "5x5",
+        "full_body"
+      ],
+      "daysPerWeek": 3,
+      "durationWeeks": 12,
+      "estimatedSessionMinutes": "45-60",
+      "workoutSplit": "full_body",
+      "requiredEquipment": [
+        "barbell",
+        "bench",
+        "squat rack"
+      ],
+      "optionalEquipment": [],
+      "recommendedSupplements": [
+        {
+          "name": {
+            "en": "Creatine Monohydrate",
+            "ar": "كرياتين مونوهيدرات"
+          },
+          "dosage": {
+            "en": "5g daily, any time",
+            "ar": "5 جرام يومياً، بأي وقت"
+          },
+          "priority": "essential",
+          "notes": {
+            "en": "Most effective supplement for strength gains. Non-negotiable for this program.",
+            "ar": "أفضل مكمل لزيادة القوة. أساسي لهذا البرنامج."
+          }
+        },
+        {
+          "name": {
+            "en": "Whey Protein",
+            "ar": "بروتين واي"
+          },
+          "dosage": {
+            "en": "1 scoop (25g) post-workout + 1 in the morning",
+            "ar": "سكوب (25 جرام) بعد التمرين + سكوب صباحاً"
+          },
+          "priority": "essential",
+          "notes": {
+            "en": "Strength training breaks down muscle. Protein rebuilds it stronger.",
+            "ar": "تدريب القوة يكسر العضل. البروتين يعيد بناءه أقوى."
+          }
+        },
+        {
+          "name": {
+            "en": "Caffeine",
+            "ar": "كافيين"
+          },
+          "dosage": {
+            "en": "200mg, 30-45 min pre-workout",
+            "ar": "200 ملغ قبل التمرين بـ30-45 دقيقة"
+          },
+          "priority": "highly_recommended",
+          "notes": {
+            "en": "Heavy lifts demand max focus. Caffeine helps before working sets.",
+            "ar": "الرفعات الثقيلة تتطلب تركيز كامل. الكافيين يساعد قبل السيتات الأساسية."
+          }
+        },
+        {
+          "name": {
+            "en": "Vitamin D3 + Magnesium",
+            "ar": "فيتامين د3 + مغنيسيوم"
+          },
+          "dosage": {
+            "en": "D3: 4000 IU / Mg: 400mg daily",
+            "ar": "د3: 4000 وحدة / مغنيسيوم: 400 ملغ يومياً"
+          },
+          "priority": "highly_recommended",
+          "notes": {
+            "en": "Both critical for testosterone, recovery, and sleep quality.",
+            "ar": "الاثنين مهمين للتستوستيرون والاستشفاء وجودة النوم."
+          }
+        }
+      ],
+      "advices": [
+        {
+          "title": {
+            "en": "Linear progression rule",
+            "ar": "قاعدة التدرج الخطي"
+          },
+          "body": {
+            "en": "Add 2.5kg to upper body lifts (Bench, OHP, Row) and 5kg to lower body lifts (Squat, Deadlift) every workout you successfully complete all sets.",
+            "ar": "زِد 2.5 كيلو على تمارين الجزء العلوي (بنش، OHP، رو) و5 كيلو على تمارين الجزء السفلي (سكوات، ديدلفت) كل مرة تكمل كل السيتات بنجاح."
+          }
+        },
+        {
+          "title": {
+            "en": "When to deload",
+            "ar": "متى تسوّي ديلود"
+          },
+          "body": {
+            "en": "If you fail 3 workouts in a row on a lift, deload 10% on that lift and work back up. Don't deload everything—just the stuck lift.",
+            "ar": "لو فشلت 3 تمارين متتالية على نفس الحركة، ارجع 10% على ذاك التمرين وارجع تتدرج. لا تنزل كل شي—فقط الحركة العالقة."
+          }
+        },
+        {
+          "title": {
+            "en": "Form check",
+            "ar": "تحقق من الفورم"
+          },
+          "body": {
+            "en": "Record your top set every workout. Watch it back. Bad form on heavy weight is the fastest way to injury.",
+            "ar": "صوّر السيت الأخير لك كل تمرين. شوفه. فورم سيء على وزن ثقيل = إصابة مؤكدة."
+          }
+        },
+        {
+          "title": {
+            "en": "Eat to grow",
+            "ar": "كُل عشان تكبر"
+          },
+          "body": {
+            "en": "This program assumes a slight caloric surplus. If you're not gaining weight, you won't gain strength as fast as possible.",
+            "ar": "هذا البرنامج يفترض سعرات زائدة بسيطة. لو ما تكتسب وزن، ما رح تكتسب قوة بأقصى سرعة."
+          }
+        },
+        {
+          "title": {
+            "en": "Schedule",
+            "ar": "جدول الأيام"
+          },
+          "body": {
+            "en": "Mon/Wed/Fri pattern works best. Week 1: A/B/A. Week 2: B/A/B. Continue alternating.",
+            "ar": "نمط أحد/ثلاثاء/خميس هو الأفضل. الأسبوع 1: أ/ب/أ. الأسبوع 2: ب/أ/ب. واصل التبادل."
+          }
+        },
+        {
+          "title": {
+            "en": "Sleep is your supplement",
+            "ar": "النوم هو مكمّلك الأهم"
+          },
+          "body": {
+            "en": "Strength gains happen during sleep. 8+ hours every night, no exceptions, especially with this much barbell volume.",
+            "ar": "اكتساب القوة يحصل أثناء النوم. 8+ ساعات كل ليلة، بدون استثناء، خصوصاً مع كثرة استخدام البار."
+          }
+        }
+      ],
+      "schedule": [
+        {
+          "dayNumber": 1,
+          "dayLabel": {
+            "en": "Workout A",
+            "ar": "تمرين أ"
+          },
+          "focus": "full_body_strength",
+          "exercises": [
+            {
+              "exerciseId": "qXTaZnJ",
+              "displayName": {
+                "en": "Barbell Back Squat",
+                "ar": "سكوات بار"
+              },
+              "sets": 5,
+              "reps": "5",
+              "restSeconds": 180,
+              "notes": {
+                "en": "All 5 sets at working weight. Same weight across.",
+                "ar": "كل الـ5 سيتات بنفس وزن العمل."
+              }
+            },
+            {
+              "exerciseId": "EIeI8Vf",
+              "displayName": {
+                "en": "Barbell Bench Press",
+                "ar": "بنش بريس بار"
+              },
+              "sets": 5,
+              "reps": "5",
+              "restSeconds": 180,
+              "notes": {
+                "en": "Same weight all 5 sets. Use spotter.",
+                "ar": "نفس الوزن في الـ5 سيتات. استخدم spotter."
+              }
+            },
+            {
+              "exerciseId": "eZyBC3j",
+              "displayName": {
+                "en": "Barbell Bent Over Row",
+                "ar": "تجديف بار منحني"
+              },
+              "sets": 5,
+              "reps": "5",
+              "restSeconds": 180,
+              "notes": {
+                "en": "Strict form. Don't use too much momentum.",
+                "ar": "فورم صارم. لا تستخدم زخم كثير."
+              }
+            }
+          ]
+        },
+        {
+          "dayNumber": 2,
+          "dayLabel": {
+            "en": "Workout B",
+            "ar": "تمرين ب"
+          },
+          "focus": "full_body_strength",
+          "exercises": [
+            {
+              "exerciseId": "qXTaZnJ",
+              "displayName": {
+                "en": "Barbell Back Squat",
+                "ar": "سكوات بار"
+              },
+              "sets": 5,
+              "reps": "5",
+              "restSeconds": 180,
+              "notes": {
+                "en": "Squat is in every workout. That's the program.",
+                "ar": "السكوات في كل تمرين. هذا أساس البرنامج."
+              }
+            },
+            {
+              "exerciseId": "kTbSH9h",
+              "displayName": {
+                "en": "Barbell Overhead Press",
+                "ar": "ضغط أكتاف بار"
+              },
+              "sets": 5,
+              "reps": "5",
+              "restSeconds": 180,
+              "notes": {
+                "en": "Hardest of the 5 lifts. Progress is slow—be patient.",
+                "ar": "أصعب الحركات الـ5. التقدّم بطيء—خذ راحتك."
+              }
+            },
+            {
+              "exerciseId": "ila4NZS",
+              "displayName": {
+                "en": "Barbell Deadlift",
+                "ar": "ديدلفت بار"
+              },
+              "sets": 1,
+              "reps": "5",
+              "restSeconds": 240,
+              "notes": {
+                "en": "Only 1 working set. Heavy and intense. Reset between reps.",
+                "ar": "سيت واحد بس. ثقيل ومكثف. ارجع للوضع المستقيم بين كل تكرار."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "templateId": "upper_lower_4day",
+      "name": {
+        "en": "Upper / Lower Split — 4 Day",
+        "ar": "تقسيم علوي / سفلي — 4 أيام"
+      },
+      "description": {
+        "en": "A balanced 4-day split alternating upper and lower body sessions. Each muscle group is hit twice per week with optimal recovery. Ideal middle ground between full-body (3 days) and PPL (6 days).",
+        "ar": "تقسيم متوازن 4 أيام يبدّل بين الجزء العلوي والسفلي. كل مجموعة عضلية تتدرّب مرتين بالأسبوع مع استشفاء مثالي. الحل الوسط بين الـfull body (3 أيام) و PPL (6 أيام)."
+      },
+      "mainGoal": "muscle_building",
+      "trainingLevel": "intermediate",
+      "targetGender": "unisex",
+      "category": "muscle_building",
+      "tags": [
+        "muscle_building",
+        "intermediate",
+        "upper_lower",
+        "strength"
+      ],
+      "daysPerWeek": 4,
+      "durationWeeks": 10,
+      "estimatedSessionMinutes": "60-75",
+      "workoutSplit": "upper_lower",
+      "requiredEquipment": [
+        "barbell",
+        "dumbbell",
+        "bench",
+        "cable",
+        "pull-up bar"
+      ],
+      "optionalEquipment": [
+        "leverage machine",
+        "leg press"
+      ],
+      "recommendedSupplements": [
+        {
+          "name": {
+            "en": "Whey Protein",
+            "ar": "بروتين واي"
+          },
+          "dosage": {
+            "en": "1-2 scoops daily",
+            "ar": "1-2 سكوب يومياً"
+          },
+          "priority": "essential",
+          "notes": {
+            "en": "Helps reach 1.6-2.2g protein per kg bodyweight.",
+            "ar": "يساعدك توصل لـ1.6-2.2 جرام بروتين لكل كيلو من وزنك."
+          }
+        },
+        {
+          "name": {
+            "en": "Creatine Monohydrate",
+            "ar": "كرياتين مونوهيدرات"
+          },
+          "dosage": {
+            "en": "5g daily",
+            "ar": "5 جرام يومياً"
+          },
+          "priority": "essential",
+          "notes": {
+            "en": "Boosts strength and muscle volume.",
+            "ar": "يزيد القوة وحجم العضل."
+          }
+        },
+        {
+          "name": {
+            "en": "Caffeine",
+            "ar": "كافيين"
+          },
+          "dosage": {
+            "en": "200-300mg pre-workout",
+            "ar": "200-300 ملغ قبل التمرين"
+          },
+          "priority": "highly_recommended",
+          "notes": {
+            "en": "Improves output on heavy compounds.",
+            "ar": "يحسّن الأداء على التمارين المركّبة الثقيلة."
+          }
+        },
+        {
+          "name": {
+            "en": "Vitamin D3",
+            "ar": "فيتامين د3"
+          },
+          "dosage": {
+            "en": "2000-4000 IU daily",
+            "ar": "2000-4000 وحدة يومياً"
+          },
+          "priority": "highly_recommended",
+          "notes": {
+            "en": "Critical for hormones and recovery.",
+            "ar": "مهم للهرمونات والاستشفاء."
+          }
+        }
+      ],
+      "advices": [
+        {
+          "title": {
+            "en": "Schedule template",
+            "ar": "جدول الأيام المقترح"
+          },
+          "body": {
+            "en": "Mon: Upper A, Tue: Lower A, Thu: Upper B, Fri: Lower B. Or Sun/Mon/Wed/Thu.",
+            "ar": "أحد: علوي أ، اثنين: سفلي أ، أربعاء: علوي ب، خميس: سفلي ب. أو رتّبها حسب جدولك."
+          }
+        },
+        {
+          "title": {
+            "en": "Two days max in a row",
+            "ar": "يومين متتاليين كحد أقصى"
+          },
+          "body": {
+            "en": "Don't train 3 days back-to-back. Give CNS time to recover from heavy compounds.",
+            "ar": "لا تتدرّب 3 أيام متتالية. أعط جهازك العصبي وقت يستشفي من الحركات الثقيلة."
+          }
+        },
+        {
+          "title": {
+            "en": "Work hard, leave 1-2 in reserve",
+            "ar": "اشتغل بجد، خلّي 1-2 احتياط"
+          },
+          "body": {
+            "en": "On working sets, stop when you have 1-2 reps left in the tank. Save failure for last sets only.",
+            "ar": "في السيتات الأساسية، وقف لمّا يكون باقي عندك 1-2 تكرار. خلّ الفشل التام للسيتات الأخيرة فقط."
+          }
+        },
+        {
+          "title": {
+            "en": "Progress weekly",
+            "ar": "تقدّم أسبوعياً"
+          },
+          "body": {
+            "en": "Add reps before adding weight. Hit top of rep range → next session add 2.5kg, restart at bottom of range.",
+            "ar": "زِد التكرارات قبل ما تزيد الوزن. لمّا توصل لأعلى مدى التكرارات → التمرين الجاي زِد 2.5 كيلو وارجع لأدنى مدى."
+          }
+        },
+        {
+          "title": {
+            "en": "Eat for your goal",
+            "ar": "كل حسب هدفك"
+          },
+          "body": {
+            "en": "Bulking: +250-500 cal/day. Recomp (muscle + fat loss): maintenance with high protein.",
+            "ar": "تضخيم: +250-500 سعرة يومياً. ريكومب (عضل + حرق): سعرات الثبات مع بروتين عالي."
+          }
+        }
+      ],
+      "schedule": [
+        {
+          "dayNumber": 1,
+          "dayLabel": {
+            "en": "Upper Body A — Strength Focus",
+            "ar": "علوي أ — تركيز قوة"
+          },
+          "focus": "chest_back_shoulders_arms",
+          "exercises": [
+            {
+              "exerciseId": "EIeI8Vf",
+              "displayName": {
+                "en": "Barbell Bench Press",
+                "ar": "بنش بريس بار"
+              },
+              "sets": 4,
+              "reps": "5-7",
+              "restSeconds": 150,
+              "notes": {
+                "en": "Heavy strength sets. Use spotter.",
+                "ar": "سيتات قوة ثقيلة. استخدم spotter."
+              }
+            },
+            {
+              "exerciseId": "eZyBC3j",
+              "displayName": {
+                "en": "Barbell Bent Over Row",
+                "ar": "تجديف بار منحني"
+              },
+              "sets": 4,
+              "reps": "6-8",
+              "restSeconds": 120,
+              "notes": {
+                "en": "Match bench volume. Strict form.",
+                "ar": "نفس حجم البنش. فورم صارم."
+              }
+            },
+            {
+              "exerciseId": "kTbSH9h",
+              "displayName": {
+                "en": "Barbell Overhead Press",
+                "ar": "ضغط أكتاف بار"
+              },
+              "sets": 3,
+              "reps": "6-8",
+              "restSeconds": 120,
+              "notes": {
+                "en": "Brace core, no leg drive.",
+                "ar": "شدّ الكور، بدون استخدام الأرجل."
+              }
+            },
+            {
+              "exerciseId": "lBDjFxJ",
+              "displayName": {
+                "en": "Pull-up",
+                "ar": "بول أب"
+              },
+              "sets": 3,
+              "reps": "AMRAP",
+              "restSeconds": 120,
+              "notes": {
+                "en": "Add weight if doing 10+ clean reps.",
+                "ar": "ضيف وزن لو تسوي 10+ تكرار نظيف."
+              }
+            },
+            {
+              "exerciseId": "NbVPDMW",
+              "displayName": {
+                "en": "Dumbbell Biceps Curl",
+                "ar": "بايسبس كيرل دمبل"
+              },
+              "sets": 3,
+              "reps": "8-10",
+              "restSeconds": 75,
+              "notes": null
+            },
+            {
+              "exerciseId": "X6C6i5Y",
+              "displayName": {
+                "en": "Triceps Dip",
+                "ar": "ديبس ترايسبس"
+              },
+              "sets": 3,
+              "reps": "8-12",
+              "restSeconds": 90,
+              "notes": null
+            }
+          ]
+        },
+        {
+          "dayNumber": 2,
+          "dayLabel": {
+            "en": "Lower Body A — Strength Focus",
+            "ar": "سفلي أ — تركيز قوة"
+          },
+          "focus": "quads_hamstrings_glutes_calves_core",
+          "exercises": [
+            {
+              "exerciseId": "qXTaZnJ",
+              "displayName": {
+                "en": "Barbell Back Squat",
+                "ar": "سكوات بار"
+              },
+              "sets": 4,
+              "reps": "5-7",
+              "restSeconds": 180,
+              "notes": {
+                "en": "Foundation lift. Below parallel.",
+                "ar": "تمرين أساسي. النزول لتحت الموازاة."
+              }
+            },
+            {
+              "exerciseId": "wQ2c4XD",
+              "displayName": {
+                "en": "Romanian Deadlift",
+                "ar": "ديدلفت روماني"
+              },
+              "sets": 3,
+              "reps": "8-10",
+              "restSeconds": 120,
+              "notes": {
+                "en": "Slight knee bend, hinge from hips.",
+                "ar": "ثني خفيف بالركب، انحنِ من الورك."
+              }
+            },
+            {
+              "exerciseId": "10Z2DXU",
+              "displayName": {
+                "en": "Sled 45° Leg Press",
+                "ar": "ليق بريس 45°"
+              },
+              "sets": 3,
+              "reps": "10-12",
+              "restSeconds": 120,
+              "notes": null
+            },
+            {
+              "exerciseId": "17lJ1kr",
+              "displayName": {
+                "en": "Lever Lying Leg Curl",
+                "ar": "ليق كيرل آلة"
+              },
+              "sets": 3,
+              "reps": "10-12",
+              "restSeconds": 75,
+              "notes": null
+            },
+            {
+              "exerciseId": "yl2IYyy",
+              "displayName": {
+                "en": "Standing Calf Raise",
+                "ar": "رفع كعبين واقف"
+              },
+              "sets": 4,
+              "reps": "10-12",
+              "restSeconds": 60,
+              "notes": null
+            },
+            {
+              "exerciseId": "I3tsCnC",
+              "displayName": {
+                "en": "Hanging Leg Raise",
+                "ar": "رفع رجلين معلّق"
+              },
+              "sets": 3,
+              "reps": "10-15",
+              "restSeconds": 60,
+              "notes": null
+            }
+          ]
+        },
+        {
+          "dayNumber": 3,
+          "dayLabel": {
+            "en": "Upper Body B — Volume / Hypertrophy",
+            "ar": "علوي ب — حجم / تضخيم"
+          },
+          "focus": "chest_back_shoulders_arms",
+          "exercises": [
+            {
+              "exerciseId": "3TZduzM",
+              "displayName": {
+                "en": "Barbell Incline Bench Press",
+                "ar": "بنش بريس مائل بار"
+              },
+              "sets": 4,
+              "reps": "8-10",
+              "restSeconds": 120,
+              "notes": {
+                "en": "Upper chest emphasis.",
+                "ar": "تركيز على أعلى الصدر."
+              }
+            },
+            {
+              "exerciseId": "RVwzP10",
+              "displayName": {
+                "en": "Cable Lat Pulldown",
+                "ar": "لات بولداون كيبل"
+              },
+              "sets": 4,
+              "reps": "10-12",
+              "restSeconds": 90,
+              "notes": null
+            },
+            {
+              "exerciseId": "znQUdHY",
+              "displayName": {
+                "en": "Dumbbell Seated Shoulder Press",
+                "ar": "ضغط أكتاف دمبل جالس"
+              },
+              "sets": 3,
+              "reps": "10-12",
+              "restSeconds": 90,
+              "notes": null
+            },
+            {
+              "exerciseId": "fUBheHs",
+              "displayName": {
+                "en": "Seated Cable Row",
+                "ar": "تجديف كيبل جالس"
+              },
+              "sets": 3,
+              "reps": "10-12",
+              "restSeconds": 90,
+              "notes": null
+            },
+            {
+              "exerciseId": "DsgkuIt",
+              "displayName": {
+                "en": "Dumbbell Lateral Raise",
+                "ar": "رفرفة جانبية دمبل"
+              },
+              "sets": 4,
+              "reps": "12-15",
+              "restSeconds": 60,
+              "notes": null
+            },
+            {
+              "exerciseId": "mu5Guxt",
+              "displayName": {
+                "en": "Dumbbell Rear Delt Raise",
+                "ar": "رفرفة خلفية دمبل"
+              },
+              "sets": 3,
+              "reps": "12-15",
+              "restSeconds": 60,
+              "notes": null
+            },
+            {
+              "exerciseId": "dU605di",
+              "displayName": {
+                "en": "Cable Tricep Pushdown",
+                "ar": "تراي بوشداون كيبل"
+              },
+              "sets": 3,
+              "reps": "12-15",
+              "restSeconds": 60,
+              "notes": null
+            },
+            {
+              "exerciseId": "slDvUAU",
+              "displayName": {
+                "en": "Dumbbell Hammer Curl",
+                "ar": "هامر كيرل دمبل"
+              },
+              "sets": 3,
+              "reps": "12-15",
+              "restSeconds": 60,
+              "notes": null
+            }
+          ]
+        },
+        {
+          "dayNumber": 4,
+          "dayLabel": {
+            "en": "Lower Body B — Volume / Hypertrophy",
+            "ar": "سفلي ب — حجم / تضخيم"
+          },
+          "focus": "quads_hamstrings_glutes_calves_core",
+          "exercises": [
+            {
+              "exerciseId": "zG0zs85",
+              "displayName": {
+                "en": "Barbell Front Squat",
+                "ar": "سكوات أمامي بار"
+              },
+              "sets": 4,
+              "reps": "8-10",
+              "restSeconds": 120,
+              "notes": {
+                "en": "Quad-dominant. Upright torso.",
+                "ar": "يركّز على الفخذ الأمامي. خلّي جسمك مستقيم."
+              }
+            },
+            {
+              "exerciseId": "9E25EOx",
+              "displayName": {
+                "en": "Bulgarian Split Squat",
+                "ar": "سكوات بلغاري"
+              },
+              "sets": 3,
+              "reps": "10-12 each leg",
+              "restSeconds": 90,
+              "notes": {
+                "en": "Hold dumbbells at sides.",
+                "ar": "امسك دمبلز على الجانبين."
+              }
+            },
+            {
+              "exerciseId": "my33uHU",
+              "displayName": {
+                "en": "Lever Leg Extension",
+                "ar": "ليق إكستنشن آلة"
+              },
+              "sets": 4,
+              "reps": "12-15",
+              "restSeconds": 60,
+              "notes": null
+            },
+            {
+              "exerciseId": "17lJ1kr",
+              "displayName": {
+                "en": "Lever Lying Leg Curl",
+                "ar": "ليق كيرل آلة"
+              },
+              "sets": 4,
+              "reps": "12-15",
+              "restSeconds": 60,
+              "notes": null
+            },
+            {
+              "exerciseId": "yl2IYyy",
+              "displayName": {
+                "en": "Standing Calf Raise",
+                "ar": "رفع كعبين واقف"
+              },
+              "sets": 5,
+              "reps": "15-20",
+              "restSeconds": 45,
+              "notes": {
+                "en": "Higher reps day. Burn it out.",
+                "ar": "يوم تكرارات عالية. حرّقها."
+              }
+            },
+            {
+              "exerciseId": "TFqbd8t",
+              "displayName": {
+                "en": "Crunch",
+                "ar": "كرنش"
+              },
+              "sets": 3,
+              "reps": "15-20",
+              "restSeconds": 45,
+              "notes": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "templateId": "fat_loss_circuit_4day",
+      "name": {
+        "en": "Fat Loss Circuit — 4 Day",
+        "ar": "حرق دهون بنظام الدائرة — 4 أيام"
+      },
+      "description": {
+        "en": "A 4-day fat loss program combining strength training with metabolic conditioning. Short rest periods, supersets, and finishers keep heart rate elevated to maximize calorie burn while preserving muscle mass.",
+        "ar": "برنامج حرق دهون 4 أيام يجمع بين تدريب القوة والتدريب الأيضي. فترات راحة قصيرة وسوبرسيتات وفينشرز عشان ترفع معدل النبض وتحرق سعرات أكثر مع المحافظة على العضلات."
+      },
+      "mainGoal": "fat_loss",
+      "trainingLevel": "intermediate",
+      "targetGender": "unisex",
+      "category": "fat_loss",
+      "tags": [
+        "fat_loss",
+        "intermediate",
+        "general_fitness",
+        "circuit",
+        "upper_lower"
+      ],
+      "daysPerWeek": 4,
+      "durationWeeks": 8,
+      "estimatedSessionMinutes": "45-60",
+      "workoutSplit": "upper_lower",
+      "requiredEquipment": [
+        "barbell",
+        "dumbbell",
+        "bench",
+        "cable"
+      ],
+      "optionalEquipment": [
+        "kettlebell",
+        "treadmill",
+        "jump rope"
+      ],
+      "recommendedSupplements": [
+        {
+          "name": {
+            "en": "Whey Protein",
+            "ar": "بروتين واي"
+          },
+          "dosage": {
+            "en": "1-2 scoops daily",
+            "ar": "1-2 سكوب يومياً"
+          },
+          "priority": "essential",
+          "notes": {
+            "en": "Critical to preserve muscle in a caloric deficit. Aim for 2.0-2.4g/kg.",
+            "ar": "ضروري للحفاظ على العضل في عجز السعرات. اهدف لـ2.0-2.4 جرام/كيلو."
+          }
+        },
+        {
+          "name": {
+            "en": "Caffeine",
+            "ar": "كافيين"
+          },
+          "dosage": {
+            "en": "200-400mg pre-workout",
+            "ar": "200-400 ملغ قبل التمرين"
+          },
+          "priority": "highly_recommended",
+          "notes": {
+            "en": "Mild appetite suppression and increased fat oxidation.",
+            "ar": "يقلل الشهية بشكل خفيف ويزيد أكسدة الدهون."
+          }
+        },
+        {
+          "name": {
+            "en": "Creatine Monohydrate",
+            "ar": "كرياتين مونوهيدرات"
+          },
+          "dosage": {
+            "en": "5g daily",
+            "ar": "5 جرام يومياً"
+          },
+          "priority": "highly_recommended",
+          "notes": {
+            "en": "Helps maintain strength while in a deficit.",
+            "ar": "يساعد على الحفاظ على القوة وأنت في عجز سعرات."
+          }
+        },
+        {
+          "name": {
+            "en": "Electrolytes",
+            "ar": "إلكتروليتس"
+          },
+          "dosage": {
+            "en": "1 serving on training days",
+            "ar": "حصة واحدة في أيام التمرين"
+          },
+          "priority": "highly_recommended",
+          "notes": {
+            "en": "High-intensity work + low carbs can cause electrolyte loss.",
+            "ar": "التمرين العالي الكثافة + قلة الكاربس يسبب فقدان الأملاح."
+          }
+        },
+        {
+          "name": {
+            "en": "Multivitamin",
+            "ar": "فيتامينات متعددة"
+          },
+          "dosage": {
+            "en": "1 daily",
+            "ar": "حبة يومياً"
+          },
+          "priority": "highly_recommended",
+          "notes": {
+            "en": "Reduced food intake can lead to micronutrient gaps.",
+            "ar": "قلة الأكل ممكن تسبب نقص فيتامينات."
+          }
+        }
+      ],
+      "advices": [
+        {
+          "title": {
+            "en": "Diet > Cardio",
+            "ar": "الأكل أهم من الكارديو"
+          },
+          "body": {
+            "en": "You can't out-train a bad diet. Eat at a 300-500 calorie deficit. The training preserves muscle—the diet creates the fat loss.",
+            "ar": "ما تقدر تتدرّب وتعوّض أكل سيء. خلّيك في عجز 300-500 سعرة. التمرين يحافظ على العضل—الأكل هو اللي يحرق الدهون."
+          }
+        },
+        {
+          "title": {
+            "en": "High protein is non-negotiable",
+            "ar": "البروتين العالي ضروري"
+          },
+          "body": {
+            "en": "In a deficit, eat 2.0-2.4g protein per kg bodyweight to preserve muscle. This is more than during a bulk.",
+            "ar": "في عجز السعرات، كل 2.0-2.4 جرام بروتين/كيلو من وزنك للحفاظ على العضل. أكثر من فترة التضخيم."
+          }
+        },
+        {
+          "title": {
+            "en": "Daily steps matter",
+            "ar": "الخطوات اليومية مهمة"
+          },
+          "body": {
+            "en": "Aim for 8,000-12,000 steps daily. Walking burns fat without affecting recovery from training.",
+            "ar": "اهدف لـ8000-12000 خطوة يومياً. المشي يحرق دهون بدون ما يأثر على استشفاءك من التمرين."
+          }
+        },
+        {
+          "title": {
+            "en": "Don't drop calories too low",
+            "ar": "لا تنزّل السعرات كثير"
+          },
+          "body": {
+            "en": "Severe deficits crash your metabolism and lead to muscle loss. Slow and steady wins.",
+            "ar": "العجز الشديد يكسر التمثيل الغذائي ويؤدي لفقدان العضل. التدرّج البطيء أفضل."
+          }
+        },
+        {
+          "title": {
+            "en": "Strength training preserves muscle",
+            "ar": "تدريب القوة يحفظ العضل"
+          },
+          "body": {
+            "en": "Don't switch to high-rep machine work because you're cutting. Heavy compounds tell your body to keep the muscle.",
+            "ar": "لا تنتقل لتمارين الآلات بتكرارات عالية لأنك تنشّف. الحركات المركّبة الثقيلة تقول لجسمك يحافظ على العضل."
+          }
+        },
+        {
+          "title": {
+            "en": "Sleep regulates hunger",
+            "ar": "النوم ينظّم الجوع"
+          },
+          "body": {
+            "en": "Poor sleep increases ghrelin (hunger hormone) and decreases leptin (fullness). 7-9 hours is mandatory.",
+            "ar": "قلة النوم ترفع الجريلين (هرمون الجوع) وتنزّل اللبتين (هرمون الشبع). 7-9 ساعات إجباري."
+          }
+        }
+      ],
+      "schedule": [
+        {
+          "dayNumber": 1,
+          "dayLabel": {
+            "en": "Upper Body Strength + Conditioning",
+            "ar": "علوي قوة + تكييف"
+          },
+          "focus": "upper_body_metabolic",
+          "exercises": [
+            {
+              "exerciseId": "EIeI8Vf",
+              "displayName": {
+                "en": "Barbell Bench Press",
+                "ar": "بنش بريس بار"
+              },
+              "sets": 4,
+              "reps": "8-10",
+              "restSeconds": 75,
+              "notes": {
+                "en": "Shorter rest than usual to keep HR up.",
+                "ar": "راحة أقصر من المعتاد عشان تحافظ على نبض عالي."
+              }
+            },
+            {
+              "exerciseId": "RVwzP10",
+              "displayName": {
+                "en": "Cable Lat Pulldown",
+                "ar": "لات بولداون كيبل"
+              },
+              "sets": 4,
+              "reps": "10-12",
+              "restSeconds": 75,
+              "notes": null
+            },
+            {
+              "exerciseId": "znQUdHY",
+              "displayName": {
+                "en": "Dumbbell Seated Shoulder Press",
+                "ar": "ضغط أكتاف دمبل"
+              },
+              "sets": 3,
+              "reps": "10-12",
+              "restSeconds": 60,
+              "notes": null
+            },
+            {
+              "exerciseId": "BJ0Hz5L",
+              "displayName": {
+                "en": "Dumbbell Bent Over Row",
+                "ar": "تجديف دمبل منحني"
+              },
+              "sets": 3,
+              "reps": "10-12",
+              "restSeconds": 60,
+              "notes": null
+            },
+            {
+              "exerciseId": "dU605di",
+              "displayName": {
+                "en": "Cable Tricep Pushdown",
+                "ar": "تراي بوشداون كيبل"
+              },
+              "sets": 3,
+              "reps": "12-15",
+              "restSeconds": 45,
+              "notes": {
+                "en": "Superset with biceps curl below.",
+                "ar": "سوبرسيت مع البايسبس كيرل تحت."
+              }
+            },
+            {
+              "exerciseId": "NbVPDMW",
+              "displayName": {
+                "en": "Dumbbell Biceps Curl",
+                "ar": "بايسبس كيرل دمبل"
+              },
+              "sets": 3,
+              "reps": "12-15",
+              "restSeconds": 45,
+              "notes": null
+            },
+            {
+              "exerciseId": "dK9394r",
+              "displayName": {
+                "en": "Burpee — Finisher",
+                "ar": "بربي — فينشر"
+              },
+              "sets": 3,
+              "reps": "10-15",
+              "restSeconds": 45,
+              "notes": {
+                "en": "Final metabolic burst. Push hard.",
+                "ar": "دفعة أيضية أخيرة. اضغط قوي."
+              }
+            }
+          ]
+        },
+        {
+          "dayNumber": 2,
+          "dayLabel": {
+            "en": "Lower Body + HIIT",
+            "ar": "سفلي + HIIT"
+          },
+          "focus": "lower_body_metabolic",
+          "exercises": [
+            {
+              "exerciseId": "qXTaZnJ",
+              "displayName": {
+                "en": "Barbell Back Squat",
+                "ar": "سكوات بار"
+              },
+              "sets": 4,
+              "reps": "8-10",
+              "restSeconds": 90,
+              "notes": null
+            },
+            {
+              "exerciseId": "wQ2c4XD",
+              "displayName": {
+                "en": "Romanian Deadlift",
+                "ar": "ديدلفت روماني"
+              },
+              "sets": 3,
+              "reps": "10-12",
+              "restSeconds": 75,
+              "notes": null
+            },
+            {
+              "exerciseId": "9E25EOx",
+              "displayName": {
+                "en": "Bulgarian Split Squat",
+                "ar": "سكوات بلغاري"
+              },
+              "sets": 3,
+              "reps": "10-12 each leg",
+              "restSeconds": 60,
+              "notes": null
+            },
+            {
+              "exerciseId": "17lJ1kr",
+              "displayName": {
+                "en": "Lever Lying Leg Curl",
+                "ar": "ليق كيرل آلة"
+              },
+              "sets": 3,
+              "reps": "12-15",
+              "restSeconds": 45,
+              "notes": null
+            },
+            {
+              "exerciseId": "yl2IYyy",
+              "displayName": {
+                "en": "Standing Calf Raise",
+                "ar": "رفع كعبين واقف"
+              },
+              "sets": 3,
+              "reps": "15-20",
+              "restSeconds": 45,
+              "notes": null
+            },
+            {
+              "exerciseId": "UHJlbu3",
+              "displayName": {
+                "en": "Kettlebell Swing — Finisher",
+                "ar": "سوينق كيتل — فينشر"
+              },
+              "sets": 4,
+              "reps": "20",
+              "restSeconds": 45,
+              "notes": {
+                "en": "Hip drive, not arm pull. Keep core braced.",
+                "ar": "اندفاع من الورك مو سحب من الذراع. شدّ الكور."
+              }
+            }
+          ]
+        },
+        {
+          "dayNumber": 3,
+          "dayLabel": {
+            "en": "Upper Body Volume + Cardio Finisher",
+            "ar": "علوي حجم + كارديو فينشر"
+          },
+          "focus": "upper_body_volume",
+          "exercises": [
+            {
+              "exerciseId": "3TZduzM",
+              "displayName": {
+                "en": "Barbell Incline Bench Press",
+                "ar": "بنش بريس مائل بار"
+              },
+              "sets": 3,
+              "reps": "10-12",
+              "restSeconds": 75,
+              "notes": null
+            },
+            {
+              "exerciseId": "fUBheHs",
+              "displayName": {
+                "en": "Seated Cable Row",
+                "ar": "تجديف كيبل جالس"
+              },
+              "sets": 3,
+              "reps": "12-15",
+              "restSeconds": 60,
+              "notes": null
+            },
+            {
+              "exerciseId": "DsgkuIt",
+              "displayName": {
+                "en": "Dumbbell Lateral Raise",
+                "ar": "رفرفة جانبية دمبل"
+              },
+              "sets": 4,
+              "reps": "15-20",
+              "restSeconds": 45,
+              "notes": null
+            },
+            {
+              "exerciseId": "lBDjFxJ",
+              "displayName": {
+                "en": "Pull-up",
+                "ar": "بول أب"
+              },
+              "sets": 3,
+              "reps": "AMRAP",
+              "restSeconds": 90,
+              "notes": null
+            },
+            {
+              "exerciseId": "X6C6i5Y",
+              "displayName": {
+                "en": "Triceps Dip",
+                "ar": "ديبس ترايسبس"
+              },
+              "sets": 3,
+              "reps": "AMRAP",
+              "restSeconds": 60,
+              "notes": null
+            },
+            {
+              "exerciseId": "RJgzwny",
+              "displayName": {
+                "en": "Mountain Climber",
+                "ar": "تسلق الجبل"
+              },
+              "sets": 3,
+              "reps": "30-45s",
+              "restSeconds": 30,
+              "notes": {
+                "en": "Fast pace. Tight core throughout.",
+                "ar": "سرعة عالية. شدّ الكور طول الحركة."
+              }
+            },
+            {
+              "exerciseId": "rjiM4L3",
+              "displayName": {
+                "en": "Treadmill — Steady Cardio",
+                "ar": "ترايدميل — كارديو ثابت"
+              },
+              "sets": 1,
+              "duration": "10-15 min",
+              "restSeconds": 0,
+              "notes": {
+                "en": "Moderate pace at the end. Don't skip.",
+                "ar": "إيقاع متوسط في النهاية. لا تتجاهلها."
+              }
+            }
+          ]
+        },
+        {
+          "dayNumber": 4,
+          "dayLabel": {
+            "en": "Full Body Conditioning + HIIT",
+            "ar": "تكييف جسم كامل + HIIT"
+          },
+          "focus": "metabolic_full_body",
+          "exercises": [
+            {
+              "exerciseId": "yn8yg1r",
+              "displayName": {
+                "en": "Dumbbell Goblet Squat",
+                "ar": "سكوات قوبلت دمبل"
+              },
+              "sets": 4,
+              "reps": "12-15",
+              "restSeconds": 60,
+              "notes": null
+            },
+            {
+              "exerciseId": "IZVHb27",
+              "displayName": {
+                "en": "Walking Lunge (BW)",
+                "ar": "لانج مشي"
+              },
+              "sets": 3,
+              "reps": "20 steps total",
+              "restSeconds": 60,
+              "notes": {
+                "en": "Hold dumbbells if BW is too easy.",
+                "ar": "امسك دمبلز لو الوزن الذاتي سهل."
+              }
+            },
+            {
+              "exerciseId": "I4hDWkc",
+              "displayName": {
+                "en": "Push-up",
+                "ar": "بوش أب"
+              },
+              "sets": 3,
+              "reps": "AMRAP",
+              "restSeconds": 60,
+              "notes": null
+            },
+            {
+              "exerciseId": "bZGHsAZ",
+              "displayName": {
+                "en": "Inverted Row",
+                "ar": "تجديف معكوس"
+              },
+              "sets": 3,
+              "reps": "AMRAP",
+              "restSeconds": 60,
+              "notes": null
+            },
+            {
+              "exerciseId": "LIlE5Tn",
+              "displayName": {
+                "en": "Jump Squat",
+                "ar": "سكوات قفز"
+              },
+              "sets": 3,
+              "reps": "12-15",
+              "restSeconds": 60,
+              "notes": {
+                "en": "Soft landing, control descent.",
+                "ar": "هبوط ناعم، تحكم بالنزول."
+              }
+            },
+            {
+              "exerciseId": "XVDdcoj",
+              "displayName": {
+                "en": "Russian Twist",
+                "ar": "تويست روسي"
+              },
+              "sets": 3,
+              "reps": "20 each side",
+              "restSeconds": 45,
+              "notes": null
+            },
+            {
+              "exerciseId": "e1e76I2",
+              "displayName": {
+                "en": "Jump Rope — HIIT Finisher",
+                "ar": "نط الحبل — فينشر HIIT"
+              },
+              "sets": 5,
+              "duration": "30s on / 30s off",
+              "restSeconds": 30,
+              "notes": {
+                "en": "5 rounds. Max effort during work intervals.",
+                "ar": "5 جولات. أقصى مجهود في فترات العمل."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "templateId": "bodyweight_only_4day",
+      "name": {
+        "en": "Bodyweight Only — 4 Day",
+        "ar": "وزن الجسم فقط — 4 أيام"
+      },
+      "description": {
+        "en": "Build muscle and strength with zero equipment. This 4-day routine uses progressive bodyweight movements and high volume to challenge any fitness level. Perfect for travel, no-gym days, or starting your fitness journey at home.",
+        "ar": "ابنِ عضل وقوة بدون أي معدات. جدول 4 أيام يستخدم تمارين وزن الجسم المتدرّجة وحجم عالي لتحدّي أي مستوى لياقة. مثالي للسفر أو أيام بدون جيم أو بداية رحلتك من البيت."
+      },
+      "mainGoal": "general_fitness",
+      "secondaryGoals": [
+        "muscle_building",
+        "fat_loss"
+      ],
+      "trainingLevel": "beginner",
+      "targetGender": "unisex",
+      "category": "bodyweight",
+      "tags": [
+        "bodyweight",
+        "at_home",
+        "beginner",
+        "intermediate",
+        "general_fitness"
+      ],
+      "daysPerWeek": 4,
+      "durationWeeks": 6,
+      "estimatedSessionMinutes": "30-45",
+      "workoutSplit": "upper_lower",
+      "requiredEquipment": [
+        "bodyweight"
+      ],
+      "optionalEquipment": [
+        "pull-up bar",
+        "resistance bands"
+      ],
+      "recommendedSupplements": [
+        {
+          "name": {
+            "en": "Whey Protein",
+            "ar": "بروتين واي"
+          },
+          "dosage": {
+            "en": "1 scoop daily",
+            "ar": "سكوب واحد يومياً"
+          },
+          "priority": "highly_recommended",
+          "notes": {
+            "en": "Helps reach daily protein target if your diet is lacking.",
+            "ar": "يساعد توصل لهدف البروتين اليومي لو أكلك قليل بروتين."
+          }
+        },
+        {
+          "name": {
+            "en": "Multivitamin",
+            "ar": "فيتامينات متعددة"
+          },
+          "dosage": {
+            "en": "1 daily",
+            "ar": "حبة يومياً"
+          },
+          "priority": "optional",
+          "notes": {
+            "en": "General health support.",
+            "ar": "دعم الصحة العامة."
+          }
+        },
+        {
+          "name": {
+            "en": "Vitamin D3",
+            "ar": "فيتامين د3"
+          },
+          "dosage": {
+            "en": "2000 IU daily",
+            "ar": "2000 وحدة يومياً"
+          },
+          "priority": "optional",
+          "notes": {
+            "en": "Especially if you train indoors and don't get sunlight.",
+            "ar": "خصوصاً لو تتمرّن داخل البيت وما تتعرّض للشمس."
+          }
+        }
+      ],
+      "advices": [
+        {
+          "title": {
+            "en": "Progress through difficulty",
+            "ar": "تقدّم بزيادة الصعوبة"
+          },
+          "body": {
+            "en": "Without weights, you progress by harder variations: knee push-ups → push-ups → decline → archer → one-arm. Master each before moving up.",
+            "ar": "بدون أوزان، التقدّم يكون بالـvariations الأصعب: بوش أب على الركبة → عادي → مائل → آرتشر → بذراع وحدة. أتقن كل واحد قبل اللي بعده."
+          }
+        },
+        {
+          "title": {
+            "en": "Volume is your friend",
+            "ar": "الحجم التدريبي صديقك"
+          },
+          "body": {
+            "en": "When weights are limited, do more reps and sets. Aim for 100+ push-ups and 50+ squats per session over time.",
+            "ar": "لمّا الوزن محدود، زد التكرارات والسيتات. اهدف لـ100+ بوش أب و50+ سكوات بالجلسة مع الوقت."
+          }
+        },
+        {
+          "title": {
+            "en": "Tempo matters more",
+            "ar": "الإيقاع أهم"
+          },
+          "body": {
+            "en": "Slow descent (3-4 seconds) increases time under tension. A slow push-up is harder than a fast one.",
+            "ar": "النزول البطيء (3-4 ثواني) يزيد وقت الشدّ على العضلة. بوش أب بطيء أصعب من السريع."
+          }
+        },
+        {
+          "title": {
+            "en": "Add a pull-up bar",
+            "ar": "ضيف بار سحب"
+          },
+          "body": {
+            "en": "If you only buy one piece of equipment, make it a doorway pull-up bar. Bodyweight back training is hard without it.",
+            "ar": "لو بتشتري معدّة واحدة فقط، خلها بار سحب باب. تدريب الظهر بوزن الجسم صعب بدونه."
+          }
+        },
+        {
+          "title": {
+            "en": "Rest days are real days",
+            "ar": "أيام الراحة جزء من الجدول"
+          },
+          "body": {
+            "en": "Even with bodyweight, your body needs to recover. Don't fall into the trap of training 7 days a week.",
+            "ar": "حتى مع وزن الجسم، جسمك محتاج يستشفي. لا تقع في فخ التدريب 7 أيام بالأسبوع."
+          }
+        }
+      ],
+      "schedule": [
+        {
+          "dayNumber": 1,
+          "dayLabel": {
+            "en": "Upper Body Push",
+            "ar": "علوي دفع"
+          },
+          "focus": "chest_shoulders_triceps",
+          "exercises": [
+            {
+              "exerciseId": "I4hDWkc",
+              "displayName": {
+                "en": "Push-up",
+                "ar": "بوش أب"
+              },
+              "sets": 4,
+              "reps": "AMRAP",
+              "restSeconds": 90,
+              "notes": {
+                "en": "If too easy, switch to decline. Too hard, switch to knee push-up.",
+                "ar": "لو سهل، انتقل لـdecline. لو صعب، اسوي على الركبة."
+              }
+            },
+            {
+              "exerciseId": "i5cEhka",
+              "displayName": {
+                "en": "Decline Push-up",
+                "ar": "بوش أب مائل سفلي"
+              },
+              "sets": 3,
+              "reps": "8-12",
+              "restSeconds": 90,
+              "notes": {
+                "en": "Feet elevated on chair/bench. Hits upper chest.",
+                "ar": "القدمين مرفوعة على كرسي/بنش. يستهدف أعلى الصدر."
+              }
+            },
+            {
+              "exerciseId": "XPUDTt7",
+              "displayName": {
+                "en": "Pike Push-up",
+                "ar": "بوش أب بايك"
+              },
+              "sets": 3,
+              "reps": "8-12",
+              "restSeconds": 90,
+              "notes": {
+                "en": "Hips up high, head down. Targets shoulders.",
+                "ar": "الورك مرفوع، الرأس للأسفل. يستهدف الكتف."
+              }
+            },
+            {
+              "exerciseId": "DQ0cqkT",
+              "displayName": {
+                "en": "Bench Dip",
+                "ar": "ديب على بنش"
+              },
+              "sets": 3,
+              "reps": "12-15",
+              "restSeconds": 60,
+              "notes": {
+                "en": "Use a chair or bench at home.",
+                "ar": "استخدم كرسي أو بنش في البيت."
+              }
+            },
+            {
+              "exerciseId": "h1ezqSu",
+              "displayName": {
+                "en": "Plank",
+                "ar": "بلانك"
+              },
+              "sets": 3,
+              "duration": "30-60s",
+              "restSeconds": 60,
+              "notes": null
+            }
+          ]
+        },
+        {
+          "dayNumber": 2,
+          "dayLabel": {
+            "en": "Lower Body",
+            "ar": "سفلي"
+          },
+          "focus": "legs_glutes",
+          "exercises": [
+            {
+              "exerciseId": "kMzUs9Y",
+              "displayName": {
+                "en": "Forward Lunge",
+                "ar": "لانج للأمام"
+              },
+              "sets": 4,
+              "reps": "10-12 each leg",
+              "restSeconds": 75,
+              "notes": null
+            },
+            {
+              "exerciseId": "IZVHb27",
+              "displayName": {
+                "en": "Walking Lunge",
+                "ar": "لانج مشي"
+              },
+              "sets": 3,
+              "reps": "20 steps total",
+              "restSeconds": 75,
+              "notes": null
+            },
+            {
+              "exerciseId": "u0cNiij",
+              "displayName": {
+                "en": "Glute Bridge",
+                "ar": "جلوت بريدج"
+              },
+              "sets": 4,
+              "reps": "15-20",
+              "restSeconds": 60,
+              "notes": {
+                "en": "Squeeze glutes hard at top, hold 1-2 seconds.",
+                "ar": "اضغط المؤخرة قوي في الأعلى، ثبّت ثانية أو ثنتين."
+              }
+            },
+            {
+              "exerciseId": "LIlE5Tn",
+              "displayName": {
+                "en": "Jump Squat",
+                "ar": "سكوات قفز"
+              },
+              "sets": 3,
+              "reps": "10-15",
+              "restSeconds": 75,
+              "notes": {
+                "en": "Soft landing. Reset between reps.",
+                "ar": "هبوط ناعم. ارجع للوضع المستقيم بين كل تكرار."
+              }
+            },
+            {
+              "exerciseId": "bJYHBIN",
+              "displayName": {
+                "en": "Standing Calf Raise",
+                "ar": "رفع كعبين"
+              },
+              "sets": 4,
+              "reps": "20-25",
+              "restSeconds": 45,
+              "notes": {
+                "en": "Use stairs/step for full range.",
+                "ar": "استخدم درج/خطوة للمدى الكامل."
+              }
+            }
+          ]
+        },
+        {
+          "dayNumber": 3,
+          "dayLabel": {
+            "en": "Upper Body Pull + Core",
+            "ar": "علوي سحب + كور"
+          },
+          "focus": "back_biceps_core",
+          "exercises": [
+            {
+              "exerciseId": "lBDjFxJ",
+              "displayName": {
+                "en": "Pull-up",
+                "ar": "بول أب"
+              },
+              "sets": 4,
+              "reps": "AMRAP",
+              "restSeconds": 120,
+              "notes": {
+                "en": "If no bar, do inverted rows under sturdy table.",
+                "ar": "لو ما عندك بار، سوي تجديف معكوس تحت طاولة قوية."
+              }
+            },
+            {
+              "exerciseId": "bZGHsAZ",
+              "displayName": {
+                "en": "Inverted Row",
+                "ar": "تجديف معكوس"
+              },
+              "sets": 4,
+              "reps": "10-15",
+              "restSeconds": 90,
+              "notes": {
+                "en": "Use sturdy table edge or low bar.",
+                "ar": "استخدم حافة طاولة قوية أو بار منخفض."
+              }
+            },
+            {
+              "exerciseId": "Qqi7bko",
+              "displayName": {
+                "en": "Wide Grip Pull-up",
+                "ar": "بول أب قبضة واسعة"
+              },
+              "sets": 3,
+              "reps": "AMRAP",
+              "restSeconds": 120,
+              "notes": {
+                "en": "Targets lats more. Skip if you can't do 3 regular pull-ups.",
+                "ar": "يستهدف اللات أكثر. تجاهلها لو ما تقدر 3 بول أب عادي."
+              }
+            },
+            {
+              "exerciseId": "XVDdcoj",
+              "displayName": {
+                "en": "Russian Twist",
+                "ar": "تويست روسي"
+              },
+              "sets": 3,
+              "reps": "20 each side",
+              "restSeconds": 45,
+              "notes": null
+            },
+            {
+              "exerciseId": "TFqbd8t",
+              "displayName": {
+                "en": "Crunch",
+                "ar": "كرنش"
+              },
+              "sets": 3,
+              "reps": "20-25",
+              "restSeconds": 45,
+              "notes": null
+            }
+          ]
+        },
+        {
+          "dayNumber": 4,
+          "dayLabel": {
+            "en": "Full Body Conditioning",
+            "ar": "تكييف جسم كامل"
+          },
+          "focus": "metabolic_full_body",
+          "exercises": [
+            {
+              "exerciseId": "dK9394r",
+              "displayName": {
+                "en": "Burpee",
+                "ar": "بربي"
+              },
+              "sets": 4,
+              "reps": "10-15",
+              "restSeconds": 60,
+              "notes": null
+            },
+            {
+              "exerciseId": "RJgzwny",
+              "displayName": {
+                "en": "Mountain Climber",
+                "ar": "تسلق الجبل"
+              },
+              "sets": 4,
+              "reps": "30-45s",
+              "restSeconds": 45,
+              "notes": null
+            },
+            {
+              "exerciseId": "I4hDWkc",
+              "displayName": {
+                "en": "Push-up",
+                "ar": "بوش أب"
+              },
+              "sets": 3,
+              "reps": "AMRAP",
+              "restSeconds": 60,
+              "notes": null
+            },
+            {
+              "exerciseId": "kMzUs9Y",
+              "displayName": {
+                "en": "Forward Lunge",
+                "ar": "لانج للأمام"
+              },
+              "sets": 3,
+              "reps": "12 each leg",
+              "restSeconds": 60,
+              "notes": null
+            },
+            {
+              "exerciseId": "uZKq7lo",
+              "displayName": {
+                "en": "Forward Jump",
+                "ar": "قفز للأمام"
+              },
+              "sets": 3,
+              "reps": "10",
+              "restSeconds": 60,
+              "notes": {
+                "en": "Full hip extension. Walk back between reps.",
+                "ar": "مدّ الورك كامل. ارجع مشي بين التكرارات."
+              }
+            },
+            {
+              "exerciseId": "h1ezqSu",
+              "displayName": {
+                "en": "Plank",
+                "ar": "بلانك"
+              },
+              "sets": 3,
+              "duration": "45-60s",
+              "restSeconds": 45,
+              "notes": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "templateId": "home_dumbbell_4day",
+      "name": {
+        "en": "Home Workout — Dumbbells Only",
+        "ar": "تمارين البيت — دمبلز فقط"
+      },
+      "description": {
+        "en": "All you need is a pair of adjustable dumbbells (or 2-3 fixed pairs). This 4-day upper/lower split builds muscle and strength from your living room. No bench? No problem—use a chair or floor where needed.",
+        "ar": "كل اللي تحتاجه زوج دمبلز قابل للتعديل (أو 2-3 أزواج). جدول 4 أيام علوي/سفلي يبني عضل وقوة من صالة بيتك. ما عندك بنش؟ ما يهم—استخدم كرسي أو الأرض حسب التمرين."
+      },
+      "mainGoal": "muscle_building",
+      "trainingLevel": "intermediate",
+      "targetGender": "unisex",
+      "category": "at_home",
+      "tags": [
+        "at_home",
+        "muscle_building",
+        "intermediate",
+        "beginner",
+        "upper_lower"
+      ],
+      "daysPerWeek": 4,
+      "durationWeeks": 8,
+      "estimatedSessionMinutes": "45-60",
+      "workoutSplit": "upper_lower",
+      "requiredEquipment": [
+        "dumbbell"
+      ],
+      "optionalEquipment": [
+        "bench",
+        "pull-up bar"
+      ],
+      "recommendedSupplements": [
+        {
+          "name": {
+            "en": "Whey Protein",
+            "ar": "بروتين واي"
+          },
+          "dosage": {
+            "en": "1-2 scoops daily",
+            "ar": "1-2 سكوب يومياً"
+          },
+          "priority": "essential",
+          "notes": {
+            "en": "Easier than cooking 200g of chicken every day.",
+            "ar": "أسهل من طبخ 200 جرام دجاج يومياً."
+          }
+        },
+        {
+          "name": {
+            "en": "Creatine Monohydrate",
+            "ar": "كرياتين مونوهيدرات"
+          },
+          "dosage": {
+            "en": "5g daily",
+            "ar": "5 جرام يومياً"
+          },
+          "priority": "highly_recommended",
+          "notes": {
+            "en": "Works the same regardless of where you train.",
+            "ar": "يشتغل بنفس الكفاءة بغض النظر عن مكان التمرين."
+          }
+        },
+        {
+          "name": {
+            "en": "Vitamin D3",
+            "ar": "فيتامين د3"
+          },
+          "dosage": {
+            "en": "2000-4000 IU daily",
+            "ar": "2000-4000 وحدة يومياً"
+          },
+          "priority": "highly_recommended",
+          "notes": {
+            "en": "Especially important if you train indoors.",
+            "ar": "أهم لو تتمرّن داخل البيت."
+          }
+        }
+      ],
+      "advices": [
+        {
+          "title": {
+            "en": "Invest in adjustable dumbbells",
+            "ar": "اشتر دمبلز قابلة للتعديل"
+          },
+          "body": {
+            "en": "Adjustable dumbbells (5-25kg) cost more upfront but save money long-term and space at home.",
+            "ar": "الدمبلز القابلة للتعديل (5-25 كيلو) تكلف بالبداية لكن توفّر فلوس على المدى الطويل ومساحة."
+          }
+        },
+        {
+          "title": {
+            "en": "Time under tension",
+            "ar": "وقت الشدّ على العضلة"
+          },
+          "body": {
+            "en": "Lighter weights need slower reps (3-second descent) to create the same stimulus as heavy gym weights.",
+            "ar": "الأوزان الخفيفة تحتاج تكرارات أبطأ (نزول 3 ثواني) عشان تخلق نفس التحفيز مثل الأوزان الثقيلة في الجيم."
+          }
+        },
+        {
+          "title": {
+            "en": "Master single-leg work",
+            "ar": "أتقن تمارين الرجل الواحدة"
+          },
+          "body": {
+            "en": "Bulgarian split squats and single-leg RDLs let you progress without needing huge weights.",
+            "ar": "السكوات البلغاري والديدلفت روماني برجل واحدة يخلوك تتقدّم بدون ما تحتاج أوزان ضخمة."
+          }
+        },
+        {
+          "title": {
+            "en": "Limited weight? Increase reps",
+            "ar": "وزن محدود؟ زد التكرارات"
+          },
+          "body": {
+            "en": "If your heaviest dumbbells start feeling light, do 15-25 reps instead of 8-12 to stay in the hypertrophy range.",
+            "ar": "لو الدمبلز الأثقل بدت تخف، سوّ 15-25 تكرار بدل 8-12 عشان تضل في مدى التضخيم."
+          }
+        },
+        {
+          "title": {
+            "en": "Floor press if no bench",
+            "ar": "Floor press لو ما في بنش"
+          },
+          "body": {
+            "en": "Lying on the floor for chest press limits range slightly but is a solid alternative to a bench.",
+            "ar": "الاستلقاء على الأرض لتمرين البنش يقلل المدى بشكل بسيط بس بديل قوي للبنش."
+          }
+        }
+      ],
+      "schedule": [
+        {
+          "dayNumber": 1,
+          "dayLabel": {
+            "en": "Upper Body A — Push",
+            "ar": "علوي أ — دفع"
+          },
+          "focus": "chest_shoulders_triceps",
+          "exercises": [
+            {
+              "exerciseId": "SpYC0Kp",
+              "displayName": {
+                "en": "Dumbbell Bench Press",
+                "ar": "بنش بريس دمبل"
+              },
+              "sets": 4,
+              "reps": "8-10",
+              "restSeconds": 90,
+              "notes": {
+                "en": "Floor press if no bench.",
+                "ar": "Floor press لو ما عندك بنش."
+              }
+            },
+            {
+              "exerciseId": "znQUdHY",
+              "displayName": {
+                "en": "Dumbbell Seated Shoulder Press",
+                "ar": "ضغط أكتاف دمبل جالس"
+              },
+              "sets": 4,
+              "reps": "8-10",
+              "restSeconds": 90,
+              "notes": null
+            },
+            {
+              "exerciseId": "I4hDWkc",
+              "displayName": {
+                "en": "Push-up",
+                "ar": "بوش أب"
+              },
+              "sets": 3,
+              "reps": "AMRAP",
+              "restSeconds": 75,
+              "notes": {
+                "en": "Hold dumbbells for added weight if too easy.",
+                "ar": "امسك دمبلز عشان وزن إضافي لو سهل."
+              }
+            },
+            {
+              "exerciseId": "DsgkuIt",
+              "displayName": {
+                "en": "Dumbbell Lateral Raise",
+                "ar": "رفرفة جانبية دمبل"
+              },
+              "sets": 4,
+              "reps": "12-15",
+              "restSeconds": 60,
+              "notes": null
+            },
+            {
+              "exerciseId": "DQ0cqkT",
+              "displayName": {
+                "en": "Bench Dip",
+                "ar": "ديب على بنش"
+              },
+              "sets": 3,
+              "reps": "12-15",
+              "restSeconds": 60,
+              "notes": null
+            }
+          ]
+        },
+        {
+          "dayNumber": 2,
+          "dayLabel": {
+            "en": "Lower Body A — Quad Focus",
+            "ar": "سفلي أ — تركيز فخذ أمامي"
+          },
+          "focus": "quads_glutes_calves",
+          "exercises": [
+            {
+              "exerciseId": "yn8yg1r",
+              "displayName": {
+                "en": "Dumbbell Goblet Squat",
+                "ar": "سكوات قوبلت"
+              },
+              "sets": 4,
+              "reps": "10-12",
+              "restSeconds": 90,
+              "notes": {
+                "en": "Hold one dumbbell at chest, deep squat.",
+                "ar": "امسك دمبل واحد عند الصدر، انزل عميق."
+              }
+            },
+            {
+              "exerciseId": "9E25EOx",
+              "displayName": {
+                "en": "Bulgarian Split Squat",
+                "ar": "سكوات بلغاري"
+              },
+              "sets": 4,
+              "reps": "10-12 each leg",
+              "restSeconds": 90,
+              "notes": {
+                "en": "Hold dumbbells at sides. Best leg builder for home.",
+                "ar": "امسك دمبلز على الجانبين. أحسن تمرين أرجل في البيت."
+              }
+            },
+            {
+              "exerciseId": "aXtJhlg",
+              "displayName": {
+                "en": "Dumbbell Step-up",
+                "ar": "ستيب أب دمبل"
+              },
+              "sets": 3,
+              "reps": "12 each leg",
+              "restSeconds": 75,
+              "notes": {
+                "en": "Use sturdy chair or step.",
+                "ar": "استخدم كرسي قوي أو خطوة."
+              }
+            },
+            {
+              "exerciseId": "u0cNiij",
+              "displayName": {
+                "en": "Glute Bridge (Weighted)",
+                "ar": "جلوت بريدج (موزون)"
+              },
+              "sets": 3,
+              "reps": "12-15",
+              "restSeconds": 60,
+              "notes": {
+                "en": "Place dumbbell on hips for resistance.",
+                "ar": "حط دمبل على الورك عشان مقاومة."
+              }
+            },
+            {
+              "exerciseId": "bJYHBIN",
+              "displayName": {
+                "en": "Standing Calf Raise (Weighted)",
+                "ar": "رفع كعبين (موزون)"
+              },
+              "sets": 4,
+              "reps": "15-20",
+              "restSeconds": 45,
+              "notes": {
+                "en": "Hold dumbbells at sides.",
+                "ar": "امسك دمبلز على الجانبين."
+              }
+            }
+          ]
+        },
+        {
+          "dayNumber": 3,
+          "dayLabel": {
+            "en": "Upper Body B — Pull",
+            "ar": "علوي ب — سحب"
+          },
+          "focus": "back_biceps",
+          "exercises": [
+            {
+              "exerciseId": "BJ0Hz5L",
+              "displayName": {
+                "en": "Dumbbell Bent Over Row",
+                "ar": "تجديف دمبل منحني"
+              },
+              "sets": 4,
+              "reps": "8-10",
+              "restSeconds": 90,
+              "notes": {
+                "en": "Hinge at hips, neutral spine.",
+                "ar": "انحنِ من الورك، ظهر مستقيم."
+              }
+            },
+            {
+              "exerciseId": "lBDjFxJ",
+              "displayName": {
+                "en": "Pull-up",
+                "ar": "بول أب"
+              },
+              "sets": 4,
+              "reps": "AMRAP",
+              "restSeconds": 120,
+              "notes": {
+                "en": "If no pull-up bar, do extra rows.",
+                "ar": "لو ما عندك بار، زد عدد سيتات التجديف."
+              }
+            },
+            {
+              "exerciseId": "mu5Guxt",
+              "displayName": {
+                "en": "Dumbbell Rear Delt Raise",
+                "ar": "رفرفة خلفية دمبل"
+              },
+              "sets": 4,
+              "reps": "12-15",
+              "restSeconds": 60,
+              "notes": null
+            },
+            {
+              "exerciseId": "NbVPDMW",
+              "displayName": {
+                "en": "Dumbbell Biceps Curl",
+                "ar": "بايسبس كيرل دمبل"
+              },
+              "sets": 4,
+              "reps": "10-12",
+              "restSeconds": 60,
+              "notes": null
+            },
+            {
+              "exerciseId": "slDvUAU",
+              "displayName": {
+                "en": "Dumbbell Hammer Curl",
+                "ar": "هامر كيرل دمبل"
+              },
+              "sets": 3,
+              "reps": "10-12",
+              "restSeconds": 60,
+              "notes": null
+            },
+            {
+              "exerciseId": "h1ezqSu",
+              "displayName": {
+                "en": "Plank",
+                "ar": "بلانك"
+              },
+              "sets": 3,
+              "duration": "45-60s",
+              "restSeconds": 45,
+              "notes": null
+            }
+          ]
+        },
+        {
+          "dayNumber": 4,
+          "dayLabel": {
+            "en": "Lower Body B — Posterior Focus",
+            "ar": "سفلي ب — تركيز خلفي"
+          },
+          "focus": "hamstrings_glutes_quads",
+          "exercises": [
+            {
+              "exerciseId": "wQ2c4XD",
+              "displayName": {
+                "en": "Dumbbell Romanian Deadlift",
+                "ar": "ديدلفت روماني دمبل"
+              },
+              "sets": 4,
+              "reps": "10-12",
+              "restSeconds": 90,
+              "notes": {
+                "en": "Use dumbbells instead of barbell. Same form.",
+                "ar": "استخدم دمبلز بدل البار. نفس الفورم."
+              }
+            },
+            {
+              "exerciseId": "9E25EOx",
+              "displayName": {
+                "en": "Bulgarian Split Squat",
+                "ar": "سكوات بلغاري"
+              },
+              "sets": 3,
+              "reps": "12-15 each leg",
+              "restSeconds": 75,
+              "notes": {
+                "en": "Slower tempo today.",
+                "ar": "إيقاع أبطأ اليوم."
+              }
+            },
+            {
+              "exerciseId": "IZVHb27",
+              "displayName": {
+                "en": "Walking Lunge (Weighted)",
+                "ar": "لانج مشي (موزون)"
+              },
+              "sets": 3,
+              "reps": "20 steps total",
+              "restSeconds": 75,
+              "notes": null
+            },
+            {
+              "exerciseId": "u0cNiij",
+              "displayName": {
+                "en": "Glute Bridge",
+                "ar": "جلوت بريدج"
+              },
+              "sets": 4,
+              "reps": "15-20",
+              "restSeconds": 60,
+              "notes": null
+            },
+            {
+              "exerciseId": "bJYHBIN",
+              "displayName": {
+                "en": "Standing Calf Raise",
+                "ar": "رفع كعبين"
+              },
+              "sets": 4,
+              "reps": "20-25",
+              "restSeconds": 45,
+              "notes": null
+            },
+            {
+              "exerciseId": "TFqbd8t",
+              "displayName": {
+                "en": "Crunch",
+                "ar": "كرنش"
+              },
+              "sets": 3,
+              "reps": "15-20",
+              "restSeconds": 45,
+              "notes": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "templateId": "glutes_lower_focus_4day",
+      "name": {
+        "en": "Glutes & Lower Body Focus",
+        "ar": "تركيز جلوتس وأرجل"
+      },
+      "description": {
+        "en": "A 4-day program prioritizing glute and lower body development. Two dedicated lower body days and two upper body days for balance. Heavy emphasis on hip thrusts, RDLs, and high-volume glute work backed by science.",
+        "ar": "برنامج 4 أيام يعطي الأولوية لتطوير الجلوتس والأرجل. يومين أرجل مخصصة ويومين علوي للتوازن. تركيز كبير على الهيب ثرست والديدلفت الروماني وتمارين الجلوتس بحجم عالي مدعومة بالعلم."
+      },
+      "mainGoal": "muscle_building",
+      "secondaryGoals": [
+        "general_fitness"
+      ],
+      "trainingLevel": "intermediate",
+      "targetGender": "female",
+      "category": "women",
+      "tags": [
+        "women",
+        "muscle_building",
+        "intermediate",
+        "beginner",
+        "upper_lower"
+      ],
+      "daysPerWeek": 4,
+      "durationWeeks": 10,
+      "estimatedSessionMinutes": "60-75",
+      "workoutSplit": "upper_lower",
+      "requiredEquipment": [
+        "barbell",
+        "dumbbell",
+        "bench",
+        "cable"
+      ],
+      "optionalEquipment": [
+        "leverage machine",
+        "leg press",
+        "resistance band"
+      ],
+      "recommendedSupplements": [
+        {
+          "name": {
+            "en": "Whey Protein",
+            "ar": "بروتين واي"
+          },
+          "dosage": {
+            "en": "1-2 scoops daily",
+            "ar": "1-2 سكوب يومياً"
+          },
+          "priority": "essential",
+          "notes": {
+            "en": "Women often under-eat protein. Aim for 1.6-2.0g per kg bodyweight.",
+            "ar": "البنات عادة ما يأكلون بروتين كافي. اهدفي لـ1.6-2.0 جرام/كيلو من وزنك."
+          }
+        },
+        {
+          "name": {
+            "en": "Creatine Monohydrate",
+            "ar": "كرياتين مونوهيدرات"
+          },
+          "dosage": {
+            "en": "5g daily",
+            "ar": "5 جرام يومياً"
+          },
+          "priority": "highly_recommended",
+          "notes": {
+            "en": "Safe and effective for women. Doesn't cause bulkiness—it improves performance.",
+            "ar": "آمن وفعّال للبنات. ما يسبّب ضخامة—يحسّن الأداء."
+          }
+        },
+        {
+          "name": {
+            "en": "Iron (if deficient)",
+            "ar": "حديد (لو في نقص)"
+          },
+          "dosage": {
+            "en": "Per blood test recommendation",
+            "ar": "حسب نتيجة تحليل الدم"
+          },
+          "priority": "highly_recommended",
+          "notes": {
+            "en": "Many women are iron-deficient. Get blood work done before supplementing.",
+            "ar": "كثير من البنات عندهم نقص حديد. سوّي تحليل قبل ما تأخذي مكمل."
+          }
+        },
+        {
+          "name": {
+            "en": "Vitamin D3",
+            "ar": "فيتامين د3"
+          },
+          "dosage": {
+            "en": "2000-4000 IU daily",
+            "ar": "2000-4000 وحدة يومياً"
+          },
+          "priority": "highly_recommended",
+          "notes": {
+            "en": "Important for bone health and hormones.",
+            "ar": "مهم لصحة العظام والهرمونات."
+          }
+        },
+        {
+          "name": {
+            "en": "Omega-3",
+            "ar": "أوميقا 3"
+          },
+          "dosage": {
+            "en": "2g EPA+DHA daily",
+            "ar": "2 جرام EPA+DHA يومياً"
+          },
+          "priority": "optional",
+          "notes": {
+            "en": "Supports recovery and reduces inflammation.",
+            "ar": "يدعم الاستشفاء ويقلل الالتهابات."
+          }
+        }
+      ],
+      "advices": [
+        {
+          "title": {
+            "en": "Train glutes hard, not light",
+            "ar": "درّبي الجلوتس بثقل، مو خفيف"
+          },
+          "body": {
+            "en": "Glutes are huge muscles—they need real load to grow. Don't be afraid of heavy weights on hip thrusts and squats.",
+            "ar": "الجلوتس عضلات ضخمة—تحتاج حمل حقيقي عشان تكبر. لا تخافي من الأوزان الثقيلة على الهيب ثرست والسكوات."
+          }
+        },
+        {
+          "title": {
+            "en": "Mind-muscle connection",
+            "ar": "ربط العقل بالعضلة"
+          },
+          "body": {
+            "en": "Squeeze your glutes hard at the top of every rep. This is how you grow them, especially during isolation work.",
+            "ar": "اضغطي الجلوتس قوي في الأعلى كل تكرار. هذا اللي يخليها تكبر، خصوصاً في تمارين العزل."
+          }
+        },
+        {
+          "title": {
+            "en": "Heavy isn't \"bulky\"",
+            "ar": "الثقل مو \"ضخامة\""
+          },
+          "body": {
+            "en": "Lifting heavy won't make you bulky. It builds shape and tone. \"Bulk\" requires extreme calorie surplus over years.",
+            "ar": "رفع الثقيل ما يخليكِ ضخمة. يبني شكل وتناسق. \"الضخامة\" تحتاج زيادة سعرات شديدة لسنوات."
+          }
+        },
+        {
+          "title": {
+            "en": "Eat enough",
+            "ar": "كلي كفاية"
+          },
+          "body": {
+            "en": "Building glutes requires a slight caloric surplus. If you're chronically dieting, you won't see growth.",
+            "ar": "بناء الجلوتس يحتاج زيادة سعرات بسيطة. لو دايماً على دايت، ما رح تشوفي تطوّر."
+          }
+        },
+        {
+          "title": {
+            "en": "Activation before training",
+            "ar": "تنشيط قبل التمرين"
+          },
+          "body": {
+            "en": "Before lower days, do 10-15 banded glute bridges and clamshells. Wakes up the glutes so they fire during compounds.",
+            "ar": "قبل أيام السفلي، سوّي 10-15 جلوت بريدج بمطاط و clamshells. توقظ الجلوتس عشان تشتغل في التمارين المركّبة."
+          }
+        },
+        {
+          "title": {
+            "en": "Consistency over years",
+            "ar": "ثبات على مدى سنوات"
+          },
+          "body": {
+            "en": "Glute development takes 12-24 months of consistent training to really show. Trust the process.",
+            "ar": "تطوير الجلوتس يحتاج 12-24 شهر من التدريب المنتظم عشان يبيّن. ثقي في العملية."
+          }
+        }
+      ],
+      "schedule": [
+        {
+          "dayNumber": 1,
+          "dayLabel": {
+            "en": "Lower A — Glute Focus (Heavy)",
+            "ar": "سفلي أ — تركيز جلوتس (ثقيل)"
+          },
+          "focus": "glutes_quads_hamstrings",
+          "exercises": [
+            {
+              "exerciseId": "KgI0tqW",
+              "displayName": {
+                "en": "Barbell Sumo Deadlift",
+                "ar": "ديدلفت سومو بار"
+              },
+              "sets": 4,
+              "reps": "6-8",
+              "restSeconds": 150,
+              "notes": {
+                "en": "Wider stance hits glutes and inner thighs more.",
+                "ar": "الوقفة الأوسع تستهدف الجلوتس والفخذ الداخلي أكثر."
+              }
+            },
+            {
+              "exerciseId": "qXTaZnJ",
+              "displayName": {
+                "en": "Barbell Back Squat",
+                "ar": "سكوات بار"
+              },
+              "sets": 4,
+              "reps": "8-10",
+              "restSeconds": 120,
+              "notes": {
+                "en": "Deep squat for max glute stretch.",
+                "ar": "سكوات عميق لأقصى مط للجلوتس."
+              }
+            },
+            {
+              "exerciseId": "9E25EOx",
+              "displayName": {
+                "en": "Bulgarian Split Squat",
+                "ar": "سكوات بلغاري"
+              },
+              "sets": 3,
+              "reps": "10-12 each leg",
+              "restSeconds": 90,
+              "notes": {
+                "en": "Lean forward slightly to emphasize glutes.",
+                "ar": "انحني لقدام شوي عشان تركيز على الجلوتس."
+              }
+            },
+            {
+              "exerciseId": "OM46QHm",
+              "displayName": {
+                "en": "Cable Pull Through",
+                "ar": "كيبل بُل ثرو"
+              },
+              "sets": 3,
+              "reps": "12-15",
+              "restSeconds": 75,
+              "notes": {
+                "en": "Hip hinge movement. Squeeze glutes at lockout.",
+                "ar": "حركة انحناء من الورك. اضغطي الجلوتس في الأعلى."
+              }
+            },
+            {
+              "exerciseId": "yl2IYyy",
+              "displayName": {
+                "en": "Standing Calf Raise",
+                "ar": "رفع كعبين"
+              },
+              "sets": 4,
+              "reps": "12-15",
+              "restSeconds": 60,
+              "notes": null
+            }
+          ]
+        },
+        {
+          "dayNumber": 2,
+          "dayLabel": {
+            "en": "Upper Body A",
+            "ar": "علوي أ"
+          },
+          "focus": "back_chest_arms",
+          "exercises": [
+            {
+              "exerciseId": "3TZduzM",
+              "displayName": {
+                "en": "Barbell Incline Bench Press",
+                "ar": "بنش بريس مائل بار"
+              },
+              "sets": 3,
+              "reps": "8-10",
+              "restSeconds": 120,
+              "notes": null
+            },
+            {
+              "exerciseId": "RVwzP10",
+              "displayName": {
+                "en": "Cable Lat Pulldown",
+                "ar": "لات بولداون كيبل"
+              },
+              "sets": 4,
+              "reps": "10-12",
+              "restSeconds": 90,
+              "notes": null
+            },
+            {
+              "exerciseId": "fUBheHs",
+              "displayName": {
+                "en": "Seated Cable Row",
+                "ar": "تجديف كيبل جالس"
+              },
+              "sets": 3,
+              "reps": "10-12",
+              "restSeconds": 90,
+              "notes": null
+            },
+            {
+              "exerciseId": "DsgkuIt",
+              "displayName": {
+                "en": "Dumbbell Lateral Raise",
+                "ar": "رفرفة جانبية دمبل"
+              },
+              "sets": 4,
+              "reps": "12-15",
+              "restSeconds": 60,
+              "notes": null
+            },
+            {
+              "exerciseId": "NbVPDMW",
+              "displayName": {
+                "en": "Dumbbell Biceps Curl",
+                "ar": "بايسبس كيرل دمبل"
+              },
+              "sets": 3,
+              "reps": "10-12",
+              "restSeconds": 60,
+              "notes": null
+            },
+            {
+              "exerciseId": "dU605di",
+              "displayName": {
+                "en": "Cable Tricep Pushdown",
+                "ar": "تراي بوشداون كيبل"
+              },
+              "sets": 3,
+              "reps": "12-15",
+              "restSeconds": 60,
+              "notes": null
+            }
+          ]
+        },
+        {
+          "dayNumber": 3,
+          "dayLabel": {
+            "en": "Lower B — Glute Focus (Volume)",
+            "ar": "سفلي ب — تركيز جلوتس (حجم)"
+          },
+          "focus": "glutes_hamstrings",
+          "exercises": [
+            {
+              "exerciseId": "wQ2c4XD",
+              "displayName": {
+                "en": "Romanian Deadlift",
+                "ar": "ديدلفت روماني"
+              },
+              "sets": 4,
+              "reps": "10-12",
+              "restSeconds": 120,
+              "notes": {
+                "en": "Push hips back, feel hamstring stretch.",
+                "ar": "ارجعي الورك للخلف، حسي بمط الهامسترنق."
+              }
+            },
+            {
+              "exerciseId": "aXtJhlg",
+              "displayName": {
+                "en": "Dumbbell Step-up",
+                "ar": "ستيب أب دمبل"
+              },
+              "sets": 4,
+              "reps": "10-12 each leg",
+              "restSeconds": 75,
+              "notes": {
+                "en": "Drive through heel of working leg.",
+                "ar": "ادفعي بالكعب من الرجل الشغّالة."
+              }
+            },
+            {
+              "exerciseId": "u0cNiij",
+              "displayName": {
+                "en": "Glute Bridge",
+                "ar": "جلوت بريدج"
+              },
+              "sets": 4,
+              "reps": "15-20",
+              "restSeconds": 60,
+              "notes": {
+                "en": "Place barbell or dumbbell on hips.",
+                "ar": "حطي بار أو دمبل على الورك."
+              }
+            },
+            {
+              "exerciseId": "17lJ1kr",
+              "displayName": {
+                "en": "Lever Lying Leg Curl",
+                "ar": "ليق كيرل آلة"
+              },
+              "sets": 4,
+              "reps": "12-15",
+              "restSeconds": 60,
+              "notes": null
+            },
+            {
+              "exerciseId": "CHpahtl",
+              "displayName": {
+                "en": "Lever Seated Hip Abduction",
+                "ar": "هيب أبدكشن آلة"
+              },
+              "sets": 4,
+              "reps": "15-20",
+              "restSeconds": 45,
+              "notes": {
+                "en": "Hits gluteus medius. Lean forward to bias glutes.",
+                "ar": "يستهدف الجلوتس الوسطى. انحني لقدام للتركيز على الجلوتس."
+              }
+            },
+            {
+              "exerciseId": "yl2IYyy",
+              "displayName": {
+                "en": "Standing Calf Raise",
+                "ar": "رفع كعبين"
+              },
+              "sets": 3,
+              "reps": "15-20",
+              "restSeconds": 45,
+              "notes": null
+            }
+          ]
+        },
+        {
+          "dayNumber": 4,
+          "dayLabel": {
+            "en": "Upper Body B",
+            "ar": "علوي ب"
+          },
+          "focus": "shoulders_back_arms_core",
+          "exercises": [
+            {
+              "exerciseId": "znQUdHY",
+              "displayName": {
+                "en": "Dumbbell Seated Shoulder Press",
+                "ar": "ضغط أكتاف دمبل جالس"
+              },
+              "sets": 4,
+              "reps": "8-10",
+              "restSeconds": 90,
+              "notes": null
+            },
+            {
+              "exerciseId": "BJ0Hz5L",
+              "displayName": {
+                "en": "Dumbbell Bent Over Row",
+                "ar": "تجديف دمبل منحني"
+              },
+              "sets": 4,
+              "reps": "10-12",
+              "restSeconds": 90,
+              "notes": null
+            },
+            {
+              "exerciseId": "DsgkuIt",
+              "displayName": {
+                "en": "Dumbbell Lateral Raise",
+                "ar": "رفرفة جانبية دمبل"
+              },
+              "sets": 4,
+              "reps": "15-20",
+              "restSeconds": 45,
+              "notes": {
+                "en": "Drop sets on last set.",
+                "ar": "Drop sets على السيت الأخير."
+              }
+            },
+            {
+              "exerciseId": "mu5Guxt",
+              "displayName": {
+                "en": "Dumbbell Rear Delt Raise",
+                "ar": "رفرفة خلفية دمبل"
+              },
+              "sets": 3,
+              "reps": "12-15",
+              "restSeconds": 60,
+              "notes": null
+            },
+            {
+              "exerciseId": "slDvUAU",
+              "displayName": {
+                "en": "Dumbbell Hammer Curl",
+                "ar": "هامر كيرل دمبل"
+              },
+              "sets": 3,
+              "reps": "10-12",
+              "restSeconds": 60,
+              "notes": null
+            },
+            {
+              "exerciseId": "h1ezqSu",
+              "displayName": {
+                "en": "Plank",
+                "ar": "بلانك"
+              },
+              "sets": 3,
+              "duration": "45-60s",
+              "restSeconds": 45,
+              "notes": null
+            },
+            {
+              "exerciseId": "TFqbd8t",
+              "displayName": {
+                "en": "Crunch",
+                "ar": "كرنش"
+              },
+              "sets": 3,
+              "reps": "20",
+              "restSeconds": 45,
+              "notes": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "templateId": "core_builder_3day",
+      "name": {
+        "en": "Core Builder",
+        "ar": "بناء الكور"
+      },
+      "description": {
+        "en": "A focused 3-day core routine designed as an add-on to your main program. Hits all aspects of the core: rectus abdominis (front), obliques (sides), and deep stabilizers. Each session is short (15-20 min) and can be added after any workout.",
+        "ar": "جدول كور مكثّف 3 أيام مصمّم كإضافة لجدولك الأساسي. يستهدف كل جوانب الكور: المستقيمة الأمامية والمائلة الجانبية والمثبّتة العميقة. كل جلسة قصيرة (15-20 دقيقة) ممكن تضيفها بعد أي تمرين."
+      },
+      "mainGoal": "general_fitness",
+      "secondaryGoals": [
+        "muscle_building"
+      ],
+      "trainingLevel": "beginner",
+      "targetGender": "unisex",
+      "category": "abs",
+      "tags": [
+        "abs",
+        "beginner",
+        "intermediate",
+        "general_fitness",
+        "add_on"
+      ],
+      "daysPerWeek": 3,
+      "durationWeeks": 4,
+      "estimatedSessionMinutes": "15-25",
+      "workoutSplit": "core_isolation",
+      "requiredEquipment": [
+        "bodyweight"
+      ],
+      "optionalEquipment": [
+        "cable",
+        "dumbbell",
+        "pull-up bar"
+      ],
+      "recommendedSupplements": [
+        {
+          "name": {
+            "en": "Whey Protein",
+            "ar": "بروتين واي"
+          },
+          "dosage": {
+            "en": "1 scoop daily",
+            "ar": "سكوب يومياً"
+          },
+          "priority": "optional",
+          "notes": {
+            "en": "If your main program is the muscle-building driver. Core work alone needs less.",
+            "ar": "إذا كان جدولك الأساسي هو محرّك بناء العضل. الكور وحده يحتاج أقل."
+          }
+        }
+      ],
+      "advices": [
+        {
+          "title": {
+            "en": "Abs are made in the kitchen",
+            "ar": "العضلات الستة من المطبخ"
+          },
+          "body": {
+            "en": "You can have the strongest core in the world but won't see it without low body fat. Visible abs = nutrition + training.",
+            "ar": "ممكن يكون عندك أقوى كور بالعالم لكن ما تشوفه بدون نسبة دهون منخفضة. عضلات بطن واضحة = أكل + تمرين."
+          }
+        },
+        {
+          "title": {
+            "en": "Quality > quantity",
+            "ar": "الجودة قبل الكمية"
+          },
+          "body": {
+            "en": "20 perfect crunches with controlled tempo beat 100 sloppy ones. Slow descent, full contraction.",
+            "ar": "20 كرنش مظبوطة بتحكم تسوي أكثر من 100 سيئة. نزول بطيء وانقباض كامل."
+          }
+        },
+        {
+          "title": {
+            "en": "Don't train abs every day",
+            "ar": "لا تدرّب الكور يومياً"
+          },
+          "body": {
+            "en": "Core muscles need recovery like any other muscle. 3 sessions per week is plenty.",
+            "ar": "عضلات الكور محتاجة استشفاء زي أي عضلة. 3 جلسات أسبوعياً تكفي."
+          }
+        },
+        {
+          "title": {
+            "en": "Add it after main lifts",
+            "ar": "ضيفه بعد التمرين الأساسي"
+          },
+          "body": {
+            "en": "Core is fatigue-sensitive. Do this routine at the end of your main workout, not before heavy lifts.",
+            "ar": "الكور حسّاس للتعب. سوّ هذا الجدول في نهاية تمرينك الأساسي، مو قبل الرفعات الثقيلة."
+          }
+        },
+        {
+          "title": {
+            "en": "Compound lifts already work core",
+            "ar": "التمارين المركّبة تشتغل على الكور"
+          },
+          "body": {
+            "en": "Squats, deadlifts, OHPs all train the core heavily. This routine is for direct, focused work on top of that.",
+            "ar": "السكوات والديدلفت والـOHP كلها تدرّب الكور بشكل قوي. هذا الجدول للشغل المباشر فوق ذلك."
+          }
+        }
+      ],
+      "schedule": [
+        {
+          "dayNumber": 1,
+          "dayLabel": {
+            "en": "Day A — Anterior Core",
+            "ar": "اليوم أ — الكور الأمامي"
+          },
+          "focus": "rectus_abdominis",
+          "exercises": [
+            {
+              "exerciseId": "TFqbd8t",
+              "displayName": {
+                "en": "Crunch",
+                "ar": "كرنش"
+              },
+              "sets": 3,
+              "reps": "15-20",
+              "restSeconds": 45,
+              "notes": {
+                "en": "Slow controlled. Don't pull on neck.",
+                "ar": "بطيء وتحكم. لا تشد رقبتك."
+              }
+            },
+            {
+              "exerciseId": "I3tsCnC",
+              "displayName": {
+                "en": "Hanging Leg Raise",
+                "ar": "رفع رجلين معلّق"
+              },
+              "sets": 3,
+              "reps": "10-15",
+              "restSeconds": 60,
+              "notes": {
+                "en": "If too hard, do hanging knee raise.",
+                "ar": "لو صعب، اسوي رفع ركب معلّق."
+              }
+            },
+            {
+              "exerciseId": "iny3m5y",
+              "displayName": {
+                "en": "Dead Bug",
+                "ar": "ديد بَق"
+              },
+              "sets": 3,
+              "reps": "10 each side",
+              "restSeconds": 45,
+              "notes": {
+                "en": "Press lower back into floor. Slow movement.",
+                "ar": "اضغط الظهر السفلي على الأرض. حركة بطيئة."
+              }
+            },
+            {
+              "exerciseId": "h1ezqSu",
+              "displayName": {
+                "en": "Plank",
+                "ar": "بلانك"
+              },
+              "sets": 3,
+              "duration": "45-60s",
+              "restSeconds": 45,
+              "notes": null
+            }
+          ]
+        },
+        {
+          "dayNumber": 2,
+          "dayLabel": {
+            "en": "Day B — Obliques & Rotation",
+            "ar": "اليوم ب — مائلة ودوران"
+          },
+          "focus": "obliques",
+          "exercises": [
+            {
+              "exerciseId": "XVDdcoj",
+              "displayName": {
+                "en": "Russian Twist",
+                "ar": "تويست روسي"
+              },
+              "sets": 3,
+              "reps": "20 each side",
+              "restSeconds": 45,
+              "notes": {
+                "en": "Hold dumbbell or plate for resistance.",
+                "ar": "امسك دمبل أو وزن عشان مقاومة."
+              }
+            },
+            {
+              "exerciseId": "BaE7O6U",
+              "displayName": {
+                "en": "Hanging Oblique Knee Raise",
+                "ar": "رفع ركب مائل معلّق"
+              },
+              "sets": 3,
+              "reps": "10-12 each side",
+              "restSeconds": 60,
+              "notes": {
+                "en": "Twist hips to one side as you raise.",
+                "ar": "لف الورك على جنب وأنت ترفع."
+              }
+            },
+            {
+              "exerciseId": "tZkGYZ9",
+              "displayName": {
+                "en": "Bicycle Crunch",
+                "ar": "كرنش الدراجة"
+              },
+              "sets": 3,
+              "reps": "20 each side",
+              "restSeconds": 45,
+              "notes": {
+                "en": "Slow controlled, opposite elbow to knee.",
+                "ar": "بطيء وتحكم، الكوع المعاكس للركبة."
+              }
+            },
+            {
+              "exerciseId": "JOZhu2h",
+              "displayName": {
+                "en": "Cable Standing Twist",
+                "ar": "تويست واقف كيبل"
+              },
+              "sets": 3,
+              "reps": "12 each side",
+              "restSeconds": 45,
+              "notes": {
+                "en": "Rotate from core, not arms.",
+                "ar": "اللف من الكور مو من الذراع."
+              }
+            }
+          ]
+        },
+        {
+          "dayNumber": 3,
+          "dayLabel": {
+            "en": "Day C — Deep Core & Stability",
+            "ar": "اليوم ج — كور عميق وثبات"
+          },
+          "focus": "deep_core_stability",
+          "exercises": [
+            {
+              "exerciseId": "h1ezqSu",
+              "displayName": {
+                "en": "Plank",
+                "ar": "بلانك"
+              },
+              "sets": 4,
+              "duration": "60s",
+              "restSeconds": 45,
+              "notes": {
+                "en": "Tight core, neutral spine, no sagging hips.",
+                "ar": "شدّ الكور، ظهر مستقيم، الورك ما ينزل."
+              }
+            },
+            {
+              "exerciseId": "VO2qeJg",
+              "displayName": {
+                "en": "Side Plank Hip Adduction",
+                "ar": "بلانك جانبي مع تقريب ورك"
+              },
+              "sets": 3,
+              "duration": "30-45s each side",
+              "restSeconds": 45,
+              "notes": null
+            },
+            {
+              "exerciseId": "iny3m5y",
+              "displayName": {
+                "en": "Dead Bug",
+                "ar": "ديد بَق"
+              },
+              "sets": 3,
+              "reps": "12 each side",
+              "restSeconds": 45,
+              "notes": null
+            },
+            {
+              "exerciseId": "nCU1Ekp",
+              "displayName": {
+                "en": "Reverse Crunch",
+                "ar": "كرنش معكوس"
+              },
+              "sets": 3,
+              "reps": "12-15",
+              "restSeconds": 45,
+              "notes": {
+                "en": "Lift hips off ground, knees toward chest.",
+                "ar": "ارفع الورك عن الأرض، الركب باتجاه الصدر."
+              }
+            },
+            {
+              "exerciseId": "8xUv4J7",
+              "displayName": {
+                "en": "Cable Seated Crunch",
+                "ar": "كرنش كيبل جالس"
+              },
+              "sets": 3,
+              "reps": "12-15",
+              "restSeconds": 45,
+              "notes": {
+                "en": "Bend at waist, full contraction.",
+                "ar": "انحنِ من الخصر، انقباض كامل."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "templateId": "athletic_conditioning_4day",
+      "name": {
+        "en": "Athletic Conditioning",
+        "ar": "تكييف رياضي"
+      },
+      "description": {
+        "en": "A 4-day program for athletes and those wanting explosive power, speed, and conditioning. Combines heavy compound lifts, plyometrics, and metabolic work. Builds strength that transfers to sports and real-world performance.",
+        "ar": "برنامج 4 أيام للرياضيين واللي يبون قوة انفجارية وسرعة وتكييف. يجمع الرفعات المركّبة الثقيلة والبلايومتركس والشغل الأيضي. يبني قوة تنتقل للرياضات والأداء في الحياة العملية."
+      },
+      "mainGoal": "sports_performance",
+      "secondaryGoals": [
+        "strength",
+        "fat_loss"
+      ],
+      "trainingLevel": "advanced",
+      "targetGender": "unisex",
+      "category": "sports_performance",
+      "tags": [
+        "sports_performance",
+        "advanced",
+        "intermediate",
+        "strength",
+        "upper_lower"
+      ],
+      "daysPerWeek": 4,
+      "durationWeeks": 8,
+      "estimatedSessionMinutes": "60-75",
+      "workoutSplit": "upper_lower",
+      "requiredEquipment": [
+        "barbell",
+        "dumbbell",
+        "bench"
+      ],
+      "optionalEquipment": [
+        "medicine ball",
+        "kettlebell",
+        "box",
+        "open space for sprints"
+      ],
+      "recommendedSupplements": [
+        {
+          "name": {
+            "en": "Creatine Monohydrate",
+            "ar": "كرياتين مونوهيدرات"
+          },
+          "dosage": {
+            "en": "5g daily",
+            "ar": "5 جرام يومياً"
+          },
+          "priority": "essential",
+          "notes": {
+            "en": "Critical for explosive power output and short-burst performance.",
+            "ar": "ضروري لإخراج القوة الانفجارية والأداء في الجهد القصير."
+          }
+        },
+        {
+          "name": {
+            "en": "Whey Protein",
+            "ar": "بروتين واي"
+          },
+          "dosage": {
+            "en": "1-2 scoops daily",
+            "ar": "1-2 سكوب يومياً"
+          },
+          "priority": "essential",
+          "notes": {
+            "en": "Heavy training breaks down muscle. Protein rebuilds it.",
+            "ar": "التدريب الثقيل يكسر العضل. البروتين يعيد بناءه."
+          }
+        },
+        {
+          "name": {
+            "en": "Beta-Alanine",
+            "ar": "بيتا ألانين"
+          },
+          "dosage": {
+            "en": "3-5g daily",
+            "ar": "3-5 جرام يومياً"
+          },
+          "priority": "highly_recommended",
+          "notes": {
+            "en": "Improves performance in 1-4 minute high-intensity bouts. Mild tingling sensation is normal.",
+            "ar": "يحسّن الأداء في الجهد العالي من 1-4 دقايق. إحساس وخز خفيف طبيعي."
+          }
+        },
+        {
+          "name": {
+            "en": "Caffeine",
+            "ar": "كافيين"
+          },
+          "dosage": {
+            "en": "200-400mg pre-training",
+            "ar": "200-400 ملغ قبل التمرين"
+          },
+          "priority": "highly_recommended",
+          "notes": {
+            "en": "Strong evidence for performance, especially in explosive movements.",
+            "ar": "أدلة قوية على تحسين الأداء، خصوصاً في الحركات الانفجارية."
+          }
+        },
+        {
+          "name": {
+            "en": "Omega-3 (Fish Oil)",
+            "ar": "أوميقا 3"
+          },
+          "dosage": {
+            "en": "2-3g EPA+DHA daily",
+            "ar": "2-3 جرام EPA+DHA يومياً"
+          },
+          "priority": "highly_recommended",
+          "notes": {
+            "en": "High training volume = inflammation. Omega-3 helps recovery.",
+            "ar": "حجم تدريب عالي = التهابات. الأوميقا 3 يساعد الاستشفاء."
+          }
+        },
+        {
+          "name": {
+            "en": "Electrolytes",
+            "ar": "إلكتروليتس"
+          },
+          "dosage": {
+            "en": "1 serving on training days",
+            "ar": "حصة في أيام التمرين"
+          },
+          "priority": "highly_recommended",
+          "notes": {
+            "en": "Heavy sweating + heavy training = electrolyte loss.",
+            "ar": "تعرّق شديد + تمرين ثقيل = فقدان أملاح."
+          }
+        }
+      ],
+      "advices": [
+        {
+          "title": {
+            "en": "Power before strength before fatigue",
+            "ar": "القوة الانفجارية قبل القوة قبل التعب"
+          },
+          "body": {
+            "en": "Always do explosive/plyo work first when you're fresh. Heavy lifts second. Conditioning last. Order matters for athletic adaptation.",
+            "ar": "دايماً سوّ التمارين الانفجارية/البلايو أولاً وأنت في كامل نشاطك. الرفعات الثقيلة ثاني. التكييف الأخير. الترتيب مهم للتكيّف الرياضي."
+          }
+        },
+        {
+          "title": {
+            "en": "Quality plyos",
+            "ar": "بلايومتركس بجودة"
+          },
+          "body": {
+            "en": "Do 3-5 reps max per set on plyos. Reset fully between reps. Sloppy plyos teach your nervous system to be slow.",
+            "ar": "سوّ 3-5 تكرارات كحد أقصى للسيت في البلايو. ارجع للوضع كامل بين التكرارات. البلايو السيء يعلّم جهازك العصبي يكون بطيء."
+          }
+        },
+        {
+          "title": {
+            "en": "Sleep is performance",
+            "ar": "النوم هو الأداء"
+          },
+          "body": {
+            "en": "Studies show 8+ hours of sleep can improve athletic performance by 5-10%. Non-negotiable for advanced training.",
+            "ar": "الدراسات تقول 8+ ساعات نوم تحسّن الأداء الرياضي 5-10%. أساسي للتدريب المتقدّم."
+          }
+        },
+        {
+          "title": {
+            "en": "Don't ignore mobility",
+            "ar": "لا تتجاهل المرونة"
+          },
+          "body": {
+            "en": "Add 10 minutes of mobility work daily. Tight hips and shoulders limit your performance ceiling.",
+            "ar": "ضيف 10 دقايق تمارين مرونة يومياً. الورك والكتف المشدودة تحدّد سقف أدائك."
+          }
+        },
+        {
+          "title": {
+            "en": "Periodize the program",
+            "ar": "نظّم البرنامج بمراحل"
+          },
+          "body": {
+            "en": "Don't run this program year-round. After 8 weeks, switch to a hypertrophy or pure strength block for 4-8 weeks.",
+            "ar": "لا تستمر على هذا البرنامج طول السنة. بعد 8 أسابيع، انتقل لبلوك تضخيم أو قوة بحتة لمدة 4-8 أسابيع."
+          }
+        },
+        {
+          "title": {
+            "en": "Track your numbers",
+            "ar": "تابع أرقامك"
+          },
+          "body": {
+            "en": "Test broad jump, vertical jump, and 40-yard sprint every 4 weeks. If they're not improving, the program isn't working for you.",
+            "ar": "اختبر القفز العريض والعمودي وسبرنت 40 ياردة كل 4 أسابيع. لو ما تحسّنوا، البرنامج ما يشتغل لك."
+          }
+        }
+      ],
+      "schedule": [
+        {
+          "dayNumber": 1,
+          "dayLabel": {
+            "en": "Lower Power + Strength",
+            "ar": "سفلي قوة انفجارية + قوة"
+          },
+          "focus": "power_strength_legs",
+          "exercises": [
+            {
+              "exerciseId": "uZKq7lo",
+              "displayName": {
+                "en": "Forward Jump (Broad Jump)",
+                "ar": "قفز للأمام (واسع)"
+              },
+              "sets": 4,
+              "reps": "3-5",
+              "restSeconds": 90,
+              "notes": {
+                "en": "Power work. Max effort. Full reset between reps.",
+                "ar": "شغل قوة انفجارية. أقصى مجهود. ارجع كامل بين التكرارات."
+              }
+            },
+            {
+              "exerciseId": "qXTaZnJ",
+              "displayName": {
+                "en": "Barbell Back Squat",
+                "ar": "سكوات بار"
+              },
+              "sets": 5,
+              "reps": "3-5",
+              "restSeconds": 180,
+              "notes": {
+                "en": "Heavy strength work. Explosive concentric (up phase).",
+                "ar": "شغل قوة ثقيلة. مركّز على الصعود الانفجاري."
+              }
+            },
+            {
+              "exerciseId": "ila4NZS",
+              "displayName": {
+                "en": "Barbell Deadlift",
+                "ar": "ديدلفت بار"
+              },
+              "sets": 4,
+              "reps": "3-5",
+              "restSeconds": 180,
+              "notes": {
+                "en": "Reset between every rep. No bouncing.",
+                "ar": "ارجع للوضع المستقيم بين كل تكرار. بدون ارتداد."
+              }
+            },
+            {
+              "exerciseId": "9E25EOx",
+              "displayName": {
+                "en": "Bulgarian Split Squat",
+                "ar": "سكوات بلغاري"
+              },
+              "sets": 3,
+              "reps": "8-10 each leg",
+              "restSeconds": 90,
+              "notes": null
+            },
+            {
+              "exerciseId": "yl2IYyy",
+              "displayName": {
+                "en": "Standing Calf Raise",
+                "ar": "رفع كعبين"
+              },
+              "sets": 4,
+              "reps": "10-12",
+              "restSeconds": 60,
+              "notes": null
+            }
+          ]
+        },
+        {
+          "dayNumber": 2,
+          "dayLabel": {
+            "en": "Upper Power + Strength",
+            "ar": "علوي قوة انفجارية + قوة"
+          },
+          "focus": "power_strength_upper",
+          "exercises": [
+            {
+              "exerciseId": "oHg8eop",
+              "displayName": {
+                "en": "Medicine Ball Overhead Slam",
+                "ar": "ضرب كرة طبية فوق الرأس"
+              },
+              "sets": 4,
+              "reps": "5-8",
+              "restSeconds": 75,
+              "notes": {
+                "en": "Max effort throws. Engage whole body.",
+                "ar": "رميات بأقصى مجهود. شغّل كل الجسم."
+              }
+            },
+            {
+              "exerciseId": "EIeI8Vf",
+              "displayName": {
+                "en": "Barbell Bench Press",
+                "ar": "بنش بريس بار"
+              },
+              "sets": 5,
+              "reps": "3-5",
+              "restSeconds": 180,
+              "notes": {
+                "en": "Heavy strength. Explosive concentric.",
+                "ar": "قوة ثقيلة. صعود انفجاري."
+              }
+            },
+            {
+              "exerciseId": "lBDjFxJ",
+              "displayName": {
+                "en": "Pull-up",
+                "ar": "بول أب"
+              },
+              "sets": 4,
+              "reps": "AMRAP",
+              "restSeconds": 120,
+              "notes": {
+                "en": "Add weight if doing 10+. Explosive up, controlled down.",
+                "ar": "ضيف وزن لو تسوي 10+. صعود سريع، نزول بتحكم."
+              }
+            },
+            {
+              "exerciseId": "kTbSH9h",
+              "displayName": {
+                "en": "Barbell Overhead Press",
+                "ar": "ضغط أكتاف بار"
+              },
+              "sets": 4,
+              "reps": "5-7",
+              "restSeconds": 120,
+              "notes": null
+            },
+            {
+              "exerciseId": "eZyBC3j",
+              "displayName": {
+                "en": "Barbell Bent Over Row",
+                "ar": "تجديف بار منحني"
+              },
+              "sets": 3,
+              "reps": "6-8",
+              "restSeconds": 120,
+              "notes": null
+            }
+          ]
+        },
+        {
+          "dayNumber": 3,
+          "dayLabel": {
+            "en": "Lower Conditioning + Sprints",
+            "ar": "سفلي تكييف + سبرنت"
+          },
+          "focus": "conditioning_speed",
+          "exercises": [
+            {
+              "exerciseId": "Qoujh3Q",
+              "displayName": {
+                "en": "Wind Sprints",
+                "ar": "سبرنت"
+              },
+              "sets": 6,
+              "duration": "20-30 sec",
+              "restSeconds": 90,
+              "notes": {
+                "en": "All-out effort. Walk back to start as recovery.",
+                "ar": "أقصى مجهود. ارجع مشي للبداية كاستراحة."
+              }
+            },
+            {
+              "exerciseId": "wQ2c4XD",
+              "displayName": {
+                "en": "Romanian Deadlift",
+                "ar": "ديدلفت روماني"
+              },
+              "sets": 4,
+              "reps": "8-10",
+              "restSeconds": 90,
+              "notes": null
+            },
+            {
+              "exerciseId": "IZVHb27",
+              "displayName": {
+                "en": "Walking Lunge (Weighted)",
+                "ar": "لانج مشي (موزون)"
+              },
+              "sets": 3,
+              "reps": "20 steps total",
+              "restSeconds": 75,
+              "notes": null
+            },
+            {
+              "exerciseId": "UHJlbu3",
+              "displayName": {
+                "en": "Kettlebell Swing",
+                "ar": "سوينق كيتل"
+              },
+              "sets": 4,
+              "reps": "15-20",
+              "restSeconds": 60,
+              "notes": {
+                "en": "Hip drive, glute squeeze at top.",
+                "ar": "اندفاع من الورك، اضغط الجلوتس في الأعلى."
+              }
+            },
+            {
+              "exerciseId": "I3tsCnC",
+              "displayName": {
+                "en": "Hanging Leg Raise",
+                "ar": "رفع رجلين معلّق"
+              },
+              "sets": 3,
+              "reps": "10-15",
+              "restSeconds": 60,
+              "notes": null
+            }
+          ]
+        },
+        {
+          "dayNumber": 4,
+          "dayLabel": {
+            "en": "Upper Conditioning + Core",
+            "ar": "علوي تكييف + كور"
+          },
+          "focus": "conditioning_upper_core",
+          "exercises": [
+            {
+              "exerciseId": "6pTkI99",
+              "displayName": {
+                "en": "Dumbbell One-Arm Snatch",
+                "ar": "سناتش دمبل بذراع واحدة"
+              },
+              "sets": 4,
+              "reps": "5-6 each arm",
+              "restSeconds": 90,
+              "notes": {
+                "en": "Explosive movement. Light to moderate weight.",
+                "ar": "حركة انفجارية. وزن خفيف إلى متوسط."
+              }
+            },
+            {
+              "exerciseId": "SpYC0Kp",
+              "displayName": {
+                "en": "Dumbbell Bench Press",
+                "ar": "بنش بريس دمبل"
+              },
+              "sets": 4,
+              "reps": "8-10",
+              "restSeconds": 90,
+              "notes": null
+            },
+            {
+              "exerciseId": "BJ0Hz5L",
+              "displayName": {
+                "en": "Dumbbell Bent Over Row",
+                "ar": "تجديف دمبل منحني"
+              },
+              "sets": 4,
+              "reps": "10-12",
+              "restSeconds": 75,
+              "notes": null
+            },
+            {
+              "exerciseId": "X6C6i5Y",
+              "displayName": {
+                "en": "Triceps Dip",
+                "ar": "ديبس ترايسبس"
+              },
+              "sets": 3,
+              "reps": "AMRAP",
+              "restSeconds": 90,
+              "notes": null
+            },
+            {
+              "exerciseId": "dK9394r",
+              "displayName": {
+                "en": "Burpee",
+                "ar": "بربي"
+              },
+              "sets": 4,
+              "reps": "10-12",
+              "restSeconds": 60,
+              "notes": {
+                "en": "Conditioning. Full extension on the jump.",
+                "ar": "تكييف. مدّ كامل في القفزة."
+              }
+            },
+            {
+              "exerciseId": "h1ezqSu",
+              "displayName": {
+                "en": "Plank",
+                "ar": "بلانك"
+              },
+              "sets": 3,
+              "duration": "60s",
+              "restSeconds": 45,
+              "notes": null
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

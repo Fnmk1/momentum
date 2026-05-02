@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Rubik } from "next/font/google";
+import FloatingNav from "@/components/FloatingNav";
 import "./globals.css";
 
 const rubik = Rubik({
@@ -127,7 +128,10 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className={`${rubik.variable} antialiased`}>{children}</body>
+      <body className={`${rubik.variable} antialiased bg-black`}>
+        <FloatingNav />
+        {children}
+      </body>
     </html>
   );
 }

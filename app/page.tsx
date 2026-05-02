@@ -110,64 +110,6 @@ function StoreButtons() {
 export default function Home() {
   return (
     <div className="bg-black text-white min-h-screen" style={{ fontFamily: 'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif' }}>
-      {/* ── Nav ─────────────────────────────────────────────── */}
-      <nav className="fixed top-4 left-4 right-4 z-50 mx-auto max-w-5xl bg-white/[0.05] backdrop-blur-xl border border-white/[0.08] rounded-full shadow-[0_4px_30px_rgba(0,0,0,0.4)]">
-        <div className="px-6 h-14 flex items-center justify-between">
-          <div className="flex items-center gap-2.5">
-            <Image
-              src="/Logo (2).png"
-              alt="Momentum"
-              width={28}
-              height={28}
-              className="rounded-lg"
-            />
-            <span className="font-bold text-lg tracking-tight text-white">
-              Momentum
-            </span>
-          </div>
-
-          <div className="hidden md:flex items-center gap-8">
-            <a
-              href="#features"
-              className="text-sm text-neutral-400 transition-colors hover:text-white"
-            >
-              المميزات
-            </a>
-            <a
-              href="#how-it-works"
-              className="text-sm text-neutral-400 transition-colors hover:text-white"
-            >
-              كيف يعمل
-            </a>
-            <a
-              href="#ai"
-              className="text-sm text-neutral-400 transition-colors hover:text-white"
-            >
-              المساعد الذكي
-            </a>
-            <a
-              href="/library"
-              className="text-sm text-neutral-400 transition-colors hover:text-white"
-            >
-              مكتبة البرامج
-            </a>
-            <a
-              href="#contact"
-              className="text-sm text-neutral-400 transition-colors hover:text-white"
-            >
-              تواصل معنا
-            </a>
-          </div>
-
-          <a
-            href="#download"
-            className="hidden sm:inline-flex bg-white text-black text-sm font-semibold rounded-full px-5 py-2.5 transition-transform active:scale-95"
-          >
-            حمّل التطبيق
-          </a>
-        </div>
-      </nav>
-
       {/* ── Hero ────────────────────────────────────────────── */}
       <section
         className="group/hero min-h-screen relative overflow-hidden"
