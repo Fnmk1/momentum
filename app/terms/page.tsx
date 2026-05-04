@@ -184,7 +184,8 @@ export default function TermsOfUse() {
         </section>
 
         <div className="text-center text-sm text-neutral-600 mt-16">
-          &copy; 2026 Momentum. All rights reserved. جميع الحقوق محفوظة.
+          <p>&copy; 2026 MOMENTIFY ESTABLISHMENT. All rights reserved.</p>
+          <p className="text-xs text-neutral-700 mt-1">Momentum is developed and published by MOMENTIFY ESTABLISHMENT, Riyadh, Saudi Arabia.</p>
         </div>
       </main>
     </div>
