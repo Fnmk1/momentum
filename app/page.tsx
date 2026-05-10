@@ -535,6 +535,51 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ── About the Company ──────────────────────────────────── */}
+      <section id="about" className="scroll-mt-20 py-20 md:py-28 border-t border-white/[0.04]">
+        <div className="max-w-3xl mx-auto px-6">
+          <div className="text-center mb-12">
+            <h2
+              className="text-2xl md:text-[32px] font-semibold text-white leading-tight"
+              style={{ letterSpacing: '-0.3px' }}
+            >
+              About MOMENTIFY ESTABLISHMENT
+            </h2>
+          </div>
+
+          <div className="space-y-5 text-[17px] text-[#cccccc] leading-relaxed" style={{ letterSpacing: '-0.37px' }} dir="ltr">
+            <p>
+              <strong className="text-white">MOMENTIFY ESTABLISHMENT</strong> is a technology company based in Jeddah, Saudi Arabia, focused on building innovative mobile applications in the health and fitness space.
+            </p>
+            <p>
+              Our flagship product, <strong className="text-white">Momentum</strong>, is an Arabic-first fitness and nutrition tracking app powered by artificial intelligence. We combine modern technology with local expertise to deliver tools that help users across the Middle East achieve their health goals.
+            </p>
+            <p>
+              We are committed to data privacy, user experience, and continuous improvement of our products.
+            </p>
+          </div>
+
+          <div className="mt-10 pt-8 border-t border-white/[0.06] grid sm:grid-cols-2 gap-6 text-[15px]" dir="ltr">
+            <div>
+              <div className="text-[#7a7a7a] text-[13px] uppercase tracking-wide mb-1">Company</div>
+              <div className="text-white">MOMENTIFY ESTABLISHMENT</div>
+            </div>
+            <div>
+              <div className="text-[#7a7a7a] text-[13px] uppercase tracking-wide mb-1">Location</div>
+              <div className="text-white">Jeddah, Saudi Arabia</div>
+            </div>
+            <div>
+              <div className="text-[#7a7a7a] text-[13px] uppercase tracking-wide mb-1">Email</div>
+              <a href="mailto:info@momentumsup.com" className="text-[#2997ff]">info@momentumsup.com</a>
+            </div>
+            <div>
+              <div className="text-[#7a7a7a] text-[13px] uppercase tracking-wide mb-1">Website</div>
+              <a href="https://momentumsup.com" className="text-[#2997ff]">momentumsup.com</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ── Footer ───────────────────────────────────────────── */}
       <footer className="bg-black py-16">
         <div className="max-w-5xl mx-auto px-6">
@@ -557,6 +602,9 @@ export default function Home() {
               </a>
               <a href="#how-it-works" className="text-[14px] text-[#cccccc] transition-colors hover:text-white" style={{ letterSpacing: '-0.22px' }}>
                 كيف يعمل
+              </a>
+              <a href="#about" className="text-[14px] text-[#cccccc] transition-colors hover:text-white" style={{ letterSpacing: '-0.22px' }}>
+                عن الشركة
               </a>
               <a href="#contact" className="text-[14px] text-[#cccccc] transition-colors hover:text-white" style={{ letterSpacing: '-0.22px' }}>
                 تواصل معنا
@@ -588,7 +636,7 @@ export default function Home() {
                 &copy; 2026 MOMENTIFY ESTABLISHMENT. All rights reserved.
               </p>
               <p className="text-[11px] text-[#555] mt-1" style={{ letterSpacing: '-0.12px' }}>
-                Momentum is developed and published by MOMENTIFY ESTABLISHMENT, Riyadh, Saudi Arabia.
+                Momentum is developed and published by MOMENTIFY ESTABLISHMENT, Jeddah, Saudi Arabia.
               </p>
             </div>
           </div>
