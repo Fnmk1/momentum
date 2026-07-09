@@ -99,14 +99,14 @@ export interface Program {
 // ── Categories ────────────────────────────────────────────────────────────────
 
 export const CATEGORIES: Category[] = [
-  { tag: "muscle_building", nameAr: "بناء عضل", nameEn: "Muscle Building", descAr: "برامج مصممة لزيادة الكتلة العضلية والحجم", image: "/explore/Arnold-Schwarzenegger2.png" },
-  { tag: "fat_loss", nameAr: "حرق دهون", nameEn: "Fat Loss", descAr: "برامج تركز على خسارة الدهون مع الحفاظ على العضلات", image: "/explore/ronnie.jpg" },
+  { tag: "muscle_building", nameAr: "بناء عضل", nameEn: "Muscle Building", descAr: "برامج مصممة لزيادة الكتلة العضلية والحجم", image: "/explore/muscles.jpg" },
+  { tag: "fat_loss", nameAr: "حرق دهون", nameEn: "Fat Loss", descAr: "برامج تركز على خسارة الدهون مع الحفاظ على العضلات", image: "/explore/fatburn.jpg" },
   { tag: "strength", nameAr: "زيادة قوة", nameEn: "Increase Strength", descAr: "برامج أوزان ثقيلة لبناء قوة حقيقية", image: "/explore/mark.jpg" },
-  { tag: "full_body", nameAr: "جسم كامل", nameEn: "Full Body", descAr: "تمارين تستهدف جميع العضلات في جلسة واحدة", image: "/explore/Arnold-Schwarzenegger.png" },
-  { tag: "abs", nameAr: "تمارين كور", nameEn: "Ab Workouts", descAr: "تمارين مركزة على عضلات البطن والكور", image: "/explore/Dorian-Yates.png" },
-  { tag: "bodyweight", nameAr: "وزن الجسم", nameEn: "Bodyweight", descAr: "تمارين بدون معدات — وزن جسمك فقط", image: "/explore/mark.jpg" },
-  { tag: "at_home", nameAr: "تمارين البيت", nameEn: "At Home", descAr: "تمارين تقدر تسويها من بيتك بدون نادي", image: "/explore/Arnold-Schwarzenegger.png" },
-  { tag: "beginner", nameAr: "للمبتدئين", nameEn: "Beginner", descAr: "برامج بسيطة وفعالة لبناء أساس قوي", image: "/explore/mark.jpg" },
+  { tag: "full_body", nameAr: "جسم كامل", nameEn: "Full Body", descAr: "تمارين تستهدف جميع العضلات في جلسة واحدة", image: "/explore/full.jpg" },
+  { tag: "abs", nameAr: "تمارين كور", nameEn: "Ab Workouts", descAr: "تمارين مركزة على عضلات البطن والكور", image: "/explore/core.jpg" },
+  { tag: "bodyweight", nameAr: "وزن الجسم", nameEn: "Bodyweight", descAr: "تمارين بدون معدات — وزن جسمك فقط", image: "/explore/body.jpg" },
+  { tag: "at_home", nameAr: "تمارين البيت", nameEn: "At Home", descAr: "تمارين تقدر تسويها من بيتك بدون نادي", image: "/explore/house.jpg" },
+  { tag: "beginner", nameAr: "للمبتدئين", nameEn: "Beginner", descAr: "برامج بسيطة وفعالة لبناء أساس قوي", image: "/explore/begginer.jpg" },
   { tag: "sports_performance", nameAr: "الأداء الرياضي", nameEn: "Sports Performance", descAr: "برامج تحسين الأداء الرياضي والقدرات البدنية", image: "/explore/Dorian-Yates.png" },
   { tag: "women", nameAr: "تمارين النساء", nameEn: "Workouts For Women", descAr: "برامج مصممة خصيصاً للنساء", image: "/explore/ronnie.jpg" },
 ];
