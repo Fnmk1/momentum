@@ -76,6 +76,16 @@ export default function PrivacyPolicy() {
                 <li>سياسات أمان على مستوى الصفوف (Row Level Security) تضمن أن بياناتك لا يراها أحد غيرك</li>
                 <li>لا نبيع أو نشارك بياناتك الشخصية مع أطراف ثالثة</li>
               </ul>
+
+              <h3 className="text-lg font-semibold text-white mt-5 mb-2">مدة الاحتفاظ بالبيانات</h3>
+              <ul className="list-disc list-inside space-y-1 mr-4">
+                <li><strong className="text-neutral-200">طول فترة نشاط حسابك:</strong> نحتفظ ببياناتك (الوجبات، التمارين، القياسات، الأهداف، المحادثات) طالما حسابك قائم، حتى نقدر نعرض لك تقدمك عبر الزمن.</li>
+                <li><strong className="text-neutral-200">عند حذف الحساب:</strong> تُحذف جميع بياناتك الشخصية نهائياً وفوراً من خوادمنا بدون فترة انتظار، وتشمل سجلات الأكل والتمارين والقياسات والصور والمحادثات. الحذف نهائي ولا يمكن التراجع عنه.</li>
+                <li><strong className="text-neutral-200">بيانات الاستخدام:</strong> إحصائيات استخدام التطبيق تُفصل عن هويتك عند حذف الحساب وتبقى بصيغة مجهولة لا تدل عليك، لأغراض تحسين التطبيق.</li>
+                <li><strong className="text-neutral-200">البيانات على جهازك:</strong> تُمسح عند تسجيل الخروج أو حذف التطبيق.</li>
+                <li><strong className="text-neutral-200">طلبات الذكاء الاصطناعي:</strong> لا يحتفظ بها مزوّد الخدمة بعد معالجة الطلب ولا تُستخدم لتدريب نماذجه.</li>
+                <li>تقدر تحذف حسابك في أي وقت من: الإعدادات ← حذف الحساب.</li>
+              </ul>
             </div>
 
             <div>
@@ -185,6 +195,16 @@ export default function PrivacyPolicy() {
                 <li>All connections are encrypted via HTTPS</li>
                 <li>Row Level Security (RLS) policies ensure only you can access your data</li>
                 <li>We do not sell or share your personal data with third parties</li>
+              </ul>
+
+              <h3 className="text-lg font-semibold text-white mt-5 mb-2">Data Retention</h3>
+              <ul className="list-disc list-inside space-y-1 ml-4">
+                <li><strong className="text-neutral-200">While your account is active:</strong> we retain your data (meals, workouts, measurements, goals, conversations) for as long as your account exists, so we can show you your progress over time.</li>
+                <li><strong className="text-neutral-200">When you delete your account:</strong> all of your personal data is permanently and immediately erased from our servers, with no retention period. This includes food logs, workouts, measurements, photos and conversations. Deletion is irreversible.</li>
+                <li><strong className="text-neutral-200">Usage analytics:</strong> app usage statistics are detached from your identity when you delete your account and remain only in anonymous form that cannot be linked back to you, for product improvement.</li>
+                <li><strong className="text-neutral-200">Data on your device:</strong> cleared when you sign out or uninstall the app.</li>
+                <li><strong className="text-neutral-200">AI requests:</strong> not retained by our AI provider after processing, and never used to train their models.</li>
+                <li>You can delete your account at any time from Settings → Delete Account.</li>
               </ul>
             </div>
 
