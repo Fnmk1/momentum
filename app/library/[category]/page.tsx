@@ -326,6 +326,15 @@ export default function CategoryPage({ params }: { params: Promise<{ category: s
   const [levelFilter, setLevelFilter] = useState<TrainingLevel | null>(null);
   const [daysFilter, setDaysFilter] = useState<number | null>(null);
 
+  // the app's gym guide links here with its answers (?level=&days=): start on them
+  useEffect(() => {
+    const q = new URLSearchParams(window.location.search);
+    const level = q.get("level");
+    const days = Number(q.get("days"));
+    if (level === "beginner" || level === "intermediate" || level === "advanced") setLevelFilter(level);
+    if ([3, 4, 5, 6].includes(days)) setDaysFilter(days);
+  }, []);
+
   if (!category) {
     return (
       <div className="bg-black text-white min-h-screen flex items-center justify-center" dir="rtl">

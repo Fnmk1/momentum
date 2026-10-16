@@ -8,7 +8,19 @@ export const metadata: Metadata = {
   description: "أكثر من ١٠ برامج تمارين احترافية — Momentum Workout Library",
 };
 
-export default function LibraryPage() {
+/** the app's gym guide opens the library on its answers (?level=&days=): pass them on to the category pages */
+function filterQuery(sp: Record<string, string | string[] | undefined>): string {
+  const q = new URLSearchParams();
+  const level = typeof sp.level === "string" ? sp.level : "";
+  const days = typeof sp.days === "string" ? sp.days : "";
+  if (level) q.set("level", level);
+  if (days) q.set("days", days);
+  const s = q.toString();
+  return s ? `?${s}` : "";
+}
+
+export default async function LibraryPage({ searchParams }: { searchParams: Promise<Record<string, string | string[] | undefined>> }) {
+  const query = filterQuery(await searchParams);
   return (
     <div className="bg-black text-white min-h-screen" dir="rtl">
       {/* ── Hero ── */}
@@ -29,7 +41,7 @@ export default function LibraryPage() {
             return (
               <Link
                 key={category.tag}
-                href={`/library/${category.tag}`}
+                href={`/library/${category.tag}${query}`}
                 className="group relative overflow-hidden aspect-[3/4] transition-transform active:scale-[0.95]"
                 style={{ borderRadius: 18 }}
               >
